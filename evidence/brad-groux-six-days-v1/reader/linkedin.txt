@@ -1,0 +1,31 @@
+The workflow I used with GPT-5.6 did not carry forward reliably to GPT-6 Astra. That is what I have seen in my own testing and daily work.
+
+I had already documented the method: defined scope, repository context, versioned SOPs, meaningful verification, and clear handoffs. Eric Provencher from OpenAI's Codex DX team described closely aligned practices in his July guidance for GPT-5.6:
+https://x.com/pvncher/status/2080707291603407077
+
+That is why the generation matters. Businesses invest in operating processes. A model upgrade needs to preserve those processes or provide an evidence-backed migration path.
+
+I reviewed retained Astra records across six study days and two local stores:
+
+• 25,254 responses across 557 turns.
+• 3.42 billion recorded tokens, including 3.35 billion cached input tokens.
+• 10.99 million output tokens, including reasoning output.
+
+Cached input was about 98.2% of input. Those counters are not unique text, billed spend, or a measure of useful work.
+
+A separate contextual review coded 538 substantive contributions. Of these, 147 contained corrective steering, 154 expressed explicit dissatisfaction, and 91 contained both. The union was 210.
+
+That is not a model failure rate or a satisfaction score. It measures interventions under a review rubric, with judgment and incomplete outcome evidence.
+
+The corrections formed 78 episodes; 31 included repeated corrective contributions. Examples involved reasserting testing cadence, pointing back to supplied context, and challenging missing handoff work. A stale runbook also contributed to one dispute.
+
+Several replies to my posts described similar friction with detailed design instructions and hard constraints. Others reported good instruction-following when steps were explained. Those are selected practitioner experiences, not a survey.
+
+I suspect shortcuts toward completion can displace requirements, and that requirements can get lost during delegation. Both are entirely untested hypotheses based on roughly four or five days of personal experience. Efficiency is beneficial when it preserves the intended outcome and constraints.
+
+The audit does not establish either cause or a matched GPT-5.6/GPT-6 performance difference. My reported experience is that an established workflow has taken repeated intervention to keep intact with Astra.
+
+I have published a small MIT contribution kit with synthetic examples and optional directly reported ratings. The examples are synthetic; reviewed aggregates are available in the separate evidence area:
+https://github.com/BradGroux/astra-field-study
+
+This is what I currently think. I want to know more, especially from people whose experience contradicts mine. If your existing workflow transferred cleanly, I would like to understand what made it work.

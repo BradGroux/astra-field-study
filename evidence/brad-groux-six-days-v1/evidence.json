@@ -1,0 +1,4032 @@
+{
+  "format": "observational_evidence",
+  "format_version": "1.0",
+  "synthetic": false,
+  "consent": {
+    "public_release_reviewed": true,
+    "mit_contribution": true
+  },
+  "model": "gpt-6-astra",
+  "study_days": 6,
+  "direct_ratings": "not_collected",
+  "usage": {
+    "summary": {
+      "responses": 25254,
+      "turns": 557,
+      "completed_turns": 551,
+      "incomplete_turns": 6,
+      "native_user_messages": 488,
+      "tasks": 76,
+      "sum_completed_turn_ms": 513154698,
+      "completed_interval_union_ms": 299198155,
+      "tokens": {
+        "input_tokens": 3409595316,
+        "cached_input_tokens": 3348480640,
+        "uncached_input_tokens": 61114676,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10989347,
+        "reasoning_output_tokens": 3684075,
+        "total_tokens": 3420584663
+      }
+    },
+    "by_day": [
+      {
+        "day": 1,
+        "responses": 843,
+        "turns": 52,
+        "completed_turns": 52,
+        "incomplete_turns": 0,
+        "native_user_messages": 18,
+        "tasks": 30,
+        "sum_completed_turn_ms": 20363969,
+        "completed_interval_union_ms": 8167448,
+        "tokens": {
+          "input_tokens": 89071979,
+          "cached_input_tokens": 85451392,
+          "uncached_input_tokens": 3620587,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 427287,
+          "reasoning_output_tokens": 45625,
+          "total_tokens": 89499266
+        }
+      },
+      {
+        "day": 2,
+        "responses": 3835,
+        "turns": 104,
+        "completed_turns": 102,
+        "incomplete_turns": 2,
+        "native_user_messages": 107,
+        "tasks": 28,
+        "sum_completed_turn_ms": 65671094,
+        "completed_interval_union_ms": 46581392,
+        "tokens": {
+          "input_tokens": 513370827,
+          "cached_input_tokens": 502264320,
+          "uncached_input_tokens": 11106507,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1937592,
+          "reasoning_output_tokens": 533010,
+          "total_tokens": 515308419
+        }
+      },
+      {
+        "day": 3,
+        "responses": 2326,
+        "turns": 66,
+        "completed_turns": 65,
+        "incomplete_turns": 1,
+        "native_user_messages": 45,
+        "tasks": 2,
+        "sum_completed_turn_ms": 48685366,
+        "completed_interval_union_ms": 48646288,
+        "tokens": {
+          "input_tokens": 312317488,
+          "cached_input_tokens": 306408320,
+          "uncached_input_tokens": 5909168,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1066001,
+          "reasoning_output_tokens": 392165,
+          "total_tokens": 313383489
+        }
+      },
+      {
+        "day": 4,
+        "responses": 10152,
+        "turns": 176,
+        "completed_turns": 176,
+        "incomplete_turns": 0,
+        "native_user_messages": 156,
+        "tasks": 32,
+        "sum_completed_turn_ms": 223000084,
+        "completed_interval_union_ms": 81665745,
+        "tokens": {
+          "input_tokens": 1378604023,
+          "cached_input_tokens": 1354133888,
+          "uncached_input_tokens": 24470135,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 4573448,
+          "reasoning_output_tokens": 1535955,
+          "total_tokens": 1383177471
+        }
+      },
+      {
+        "day": 5,
+        "responses": 6267,
+        "turns": 131,
+        "completed_turns": 130,
+        "incomplete_turns": 1,
+        "native_user_messages": 151,
+        "tasks": 8,
+        "sum_completed_turn_ms": 120828088,
+        "completed_interval_union_ms": 82087955,
+        "tokens": {
+          "input_tokens": 868872685,
+          "cached_input_tokens": 857134336,
+          "uncached_input_tokens": 11738349,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2225354,
+          "reasoning_output_tokens": 861589,
+          "total_tokens": 871098039
+        }
+      },
+      {
+        "day": 6,
+        "responses": 1831,
+        "turns": 28,
+        "completed_turns": 26,
+        "incomplete_turns": 2,
+        "native_user_messages": 11,
+        "tasks": 2,
+        "sum_completed_turn_ms": 34606097,
+        "completed_interval_union_ms": 33896030,
+        "tokens": {
+          "input_tokens": 247358314,
+          "cached_input_tokens": 243088384,
+          "uncached_input_tokens": 4269930,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 759665,
+          "reasoning_output_tokens": 315731,
+          "total_tokens": 248117979
+        }
+      }
+    ],
+    "by_project": [
+      {
+        "project": "Project 01",
+        "responses": 50,
+        "turns": 13,
+        "completed_turns": 13,
+        "incomplete_turns": 0,
+        "native_user_messages": 12,
+        "tasks": 4,
+        "sum_completed_turn_ms": 729990,
+        "completed_interval_union_ms": 703615,
+        "tokens": {
+          "input_tokens": 3746131,
+          "cached_input_tokens": 3486464,
+          "uncached_input_tokens": 259667,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 16982,
+          "reasoning_output_tokens": 1289,
+          "total_tokens": 3763113
+        }
+      },
+      {
+        "project": "Project 02",
+        "responses": 1838,
+        "turns": 39,
+        "completed_turns": 39,
+        "incomplete_turns": 0,
+        "native_user_messages": 44,
+        "tasks": 8,
+        "sum_completed_turn_ms": 35107203,
+        "completed_interval_union_ms": 34965608,
+        "tokens": {
+          "input_tokens": 244342255,
+          "cached_input_tokens": 238971648,
+          "uncached_input_tokens": 5370607,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 712561,
+          "reasoning_output_tokens": 145340,
+          "total_tokens": 245054816
+        }
+      },
+      {
+        "project": "Project 03",
+        "responses": 1930,
+        "turns": 74,
+        "completed_turns": 73,
+        "incomplete_turns": 1,
+        "native_user_messages": 117,
+        "tasks": 8,
+        "sum_completed_turn_ms": 33811980,
+        "completed_interval_union_ms": 26036121,
+        "tokens": {
+          "input_tokens": 268736390,
+          "cached_input_tokens": 263737088,
+          "uncached_input_tokens": 4999302,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 622466,
+          "reasoning_output_tokens": 128618,
+          "total_tokens": 269358856
+        }
+      },
+      {
+        "project": "Project 04",
+        "responses": 10827,
+        "turns": 199,
+        "completed_turns": 195,
+        "incomplete_turns": 4,
+        "native_user_messages": 135,
+        "tasks": 2,
+        "sum_completed_turn_ms": 257899374,
+        "completed_interval_union_ms": 257695769,
+        "tokens": {
+          "input_tokens": 1467739804,
+          "cached_input_tokens": 1443709056,
+          "uncached_input_tokens": 24030748,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5060561,
+          "reasoning_output_tokens": 2064613,
+          "total_tokens": 1472800365
+        }
+      },
+      {
+        "project": "Project 05",
+        "responses": 611,
+        "turns": 37,
+        "completed_turns": 37,
+        "incomplete_turns": 0,
+        "native_user_messages": 24,
+        "tasks": 6,
+        "sum_completed_turn_ms": 13824955,
+        "completed_interval_union_ms": 11997680,
+        "tokens": {
+          "input_tokens": 77638697,
+          "cached_input_tokens": 75342208,
+          "uncached_input_tokens": 2296489,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 310511,
+          "reasoning_output_tokens": 79896,
+          "total_tokens": 77949208
+        }
+      },
+      {
+        "project": "Project 06",
+        "responses": 301,
+        "turns": 2,
+        "completed_turns": 2,
+        "incomplete_turns": 0,
+        "native_user_messages": 5,
+        "tasks": 1,
+        "sum_completed_turn_ms": 3839525,
+        "completed_interval_union_ms": 3839525,
+        "tokens": {
+          "input_tokens": 42808205,
+          "cached_input_tokens": 42228864,
+          "uncached_input_tokens": 579341,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 77540,
+          "reasoning_output_tokens": 14998,
+          "total_tokens": 42885745
+        }
+      },
+      {
+        "project": "Project 07",
+        "responses": 7,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 140825,
+        "completed_interval_union_ms": 140825,
+        "tokens": {
+          "input_tokens": 372307,
+          "cached_input_tokens": 327040,
+          "uncached_input_tokens": 45267,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3557,
+          "reasoning_output_tokens": 118,
+          "total_tokens": 375864
+        }
+      },
+      {
+        "project": "Project 08",
+        "responses": 372,
+        "turns": 9,
+        "completed_turns": 9,
+        "incomplete_turns": 0,
+        "native_user_messages": 19,
+        "tasks": 3,
+        "sum_completed_turn_ms": 9523835,
+        "completed_interval_union_ms": 9523835,
+        "tokens": {
+          "input_tokens": 46872606,
+          "cached_input_tokens": 45750656,
+          "uncached_input_tokens": 1121950,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 232391,
+          "reasoning_output_tokens": 74806,
+          "total_tokens": 47104997
+        }
+      },
+      {
+        "project": "Project 09",
+        "responses": 96,
+        "turns": 6,
+        "completed_turns": 6,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1706659,
+        "completed_interval_union_ms": 1346983,
+        "tokens": {
+          "input_tokens": 10726892,
+          "cached_input_tokens": 10388736,
+          "uncached_input_tokens": 338156,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 43038,
+          "reasoning_output_tokens": 5503,
+          "total_tokens": 10769930
+        }
+      },
+      {
+        "project": "Project 10",
+        "responses": 120,
+        "turns": 8,
+        "completed_turns": 8,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1791396,
+        "completed_interval_union_ms": 1177567,
+        "tokens": {
+          "input_tokens": 11236393,
+          "cached_input_tokens": 10919680,
+          "uncached_input_tokens": 316713,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 41557,
+          "reasoning_output_tokens": 4729,
+          "total_tokens": 11277950
+        }
+      },
+      {
+        "project": "Project 11",
+        "responses": 1471,
+        "turns": 17,
+        "completed_turns": 16,
+        "incomplete_turns": 1,
+        "native_user_messages": 41,
+        "tasks": 2,
+        "sum_completed_turn_ms": 13223595,
+        "completed_interval_union_ms": 13223595,
+        "tokens": {
+          "input_tokens": 197951798,
+          "cached_input_tokens": 193812352,
+          "uncached_input_tokens": 4139446,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 709251,
+          "reasoning_output_tokens": 234238,
+          "total_tokens": 198661049
+        }
+      },
+      {
+        "project": "Project 12",
+        "responses": 3601,
+        "turns": 74,
+        "completed_turns": 74,
+        "incomplete_turns": 0,
+        "native_user_messages": 32,
+        "tasks": 4,
+        "sum_completed_turn_ms": 64281598,
+        "completed_interval_union_ms": 64155688,
+        "tokens": {
+          "input_tokens": 506853308,
+          "cached_input_tokens": 499921152,
+          "uncached_input_tokens": 6932156,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1396962,
+          "reasoning_output_tokens": 440217,
+          "total_tokens": 508250270
+        }
+      },
+      {
+        "project": "Project 13",
+        "responses": 1674,
+        "turns": 25,
+        "completed_turns": 25,
+        "incomplete_turns": 0,
+        "native_user_messages": 18,
+        "tasks": 8,
+        "sum_completed_turn_ms": 33031727,
+        "completed_interval_union_ms": 31983889,
+        "tokens": {
+          "input_tokens": 228509654,
+          "cached_input_tokens": 224238720,
+          "uncached_input_tokens": 4270934,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 754447,
+          "reasoning_output_tokens": 203835,
+          "total_tokens": 229264101
+        }
+      },
+      {
+        "project": "Project 14",
+        "responses": 97,
+        "turns": 4,
+        "completed_turns": 4,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 2097423,
+        "completed_interval_union_ms": 1415609,
+        "tokens": {
+          "input_tokens": 10524533,
+          "cached_input_tokens": 10156032,
+          "uncached_input_tokens": 368501,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 49968,
+          "reasoning_output_tokens": 5292,
+          "total_tokens": 10574501
+        }
+      },
+      {
+        "project": "Project 15",
+        "responses": 91,
+        "turns": 6,
+        "completed_turns": 6,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1331669,
+        "completed_interval_union_ms": 1016501,
+        "tokens": {
+          "input_tokens": 8262089,
+          "cached_input_tokens": 7998336,
+          "uncached_input_tokens": 263753,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 28770,
+          "reasoning_output_tokens": 2340,
+          "total_tokens": 8290859
+        }
+      },
+      {
+        "project": "Project 16",
+        "responses": 125,
+        "turns": 14,
+        "completed_turns": 14,
+        "incomplete_turns": 0,
+        "native_user_messages": 7,
+        "tasks": 4,
+        "sum_completed_turn_ms": 3344821,
+        "completed_interval_union_ms": 2951216,
+        "tokens": {
+          "input_tokens": 12872767,
+          "cached_input_tokens": 12399232,
+          "uncached_input_tokens": 473535,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 85882,
+          "reasoning_output_tokens": 14257,
+          "total_tokens": 12958649
+        }
+      },
+      {
+        "project": "Project 17",
+        "responses": 66,
+        "turns": 5,
+        "completed_turns": 5,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1064902,
+        "completed_interval_union_ms": 895704,
+        "tokens": {
+          "input_tokens": 6204932,
+          "cached_input_tokens": 5979520,
+          "uncached_input_tokens": 225412,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 27077,
+          "reasoning_output_tokens": 1682,
+          "total_tokens": 6232009
+        }
+      },
+      {
+        "project": "Project 18",
+        "responses": 1977,
+        "turns": 24,
+        "completed_turns": 24,
+        "incomplete_turns": 0,
+        "native_user_messages": 28,
+        "tasks": 10,
+        "sum_completed_turn_ms": 36403221,
+        "completed_interval_union_ms": 35142732,
+        "tokens": {
+          "input_tokens": 264196555,
+          "cached_input_tokens": 259113856,
+          "uncached_input_tokens": 5082699,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 815826,
+          "reasoning_output_tokens": 262304,
+          "total_tokens": 265012381
+        }
+      }
+    ],
+    "by_observer": [
+      {
+        "observer": "Observer 01",
+        "responses": 8286,
+        "turns": 132,
+        "completed_turns": 132,
+        "incomplete_turns": 0,
+        "native_user_messages": 105,
+        "tasks": 15,
+        "sum_completed_turn_ms": 149720770,
+        "completed_interval_union_ms": 65968510,
+        "tokens": {
+          "input_tokens": 1146391844,
+          "cached_input_tokens": 1128490112,
+          "uncached_input_tokens": 17901732,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3173842,
+          "reasoning_output_tokens": 978148,
+          "total_tokens": 1149565686
+        }
+      },
+      {
+        "observer": "Observer 02",
+        "responses": 16968,
+        "turns": 425,
+        "completed_turns": 419,
+        "incomplete_turns": 6,
+        "native_user_messages": 383,
+        "tasks": 61,
+        "sum_completed_turn_ms": 363433928,
+        "completed_interval_union_ms": 298619266,
+        "tokens": {
+          "input_tokens": 2263203472,
+          "cached_input_tokens": 2219990528,
+          "uncached_input_tokens": 43212944,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 7815505,
+          "reasoning_output_tokens": 2705927,
+          "total_tokens": 2271018977
+        }
+      }
+    ],
+    "by_day_project_observer": [
+      {
+        "day": 1,
+        "project": "Project 03",
+        "observer": "Observer 02",
+        "responses": 169,
+        "turns": 7,
+        "completed_turns": 7,
+        "incomplete_turns": 0,
+        "native_user_messages": 3,
+        "tasks": 4,
+        "sum_completed_turn_ms": 3083226,
+        "completed_interval_union_ms": 2183676,
+        "tokens": {
+          "input_tokens": 19400488,
+          "cached_input_tokens": 18668672,
+          "uncached_input_tokens": 731816,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 77382,
+          "reasoning_output_tokens": 6647,
+          "total_tokens": 19477870
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 09",
+        "observer": "Observer 02",
+        "responses": 46,
+        "turns": 3,
+        "completed_turns": 3,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1588803,
+        "completed_interval_union_ms": 1346983,
+        "tokens": {
+          "input_tokens": 3297233,
+          "cached_input_tokens": 3071104,
+          "uncached_input_tokens": 226129,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 18044,
+          "reasoning_output_tokens": 1147,
+          "total_tokens": 3315277
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 10",
+        "observer": "Observer 02",
+        "responses": 69,
+        "turns": 5,
+        "completed_turns": 5,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1648527,
+        "completed_interval_union_ms": 1177567,
+        "tokens": {
+          "input_tokens": 5122026,
+          "cached_input_tokens": 4873344,
+          "uncached_input_tokens": 248682,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 27863,
+          "reasoning_output_tokens": 1707,
+          "total_tokens": 5149889
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 11",
+        "observer": "Observer 02",
+        "responses": 45,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 1420849,
+        "completed_interval_union_ms": 1420849,
+        "tokens": {
+          "input_tokens": 7118708,
+          "cached_input_tokens": 6881792,
+          "uncached_input_tokens": 236916,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 35783,
+          "reasoning_output_tokens": 6280,
+          "total_tokens": 7154491
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 13",
+        "observer": "Observer 02",
+        "responses": 144,
+        "turns": 6,
+        "completed_turns": 6,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 4,
+        "sum_completed_turn_ms": 2807364,
+        "completed_interval_union_ms": 1891094,
+        "tokens": {
+          "input_tokens": 15723100,
+          "cached_input_tokens": 15125248,
+          "uncached_input_tokens": 597852,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 64367,
+          "reasoning_output_tokens": 6576,
+          "total_tokens": 15787467
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 14",
+        "observer": "Observer 02",
+        "responses": 18,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 1415609,
+        "completed_interval_union_ms": 1415609,
+        "tokens": {
+          "input_tokens": 1536310,
+          "cached_input_tokens": 1415168,
+          "uncached_input_tokens": 121142,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 12926,
+          "reasoning_output_tokens": 664,
+          "total_tokens": 1549236
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 15",
+        "observer": "Observer 02",
+        "responses": 54,
+        "turns": 5,
+        "completed_turns": 5,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1320009,
+        "completed_interval_union_ms": 1016501,
+        "tokens": {
+          "input_tokens": 3908321,
+          "cached_input_tokens": 3672832,
+          "uncached_input_tokens": 235489,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 20037,
+          "reasoning_output_tokens": 892,
+          "total_tokens": 3928358
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 16",
+        "observer": "Observer 02",
+        "responses": 125,
+        "turns": 14,
+        "completed_turns": 14,
+        "incomplete_turns": 0,
+        "native_user_messages": 7,
+        "tasks": 4,
+        "sum_completed_turn_ms": 3344821,
+        "completed_interval_union_ms": 2951216,
+        "tokens": {
+          "input_tokens": 12872767,
+          "cached_input_tokens": 12399232,
+          "uncached_input_tokens": 473535,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 85882,
+          "reasoning_output_tokens": 14257,
+          "total_tokens": 12958649
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 17",
+        "observer": "Observer 02",
+        "responses": 33,
+        "turns": 3,
+        "completed_turns": 3,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 3,
+        "sum_completed_turn_ms": 1018626,
+        "completed_interval_union_ms": 895704,
+        "tokens": {
+          "input_tokens": 2404233,
+          "cached_input_tokens": 2227200,
+          "uncached_input_tokens": 177033,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 17692,
+          "reasoning_output_tokens": 912,
+          "total_tokens": 2421925
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 18",
+        "observer": "Observer 02",
+        "responses": 140,
+        "turns": 7,
+        "completed_turns": 7,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 4,
+        "sum_completed_turn_ms": 2716135,
+        "completed_interval_union_ms": 1703550,
+        "tokens": {
+          "input_tokens": 17688793,
+          "cached_input_tokens": 17116800,
+          "uncached_input_tokens": 571993,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 67311,
+          "reasoning_output_tokens": 6543,
+          "total_tokens": 17756104
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 01",
+        "observer": "Observer 02",
+        "responses": 3,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 36659,
+        "completed_interval_union_ms": 36659,
+        "tokens": {
+          "input_tokens": 115942,
+          "cached_input_tokens": 76288,
+          "uncached_input_tokens": 39654,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 575,
+          "reasoning_output_tokens": 31,
+          "total_tokens": 116517
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 02",
+        "observer": "Observer 02",
+        "responses": 324,
+        "turns": 5,
+        "completed_turns": 5,
+        "incomplete_turns": 0,
+        "native_user_messages": 4,
+        "tasks": 2,
+        "sum_completed_turn_ms": 8726186,
+        "completed_interval_union_ms": 8726186,
+        "tokens": {
+          "input_tokens": 40616482,
+          "cached_input_tokens": 39152640,
+          "uncached_input_tokens": 1463842,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 246291,
+          "reasoning_output_tokens": 46168,
+          "total_tokens": 40862773
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 03",
+        "observer": "Observer 02",
+        "responses": 824,
+        "turns": 47,
+        "completed_turns": 47,
+        "incomplete_turns": 0,
+        "native_user_messages": 23,
+        "tasks": 1,
+        "sum_completed_turn_ms": 17187619,
+        "completed_interval_union_ms": 17187523,
+        "tokens": {
+          "input_tokens": 119005767,
+          "cached_input_tokens": 116262528,
+          "uncached_input_tokens": 2743239,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 334854,
+          "reasoning_output_tokens": 72409,
+          "total_tokens": 119340621
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 04",
+        "observer": "Observer 02",
+        "responses": 338,
+        "turns": 14,
+        "completed_turns": 13,
+        "incomplete_turns": 1,
+        "native_user_messages": 14,
+        "tasks": 1,
+        "sum_completed_turn_ms": 13402459,
+        "completed_interval_union_ms": 13402433,
+        "tokens": {
+          "input_tokens": 43376669,
+          "cached_input_tokens": 42424832,
+          "uncached_input_tokens": 951837,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 273198,
+          "reasoning_output_tokens": 82275,
+          "total_tokens": 43649867
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 06",
+        "observer": "Observer 02",
+        "responses": 301,
+        "turns": 2,
+        "completed_turns": 2,
+        "incomplete_turns": 0,
+        "native_user_messages": 5,
+        "tasks": 1,
+        "sum_completed_turn_ms": 3839525,
+        "completed_interval_union_ms": 3839525,
+        "tokens": {
+          "input_tokens": 42808205,
+          "cached_input_tokens": 42228864,
+          "uncached_input_tokens": 579341,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 77540,
+          "reasoning_output_tokens": 14998,
+          "total_tokens": 42885745
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 07",
+        "observer": "Observer 02",
+        "responses": 7,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 140825,
+        "completed_interval_union_ms": 140825,
+        "tokens": {
+          "input_tokens": 372307,
+          "cached_input_tokens": 327040,
+          "uncached_input_tokens": 45267,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3557,
+          "reasoning_output_tokens": 118,
+          "total_tokens": 375864
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 08",
+        "observer": "Observer 02",
+        "responses": 372,
+        "turns": 9,
+        "completed_turns": 9,
+        "incomplete_turns": 0,
+        "native_user_messages": 19,
+        "tasks": 3,
+        "sum_completed_turn_ms": 9523835,
+        "completed_interval_union_ms": 9523835,
+        "tokens": {
+          "input_tokens": 46872606,
+          "cached_input_tokens": 45750656,
+          "uncached_input_tokens": 1121950,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 232391,
+          "reasoning_output_tokens": 74806,
+          "total_tokens": 47104997
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 09",
+        "observer": "Observer 02",
+        "responses": 50,
+        "turns": 3,
+        "completed_turns": 3,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 3,
+        "sum_completed_turn_ms": 117856,
+        "completed_interval_union_ms": 75144,
+        "tokens": {
+          "input_tokens": 7429659,
+          "cached_input_tokens": 7317632,
+          "uncached_input_tokens": 112027,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 24994,
+          "reasoning_output_tokens": 4356,
+          "total_tokens": 7454653
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 10",
+        "observer": "Observer 02",
+        "responses": 51,
+        "turns": 3,
+        "completed_turns": 3,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 3,
+        "sum_completed_turn_ms": 142869,
+        "completed_interval_union_ms": 97413,
+        "tokens": {
+          "input_tokens": 6114367,
+          "cached_input_tokens": 6046336,
+          "uncached_input_tokens": 68031,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 13694,
+          "reasoning_output_tokens": 3022,
+          "total_tokens": 6128061
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 11",
+        "observer": "Observer 02",
+        "responses": 1408,
+        "turns": 11,
+        "completed_turns": 10,
+        "incomplete_turns": 1,
+        "native_user_messages": 38,
+        "tasks": 1,
+        "sum_completed_turn_ms": 11678433,
+        "completed_interval_union_ms": 11678433,
+        "tokens": {
+          "input_tokens": 188995214,
+          "cached_input_tokens": 185462272,
+          "uncached_input_tokens": 3532942,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 672455,
+          "reasoning_output_tokens": 227936,
+          "total_tokens": 189667669
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 13",
+        "observer": "Observer 02",
+        "responses": 1,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 21995,
+        "completed_interval_union_ms": 21995,
+        "tokens": {
+          "input_tokens": 79016,
+          "cached_input_tokens": 30464,
+          "uncached_input_tokens": 48552,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 412,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 79428
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 14",
+        "observer": "Observer 02",
+        "responses": 79,
+        "turns": 3,
+        "completed_turns": 3,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 3,
+        "sum_completed_turn_ms": 681814,
+        "completed_interval_union_ms": 393492,
+        "tokens": {
+          "input_tokens": 8988223,
+          "cached_input_tokens": 8740864,
+          "uncached_input_tokens": 247359,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37042,
+          "reasoning_output_tokens": 4628,
+          "total_tokens": 9025265
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 15",
+        "observer": "Observer 02",
+        "responses": 37,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 3,
+        "sum_completed_turn_ms": 11660,
+        "completed_interval_union_ms": 11660,
+        "tokens": {
+          "input_tokens": 4353768,
+          "cached_input_tokens": 4325504,
+          "uncached_input_tokens": 28264,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 8733,
+          "reasoning_output_tokens": 1448,
+          "total_tokens": 4362501
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 17",
+        "observer": "Observer 02",
+        "responses": 33,
+        "turns": 2,
+        "completed_turns": 2,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 3,
+        "sum_completed_turn_ms": 46276,
+        "completed_interval_union_ms": 27465,
+        "tokens": {
+          "input_tokens": 3800699,
+          "cached_input_tokens": 3752320,
+          "uncached_input_tokens": 48379,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 9385,
+          "reasoning_output_tokens": 770,
+          "total_tokens": 3810084
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 18",
+        "observer": "Observer 02",
+        "responses": 7,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 113083,
+        "completed_interval_union_ms": 113083,
+        "tokens": {
+          "input_tokens": 441903,
+          "cached_input_tokens": 366080,
+          "uncached_input_tokens": 75823,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2471,
+          "reasoning_output_tokens": 45,
+          "total_tokens": 444374
+        }
+      },
+      {
+        "day": 3,
+        "project": "Project 04",
+        "observer": "Observer 02",
+        "responses": 2321,
+        "turns": 65,
+        "completed_turns": 64,
+        "incomplete_turns": 1,
+        "native_user_messages": 45,
+        "tasks": 1,
+        "sum_completed_turn_ms": 48646335,
+        "completed_interval_union_ms": 48646288,
+        "tokens": {
+          "input_tokens": 311772149,
+          "cached_input_tokens": 305973120,
+          "uncached_input_tokens": 5799029,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1065711,
+          "reasoning_output_tokens": 392153,
+          "total_tokens": 312837860
+        }
+      },
+      {
+        "day": 3,
+        "project": "Project 11",
+        "observer": "Observer 02",
+        "responses": 5,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 1,
+        "sum_completed_turn_ms": 39031,
+        "completed_interval_union_ms": 39031,
+        "tokens": {
+          "input_tokens": 545339,
+          "cached_input_tokens": 435200,
+          "uncached_input_tokens": 110139,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 290,
+          "reasoning_output_tokens": 12,
+          "total_tokens": 545629
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 01",
+        "observer": "Observer 02",
+        "responses": 47,
+        "turns": 12,
+        "completed_turns": 12,
+        "incomplete_turns": 0,
+        "native_user_messages": 11,
+        "tasks": 3,
+        "sum_completed_turn_ms": 693331,
+        "completed_interval_union_ms": 666956,
+        "tokens": {
+          "input_tokens": 3630189,
+          "cached_input_tokens": 3410176,
+          "uncached_input_tokens": 220013,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 16407,
+          "reasoning_output_tokens": 1258,
+          "total_tokens": 3646596
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 02",
+        "observer": "Observer 01",
+        "responses": 1399,
+        "turns": 28,
+        "completed_turns": 28,
+        "incomplete_turns": 0,
+        "native_user_messages": 36,
+        "tasks": 3,
+        "sum_completed_turn_ms": 23049039,
+        "completed_interval_union_ms": 23048994,
+        "tokens": {
+          "input_tokens": 190170308,
+          "cached_input_tokens": 186716672,
+          "uncached_input_tokens": 3453636,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 376708,
+          "reasoning_output_tokens": 87893,
+          "total_tokens": 190547016
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 02",
+        "observer": "Observer 02",
+        "responses": 115,
+        "turns": 6,
+        "completed_turns": 6,
+        "incomplete_turns": 0,
+        "native_user_messages": 4,
+        "tasks": 3,
+        "sum_completed_turn_ms": 3331978,
+        "completed_interval_union_ms": 3190428,
+        "tokens": {
+          "input_tokens": 13555465,
+          "cached_input_tokens": 13102336,
+          "uncached_input_tokens": 453129,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 89562,
+          "reasoning_output_tokens": 11279,
+          "total_tokens": 13645027
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 04",
+        "observer": "Observer 02",
+        "responses": 3095,
+        "turns": 46,
+        "completed_turns": 46,
+        "incomplete_turns": 0,
+        "native_user_messages": 34,
+        "tasks": 2,
+        "sum_completed_turn_ms": 81807399,
+        "completed_interval_union_ms": 81603867,
+        "tokens": {
+          "input_tokens": 420682673,
+          "cached_input_tokens": 414618624,
+          "uncached_input_tokens": 6064049,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1486914,
+          "reasoning_output_tokens": 644728,
+          "total_tokens": 422169587
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 05",
+        "observer": "Observer 02",
+        "responses": 611,
+        "turns": 37,
+        "completed_turns": 37,
+        "incomplete_turns": 0,
+        "native_user_messages": 24,
+        "tasks": 6,
+        "sum_completed_turn_ms": 13824955,
+        "completed_interval_union_ms": 11997680,
+        "tokens": {
+          "input_tokens": 77638697,
+          "cached_input_tokens": 75342208,
+          "uncached_input_tokens": 2296489,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 310511,
+          "reasoning_output_tokens": 79896,
+          "total_tokens": 77949208
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 11",
+        "observer": "Observer 02",
+        "responses": 5,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 1,
+        "sum_completed_turn_ms": 35524,
+        "completed_interval_union_ms": 35524,
+        "tokens": {
+          "input_tokens": 600605,
+          "cached_input_tokens": 479360,
+          "uncached_input_tokens": 121245,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 274,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 600879
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 12",
+        "observer": "Observer 01",
+        "responses": 1577,
+        "turns": 13,
+        "completed_turns": 13,
+        "incomplete_turns": 0,
+        "native_user_messages": 8,
+        "tasks": 3,
+        "sum_completed_turn_ms": 36933703,
+        "completed_interval_union_ms": 36808028,
+        "tokens": {
+          "input_tokens": 218293754,
+          "cached_input_tokens": 214522240,
+          "uncached_input_tokens": 3771514,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 864215,
+          "reasoning_output_tokens": 262648,
+          "total_tokens": 219157969
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 12",
+        "observer": "Observer 02",
+        "responses": 39,
+        "turns": 3,
+        "completed_turns": 3,
+        "incomplete_turns": 0,
+        "native_user_messages": 3,
+        "tasks": 1,
+        "sum_completed_turn_ms": 774240,
+        "completed_interval_union_ms": 774240,
+        "tokens": {
+          "input_tokens": 5065896,
+          "cached_input_tokens": 4865152,
+          "uncached_input_tokens": 200744,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 20442,
+          "reasoning_output_tokens": 1826,
+          "total_tokens": 5086338
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 13",
+        "observer": "Observer 01",
+        "responses": 1496,
+        "turns": 16,
+        "completed_turns": 16,
+        "incomplete_turns": 0,
+        "native_user_messages": 13,
+        "tasks": 3,
+        "sum_completed_turn_ms": 29655969,
+        "completed_interval_union_ms": 29524401,
+        "tokens": {
+          "input_tokens": 208668674,
+          "cached_input_tokens": 205302016,
+          "uncached_input_tokens": 3366658,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 676467,
+          "reasoning_output_tokens": 196193,
+          "total_tokens": 209345141
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 13",
+        "observer": "Observer 02",
+        "responses": 33,
+        "turns": 2,
+        "completed_turns": 2,
+        "incomplete_turns": 0,
+        "native_user_messages": 3,
+        "tasks": 2,
+        "sum_completed_turn_ms": 546399,
+        "completed_interval_union_ms": 546399,
+        "tokens": {
+          "input_tokens": 4038864,
+          "cached_input_tokens": 3780992,
+          "uncached_input_tokens": 257872,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 13201,
+          "reasoning_output_tokens": 1066,
+          "total_tokens": 4052065
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 18",
+        "observer": "Observer 01",
+        "responses": 1731,
+        "turns": 11,
+        "completed_turns": 11,
+        "incomplete_turns": 0,
+        "native_user_messages": 19,
+        "tasks": 4,
+        "sum_completed_turn_ms": 32267171,
+        "completed_interval_union_ms": 32019267,
+        "tokens": {
+          "input_tokens": 235872952,
+          "cached_input_tokens": 231708800,
+          "uncached_input_tokens": 4164152,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 716675,
+          "reasoning_output_tokens": 249113,
+          "total_tokens": 236589627
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 18",
+        "observer": "Observer 02",
+        "responses": 4,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 1,
+        "tasks": 1,
+        "sum_completed_turn_ms": 80376,
+        "completed_interval_union_ms": 80376,
+        "tokens": {
+          "input_tokens": 385946,
+          "cached_input_tokens": 285312,
+          "uncached_input_tokens": 100634,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2072,
+          "reasoning_output_tokens": 55,
+          "total_tokens": 388018
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 03",
+        "observer": "Observer 02",
+        "responses": 937,
+        "turns": 20,
+        "completed_turns": 19,
+        "incomplete_turns": 1,
+        "native_user_messages": 91,
+        "tasks": 4,
+        "sum_completed_turn_ms": 13541135,
+        "completed_interval_union_ms": 6664922,
+        "tokens": {
+          "input_tokens": 130330135,
+          "cached_input_tokens": 128805888,
+          "uncached_input_tokens": 1524247,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 210230,
+          "reasoning_output_tokens": 49562,
+          "total_tokens": 130540365
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 04",
+        "observer": "Observer 02",
+        "responses": 3337,
+        "turns": 50,
+        "completed_turns": 50,
+        "incomplete_turns": 0,
+        "native_user_messages": 37,
+        "tasks": 1,
+        "sum_completed_turn_ms": 80663540,
+        "completed_interval_union_ms": 80663540,
+        "tokens": {
+          "input_tokens": 454356960,
+          "cached_input_tokens": 447240960,
+          "uncached_input_tokens": 7116000,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1502370,
+          "reasoning_output_tokens": 636274,
+          "total_tokens": 455859330
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 11",
+        "observer": "Observer 01",
+        "responses": 3,
+        "turns": 2,
+        "completed_turns": 2,
+        "incomplete_turns": 0,
+        "native_user_messages": 2,
+        "tasks": 1,
+        "sum_completed_turn_ms": 14777,
+        "completed_interval_union_ms": 14777,
+        "tokens": {
+          "input_tokens": 85537,
+          "cached_input_tokens": 69760,
+          "uncached_input_tokens": 15777,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 175,
+          "reasoning_output_tokens": 10,
+          "total_tokens": 85712
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 11",
+        "observer": "Observer 02",
+        "responses": 5,
+        "turns": 1,
+        "completed_turns": 1,
+        "incomplete_turns": 0,
+        "native_user_messages": 0,
+        "tasks": 1,
+        "sum_completed_turn_ms": 34981,
+        "completed_interval_union_ms": 34981,
+        "tokens": {
+          "input_tokens": 606395,
+          "cached_input_tokens": 483968,
+          "uncached_input_tokens": 122427,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 274,
+          "reasoning_output_tokens": 0,
+          "total_tokens": 606669
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 12",
+        "observer": "Observer 01",
+        "responses": 1985,
+        "turns": 58,
+        "completed_turns": 58,
+        "incomplete_turns": 0,
+        "native_user_messages": 21,
+        "tasks": 1,
+        "sum_completed_turn_ms": 26573655,
+        "completed_interval_union_ms": 26573420,
+        "tokens": {
+          "input_tokens": 283493658,
+          "cached_input_tokens": 280533760,
+          "uncached_input_tokens": 2959898,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 512305,
+          "reasoning_output_tokens": 175743,
+          "total_tokens": 284005963
+        }
+      },
+      {
+        "day": 6,
+        "project": "Project 04",
+        "observer": "Observer 02",
+        "responses": 1736,
+        "turns": 24,
+        "completed_turns": 22,
+        "incomplete_turns": 2,
+        "native_user_messages": 5,
+        "tasks": 1,
+        "sum_completed_turn_ms": 33379641,
+        "completed_interval_union_ms": 33379641,
+        "tokens": {
+          "input_tokens": 237551353,
+          "cached_input_tokens": 233451520,
+          "uncached_input_tokens": 4099833,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 732368,
+          "reasoning_output_tokens": 309183,
+          "total_tokens": 238283721
+        }
+      },
+      {
+        "day": 6,
+        "project": "Project 18",
+        "observer": "Observer 01",
+        "responses": 95,
+        "turns": 4,
+        "completed_turns": 4,
+        "incomplete_turns": 0,
+        "native_user_messages": 6,
+        "tasks": 1,
+        "sum_completed_turn_ms": 1226456,
+        "completed_interval_union_ms": 1226456,
+        "tokens": {
+          "input_tokens": 9806961,
+          "cached_input_tokens": 9636864,
+          "uncached_input_tokens": 170097,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 27297,
+          "reasoning_output_tokens": 6548,
+          "total_tokens": 9834258
+        }
+      }
+    ]
+  },
+  "coded_observations": {
+    "protocol_version": "1.1",
+    "summary": {
+      "eligible": 538,
+      "D_only": 63,
+      "C_only": 56,
+      "both": 91,
+      "routine": 310,
+      "ambiguous": 18,
+      "union": 210,
+      "dissatisfaction_units": 154,
+      "corrective_units": 147,
+      "correction_episodes": 78,
+      "repeated_correction_episodes": 31,
+      "process_correction_episodes": 40,
+      "process_correction_units": 102,
+      "outcomes": {
+        "confirmed_resolved": 14,
+        "accepted_with_residual_or_waived": 3,
+        "fix_reported_unverified": 15,
+        "claim_withdrawn_artifact_unverified": 1,
+        "no_closure_established": 45
+      }
+    },
+    "by_day": [
+      {
+        "day": 1,
+        "eligible": 18,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 17,
+        "ambiguous": 1,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "eligible": 107,
+        "D_only": 18,
+        "C_only": 8,
+        "both": 16,
+        "routine": 62,
+        "ambiguous": 3,
+        "union": 42,
+        "dissatisfaction_units": 34,
+        "corrective_units": 24,
+        "correction_episodes": 16,
+        "repeated_correction_episodes": 6,
+        "process_correction_episodes": 3,
+        "process_correction_units": 6,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 16
+        }
+      },
+      {
+        "day": 3,
+        "eligible": 45,
+        "D_only": 6,
+        "C_only": 5,
+        "both": 8,
+        "routine": 23,
+        "ambiguous": 3,
+        "union": 19,
+        "dissatisfaction_units": 14,
+        "corrective_units": 13,
+        "correction_episodes": 11,
+        "repeated_correction_episodes": 2,
+        "process_correction_episodes": 3,
+        "process_correction_units": 4,
+        "outcomes": {
+          "confirmed_resolved": 2,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 9
+        }
+      },
+      {
+        "day": 4,
+        "eligible": 155,
+        "D_only": 8,
+        "C_only": 17,
+        "both": 15,
+        "routine": 112,
+        "ambiguous": 3,
+        "union": 40,
+        "dissatisfaction_units": 23,
+        "corrective_units": 32,
+        "correction_episodes": 25,
+        "repeated_correction_episodes": 4,
+        "process_correction_episodes": 14,
+        "process_correction_units": 23,
+        "outcomes": {
+          "confirmed_resolved": 6,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 10,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 9
+        }
+      },
+      {
+        "day": 5,
+        "eligible": 202,
+        "D_only": 31,
+        "C_only": 25,
+        "both": 51,
+        "routine": 88,
+        "ambiguous": 7,
+        "union": 107,
+        "dissatisfaction_units": 82,
+        "corrective_units": 76,
+        "correction_episodes": 24,
+        "repeated_correction_episodes": 18,
+        "process_correction_episodes": 18,
+        "process_correction_units": 67,
+        "outcomes": {
+          "confirmed_resolved": 6,
+          "accepted_with_residual_or_waived": 3,
+          "fix_reported_unverified": 3,
+          "claim_withdrawn_artifact_unverified": 1,
+          "no_closure_established": 11
+        }
+      },
+      {
+        "day": 6,
+        "eligible": 11,
+        "D_only": 0,
+        "C_only": 1,
+        "both": 1,
+        "routine": 8,
+        "ambiguous": 1,
+        "union": 2,
+        "dissatisfaction_units": 1,
+        "corrective_units": 2,
+        "correction_episodes": 2,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 2,
+        "process_correction_units": 2,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 2,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      }
+    ],
+    "by_project": [
+      {
+        "project": "Project 01",
+        "eligible": 14,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 14,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 02",
+        "eligible": 44,
+        "D_only": 4,
+        "C_only": 2,
+        "both": 4,
+        "routine": 33,
+        "ambiguous": 1,
+        "union": 10,
+        "dissatisfaction_units": 8,
+        "corrective_units": 6,
+        "correction_episodes": 5,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 2,
+        "process_correction_units": 3,
+        "outcomes": {
+          "confirmed_resolved": 4,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 1,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 03",
+        "eligible": 168,
+        "D_only": 34,
+        "C_only": 20,
+        "both": 39,
+        "routine": 68,
+        "ambiguous": 7,
+        "union": 93,
+        "dissatisfaction_units": 73,
+        "corrective_units": 59,
+        "correction_episodes": 23,
+        "repeated_correction_episodes": 18,
+        "process_correction_episodes": 17,
+        "process_correction_units": 50,
+        "outcomes": {
+          "confirmed_resolved": 6,
+          "accepted_with_residual_or_waived": 3,
+          "fix_reported_unverified": 2,
+          "claim_withdrawn_artifact_unverified": 1,
+          "no_closure_established": 11
+        }
+      },
+      {
+        "project": "Project 04",
+        "eligible": 135,
+        "D_only": 10,
+        "C_only": 15,
+        "both": 17,
+        "routine": 87,
+        "ambiguous": 6,
+        "union": 42,
+        "dissatisfaction_units": 27,
+        "corrective_units": 32,
+        "correction_episodes": 29,
+        "repeated_correction_episodes": 5,
+        "process_correction_episodes": 8,
+        "process_correction_units": 11,
+        "outcomes": {
+          "confirmed_resolved": 3,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 26
+        }
+      },
+      {
+        "project": "Project 05",
+        "eligible": 24,
+        "D_only": 0,
+        "C_only": 1,
+        "both": 0,
+        "routine": 22,
+        "ambiguous": 1,
+        "union": 1,
+        "dissatisfaction_units": 0,
+        "corrective_units": 1,
+        "correction_episodes": 1,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 1,
+        "process_correction_units": 1,
+        "outcomes": {
+          "confirmed_resolved": 1,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 06",
+        "eligible": 5,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 5,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 07",
+        "eligible": 1,
+        "D_only": 1,
+        "C_only": 0,
+        "both": 0,
+        "routine": 0,
+        "ambiguous": 0,
+        "union": 1,
+        "dissatisfaction_units": 1,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 08",
+        "eligible": 19,
+        "D_only": 0,
+        "C_only": 2,
+        "both": 2,
+        "routine": 14,
+        "ambiguous": 1,
+        "union": 4,
+        "dissatisfaction_units": 2,
+        "corrective_units": 4,
+        "correction_episodes": 1,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 1
+        }
+      },
+      {
+        "project": "Project 09",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 10",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 11",
+        "eligible": 39,
+        "D_only": 11,
+        "C_only": 2,
+        "both": 4,
+        "routine": 22,
+        "ambiguous": 0,
+        "union": 17,
+        "dissatisfaction_units": 15,
+        "corrective_units": 6,
+        "correction_episodes": 4,
+        "repeated_correction_episodes": 2,
+        "process_correction_episodes": 1,
+        "process_correction_units": 2,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 4
+        }
+      },
+      {
+        "project": "Project 12",
+        "eligible": 32,
+        "D_only": 0,
+        "C_only": 5,
+        "both": 19,
+        "routine": 7,
+        "ambiguous": 1,
+        "union": 24,
+        "dissatisfaction_units": 19,
+        "corrective_units": 24,
+        "correction_episodes": 3,
+        "repeated_correction_episodes": 2,
+        "process_correction_episodes": 2,
+        "process_correction_units": 23,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 1,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 2
+        }
+      },
+      {
+        "project": "Project 13",
+        "eligible": 18,
+        "D_only": 1,
+        "C_only": 4,
+        "both": 3,
+        "routine": 10,
+        "ambiguous": 0,
+        "union": 8,
+        "dissatisfaction_units": 4,
+        "corrective_units": 7,
+        "correction_episodes": 4,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 3,
+        "process_correction_units": 6,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 4,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 14",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 15",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 16",
+        "eligible": 7,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 6,
+        "ambiguous": 1,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 17",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "project": "Project 18",
+        "eligible": 27,
+        "D_only": 2,
+        "C_only": 5,
+        "both": 3,
+        "routine": 17,
+        "ambiguous": 0,
+        "union": 10,
+        "dissatisfaction_units": 5,
+        "corrective_units": 8,
+        "correction_episodes": 8,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 6,
+        "process_correction_units": 6,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 7,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 1
+        }
+      }
+    ],
+    "by_day_project": [
+      {
+        "day": 1,
+        "project": "Project 03",
+        "eligible": 3,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 3,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 09",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 10",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 11",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 13",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 14",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 15",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 16",
+        "eligible": 7,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 6,
+        "ambiguous": 1,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 17",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 1,
+        "project": "Project 18",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 01",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 02",
+        "eligible": 4,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 4,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 03",
+        "eligible": 23,
+        "D_only": 5,
+        "C_only": 3,
+        "both": 6,
+        "routine": 7,
+        "ambiguous": 2,
+        "union": 14,
+        "dissatisfaction_units": 11,
+        "corrective_units": 9,
+        "correction_episodes": 6,
+        "repeated_correction_episodes": 3,
+        "process_correction_episodes": 2,
+        "process_correction_units": 4,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 6
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 04",
+        "eligible": 14,
+        "D_only": 1,
+        "C_only": 1,
+        "both": 4,
+        "routine": 8,
+        "ambiguous": 0,
+        "union": 6,
+        "dissatisfaction_units": 5,
+        "corrective_units": 5,
+        "correction_episodes": 5,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 5
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 06",
+        "eligible": 5,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 5,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 07",
+        "eligible": 1,
+        "D_only": 1,
+        "C_only": 0,
+        "both": 0,
+        "routine": 0,
+        "ambiguous": 0,
+        "union": 1,
+        "dissatisfaction_units": 1,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 08",
+        "eligible": 19,
+        "D_only": 0,
+        "C_only": 2,
+        "both": 2,
+        "routine": 14,
+        "ambiguous": 1,
+        "union": 4,
+        "dissatisfaction_units": 2,
+        "corrective_units": 4,
+        "correction_episodes": 1,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 1
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 11",
+        "eligible": 38,
+        "D_only": 11,
+        "C_only": 2,
+        "both": 4,
+        "routine": 21,
+        "ambiguous": 0,
+        "union": 17,
+        "dissatisfaction_units": 15,
+        "corrective_units": 6,
+        "correction_episodes": 4,
+        "repeated_correction_episodes": 2,
+        "process_correction_episodes": 1,
+        "process_correction_units": 2,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 4
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 13",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 2,
+        "project": "Project 18",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 3,
+        "project": "Project 04",
+        "eligible": 45,
+        "D_only": 6,
+        "C_only": 5,
+        "both": 8,
+        "routine": 23,
+        "ambiguous": 3,
+        "union": 19,
+        "dissatisfaction_units": 14,
+        "corrective_units": 13,
+        "correction_episodes": 11,
+        "repeated_correction_episodes": 2,
+        "process_correction_episodes": 3,
+        "process_correction_units": 4,
+        "outcomes": {
+          "confirmed_resolved": 2,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 9
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 01",
+        "eligible": 11,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 11,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 02",
+        "eligible": 40,
+        "D_only": 4,
+        "C_only": 2,
+        "both": 4,
+        "routine": 29,
+        "ambiguous": 1,
+        "union": 10,
+        "dissatisfaction_units": 8,
+        "corrective_units": 6,
+        "correction_episodes": 5,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 2,
+        "process_correction_units": 3,
+        "outcomes": {
+          "confirmed_resolved": 4,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 1,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 04",
+        "eligible": 34,
+        "D_only": 1,
+        "C_only": 4,
+        "both": 1,
+        "routine": 27,
+        "ambiguous": 1,
+        "union": 6,
+        "dissatisfaction_units": 2,
+        "corrective_units": 5,
+        "correction_episodes": 7,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 2,
+        "process_correction_units": 2,
+        "outcomes": {
+          "confirmed_resolved": 1,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 6
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 05",
+        "eligible": 24,
+        "D_only": 0,
+        "C_only": 1,
+        "both": 0,
+        "routine": 22,
+        "ambiguous": 1,
+        "union": 1,
+        "dissatisfaction_units": 0,
+        "corrective_units": 1,
+        "correction_episodes": 1,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 1,
+        "process_correction_units": 1,
+        "outcomes": {
+          "confirmed_resolved": 1,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 12",
+        "eligible": 11,
+        "D_only": 0,
+        "C_only": 2,
+        "both": 5,
+        "routine": 4,
+        "ambiguous": 0,
+        "union": 7,
+        "dissatisfaction_units": 5,
+        "corrective_units": 7,
+        "correction_episodes": 2,
+        "repeated_correction_episodes": 2,
+        "process_correction_episodes": 2,
+        "process_correction_units": 7,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 2
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 13",
+        "eligible": 16,
+        "D_only": 1,
+        "C_only": 4,
+        "both": 3,
+        "routine": 8,
+        "ambiguous": 0,
+        "union": 8,
+        "dissatisfaction_units": 4,
+        "corrective_units": 7,
+        "correction_episodes": 4,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 3,
+        "process_correction_units": 6,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 4,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 4,
+        "project": "Project 18",
+        "eligible": 19,
+        "D_only": 2,
+        "C_only": 4,
+        "both": 2,
+        "routine": 11,
+        "ambiguous": 0,
+        "union": 8,
+        "dissatisfaction_units": 4,
+        "corrective_units": 6,
+        "correction_episodes": 6,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 4,
+        "process_correction_units": 4,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 5,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 1
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 01",
+        "eligible": 2,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 2,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 03",
+        "eligible": 142,
+        "D_only": 29,
+        "C_only": 17,
+        "both": 33,
+        "routine": 58,
+        "ambiguous": 5,
+        "union": 79,
+        "dissatisfaction_units": 62,
+        "corrective_units": 50,
+        "correction_episodes": 17,
+        "repeated_correction_episodes": 15,
+        "process_correction_episodes": 15,
+        "process_correction_units": 46,
+        "outcomes": {
+          "confirmed_resolved": 6,
+          "accepted_with_residual_or_waived": 3,
+          "fix_reported_unverified": 2,
+          "claim_withdrawn_artifact_unverified": 1,
+          "no_closure_established": 5
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 04",
+        "eligible": 37,
+        "D_only": 2,
+        "C_only": 5,
+        "both": 4,
+        "routine": 25,
+        "ambiguous": 1,
+        "union": 11,
+        "dissatisfaction_units": 6,
+        "corrective_units": 9,
+        "correction_episodes": 6,
+        "repeated_correction_episodes": 3,
+        "process_correction_episodes": 3,
+        "process_correction_units": 5,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 6
+        }
+      },
+      {
+        "day": 5,
+        "project": "Project 12",
+        "eligible": 21,
+        "D_only": 0,
+        "C_only": 3,
+        "both": 14,
+        "routine": 3,
+        "ambiguous": 1,
+        "union": 17,
+        "dissatisfaction_units": 14,
+        "corrective_units": 17,
+        "correction_episodes": 1,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 16,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 1,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 6,
+        "project": "Project 04",
+        "eligible": 5,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 4,
+        "ambiguous": 1,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0,
+        "correction_episodes": 0,
+        "repeated_correction_episodes": 0,
+        "process_correction_episodes": 0,
+        "process_correction_units": 0,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 0,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      },
+      {
+        "day": 6,
+        "project": "Project 18",
+        "eligible": 6,
+        "D_only": 0,
+        "C_only": 1,
+        "both": 1,
+        "routine": 4,
+        "ambiguous": 0,
+        "union": 2,
+        "dissatisfaction_units": 1,
+        "corrective_units": 2,
+        "correction_episodes": 2,
+        "repeated_correction_episodes": 1,
+        "process_correction_episodes": 2,
+        "process_correction_units": 2,
+        "outcomes": {
+          "confirmed_resolved": 0,
+          "accepted_with_residual_or_waived": 0,
+          "fix_reported_unverified": 2,
+          "claim_withdrawn_artifact_unverified": 0,
+          "no_closure_established": 0
+        }
+      }
+    ],
+    "by_surface": [
+      {
+        "surface": "typed",
+        "eligible": 396,
+        "D_only": 34,
+        "C_only": 39,
+        "both": 58,
+        "routine": 253,
+        "ambiguous": 12,
+        "union": 131,
+        "dissatisfaction_units": 92,
+        "corrective_units": 97
+      },
+      {
+        "surface": "voice",
+        "eligible": 141,
+        "D_only": 29,
+        "C_only": 17,
+        "both": 33,
+        "routine": 56,
+        "ambiguous": 6,
+        "union": 79,
+        "dissatisfaction_units": 62,
+        "corrective_units": 50
+      },
+      {
+        "surface": "voice_with_typed_reference",
+        "eligible": 1,
+        "D_only": 0,
+        "C_only": 0,
+        "both": 0,
+        "routine": 1,
+        "ambiguous": 0,
+        "union": 0,
+        "dissatisfaction_units": 0,
+        "corrective_units": 0
+      }
+    ]
+  },
+  "repository_activity": {
+    "scope": "full_window_all_authors",
+    "identifiable_repositories": 17,
+    "unresolved_projects": 1,
+    "events": {
+      "issue_active_in_window": 444,
+      "issue_active_state_closed": 385,
+      "issue_active_state_open": 59,
+      "issue_candidate_records": 444,
+      "issue_distinct_reopened": 3,
+      "issue_distinct_with_close_event": 385,
+      "issue_opened_in_window": 401,
+      "issue_window_events": 2729,
+      "pr_active_in_window": 452,
+      "pr_active_state_closed": 29,
+      "pr_active_state_merged": 411,
+      "pr_active_state_open": 12,
+      "pr_candidate_records": 452,
+      "pr_distinct_reopened": 2,
+      "pr_distinct_with_close_event": 439,
+      "pr_merged_in_window": 410,
+      "pr_opened_in_window": 435,
+      "pr_window_events": 2161
+    },
+    "net_changes": {
+      "first_parent_commit_objects_in_window": 396,
+      "net_changed_repository_qualified_paths": 3753,
+      "net_diff_additions": 311765,
+      "net_diff_deletions": 18415,
+      "repositories_with_complete_net_diff": 17,
+      "repositories_with_default_branch_commit_activity": 17,
+      "net_line_delta": 293350
+    },
+    "by_project": [
+      {
+        "project": "Project 01",
+        "events": {
+          "issue_active_in_window": 2,
+          "issue_active_state_closed": 2,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 2,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 2,
+          "issue_opened_in_window": 2,
+          "issue_window_events": 5,
+          "pr_active_in_window": 2,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 2,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 2,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 2,
+          "pr_merged_in_window": 2,
+          "pr_opened_in_window": 2,
+          "pr_window_events": 6
+        },
+        "first_parent_commit_objects_in_window": 2,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 94,
+          "deleted": 7,
+          "binary_touches": 0,
+          "file_touches": 4,
+          "unique_paths": 4,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 94,
+              "deleted": 7,
+              "binary_touches": 0,
+              "touches": 4
+            },
+            "other_source_or_asset": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 02",
+        "events": {
+          "issue_active_in_window": 14,
+          "issue_active_state_closed": 9,
+          "issue_active_state_open": 5,
+          "issue_candidate_records": 14,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 9,
+          "issue_opened_in_window": 11,
+          "issue_window_events": 41,
+          "pr_active_in_window": 12,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 12,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 12,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 12,
+          "pr_merged_in_window": 12,
+          "pr_opened_in_window": 12,
+          "pr_window_events": 50
+        },
+        "first_parent_commit_objects_in_window": 12,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 47304,
+          "deleted": 2694,
+          "binary_touches": 35,
+          "file_touches": 907,
+          "unique_paths": 907,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 14661,
+              "deleted": 1628,
+              "binary_touches": 0,
+              "touches": 346
+            },
+            "other_source_or_asset": {
+              "added": 31724,
+              "deleted": 1061,
+              "binary_touches": 35,
+              "touches": 530
+            },
+            "test": {
+              "added": 919,
+              "deleted": 5,
+              "binary_touches": 0,
+              "touches": 31
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 03",
+        "events": {
+          "issue_active_in_window": 58,
+          "issue_active_state_closed": 42,
+          "issue_active_state_open": 16,
+          "issue_candidate_records": 58,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 42,
+          "issue_opened_in_window": 33,
+          "issue_window_events": 625,
+          "pr_active_in_window": 38,
+          "pr_active_state_closed": 7,
+          "pr_active_state_merged": 31,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 38,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 38,
+          "pr_merged_in_window": 31,
+          "pr_opened_in_window": 38,
+          "pr_window_events": 245
+        },
+        "first_parent_commit_objects_in_window": 20,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 5073,
+          "deleted": 1623,
+          "binary_touches": 0,
+          "file_touches": 207,
+          "unique_paths": 207,
+          "categories": {
+            "dependency_lock": {
+              "added": 71,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 978,
+              "deleted": 9,
+              "binary_touches": 0,
+              "touches": 21
+            },
+            "other_source_or_asset": {
+              "added": 3291,
+              "deleted": 1579,
+              "binary_touches": 0,
+              "touches": 161
+            },
+            "test": {
+              "added": 733,
+              "deleted": 35,
+              "binary_touches": 0,
+              "touches": 24
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 04",
+        "events": {
+          "issue_active_in_window": 132,
+          "issue_active_state_closed": 130,
+          "issue_active_state_open": 2,
+          "issue_candidate_records": 132,
+          "issue_distinct_reopened": 1,
+          "issue_distinct_with_close_event": 130,
+          "issue_opened_in_window": 132,
+          "issue_window_events": 402,
+          "pr_active_in_window": 177,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 177,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 177,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 177,
+          "pr_merged_in_window": 177,
+          "pr_opened_in_window": 177,
+          "pr_window_events": 636
+        },
+        "first_parent_commit_objects_in_window": 178,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 62246,
+          "deleted": 0,
+          "binary_touches": 341,
+          "file_touches": 1062,
+          "unique_paths": 1062,
+          "categories": {
+            "dependency_lock": {
+              "added": 1219,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 3604,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 99
+            },
+            "other_source_or_asset": {
+              "added": 43818,
+              "deleted": 0,
+              "binary_touches": 341,
+              "touches": 639
+            },
+            "test": {
+              "added": 13605,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 323
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 05",
+        "events": {
+          "issue_active_in_window": 7,
+          "issue_active_state_closed": 7,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 7,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 7,
+          "issue_opened_in_window": 7,
+          "issue_window_events": 15,
+          "pr_active_in_window": 7,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 7,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 7,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 7,
+          "pr_merged_in_window": 7,
+          "pr_opened_in_window": 7,
+          "pr_window_events": 22
+        },
+        "first_parent_commit_objects_in_window": 8,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 106230,
+          "deleted": 0,
+          "binary_touches": 22,
+          "file_touches": 75,
+          "unique_paths": 75,
+          "categories": {
+            "dependency_lock": {
+              "added": 3464,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 1703,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 17
+            },
+            "other_source_or_asset": {
+              "added": 101063,
+              "deleted": 0,
+              "binary_touches": 22,
+              "touches": 57
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 07",
+        "events": {
+          "issue_active_in_window": 1,
+          "issue_active_state_closed": 1,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 1,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 1,
+          "issue_opened_in_window": 1,
+          "issue_window_events": 2,
+          "pr_active_in_window": 1,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 1,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 1,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 1,
+          "pr_merged_in_window": 1,
+          "pr_opened_in_window": 1,
+          "pr_window_events": 4
+        },
+        "first_parent_commit_objects_in_window": 1,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 838,
+          "deleted": 5,
+          "binary_touches": 0,
+          "file_touches": 9,
+          "unique_paths": 9,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 823,
+              "deleted": 5,
+              "binary_touches": 0,
+              "touches": 4
+            },
+            "other_source_or_asset": {
+              "added": 15,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 5
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 08",
+        "events": {
+          "issue_active_in_window": 13,
+          "issue_active_state_closed": 6,
+          "issue_active_state_open": 7,
+          "issue_candidate_records": 13,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 6,
+          "issue_opened_in_window": 13,
+          "issue_window_events": 38,
+          "pr_active_in_window": 7,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 7,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 7,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 7,
+          "pr_merged_in_window": 7,
+          "pr_opened_in_window": 7,
+          "pr_window_events": 22
+        },
+        "first_parent_commit_objects_in_window": 8,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 24728,
+          "deleted": 0,
+          "binary_touches": 17,
+          "file_touches": 228,
+          "unique_paths": 228,
+          "categories": {
+            "dependency_lock": {
+              "added": 1826,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 11672,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 79
+            },
+            "other_source_or_asset": {
+              "added": 10893,
+              "deleted": 0,
+              "binary_touches": 17,
+              "touches": 142
+            },
+            "test": {
+              "added": 337,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 6
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 09",
+        "events": {
+          "issue_active_in_window": 10,
+          "issue_active_state_closed": 10,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 10,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 10,
+          "issue_opened_in_window": 10,
+          "issue_window_events": 52,
+          "pr_active_in_window": 11,
+          "pr_active_state_closed": 3,
+          "pr_active_state_merged": 3,
+          "pr_active_state_open": 5,
+          "pr_candidate_records": 11,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 6,
+          "pr_merged_in_window": 3,
+          "pr_opened_in_window": 8,
+          "pr_window_events": 66
+        },
+        "first_parent_commit_objects_in_window": 3,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 11325,
+          "deleted": 946,
+          "binary_touches": 0,
+          "file_touches": 190,
+          "unique_paths": 190,
+          "categories": {
+            "dependency_lock": {
+              "added": 1292,
+              "deleted": 38,
+              "binary_touches": 0,
+              "touches": 2
+            },
+            "documentation": {
+              "added": 7176,
+              "deleted": 873,
+              "binary_touches": 0,
+              "touches": 121
+            },
+            "other_source_or_asset": {
+              "added": 2796,
+              "deleted": 35,
+              "binary_touches": 0,
+              "touches": 64
+            },
+            "test": {
+              "added": 61,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 3
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 10",
+        "events": {
+          "issue_active_in_window": 4,
+          "issue_active_state_closed": 4,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 4,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 4,
+          "issue_opened_in_window": 4,
+          "issue_window_events": 26,
+          "pr_active_in_window": 1,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 1,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 1,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 1,
+          "pr_merged_in_window": 1,
+          "pr_opened_in_window": 1,
+          "pr_window_events": 8
+        },
+        "first_parent_commit_objects_in_window": 1,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 995,
+          "deleted": 86,
+          "binary_touches": 0,
+          "file_touches": 25,
+          "unique_paths": 25,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 539,
+              "deleted": 45,
+              "binary_touches": 0,
+              "touches": 18
+            },
+            "other_source_or_asset": {
+              "added": 255,
+              "deleted": 41,
+              "binary_touches": 0,
+              "touches": 5
+            },
+            "test": {
+              "added": 201,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 2
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 11",
+        "events": {
+          "issue_active_in_window": 0,
+          "issue_active_state_closed": 0,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 0,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 0,
+          "issue_opened_in_window": 0,
+          "issue_window_events": 0,
+          "pr_active_in_window": 0,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 0,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 0,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 0,
+          "pr_merged_in_window": 0,
+          "pr_opened_in_window": 0,
+          "pr_window_events": 0
+        },
+        "first_parent_commit_objects_in_window": 17,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 6,
+          "deleted": 6,
+          "binary_touches": 0,
+          "file_touches": 2,
+          "unique_paths": 2,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "other_source_or_asset": {
+              "added": 6,
+              "deleted": 6,
+              "binary_touches": 0,
+              "touches": 2
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 12",
+        "events": {
+          "issue_active_in_window": 57,
+          "issue_active_state_closed": 47,
+          "issue_active_state_open": 10,
+          "issue_candidate_records": 57,
+          "issue_distinct_reopened": 2,
+          "issue_distinct_with_close_event": 47,
+          "issue_opened_in_window": 54,
+          "issue_window_events": 408,
+          "pr_active_in_window": 66,
+          "pr_active_state_closed": 3,
+          "pr_active_state_merged": 63,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 66,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 66,
+          "pr_merged_in_window": 63,
+          "pr_opened_in_window": 62,
+          "pr_window_events": 351
+        },
+        "first_parent_commit_objects_in_window": 63,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 11603,
+          "deleted": 2364,
+          "binary_touches": 0,
+          "file_touches": 290,
+          "unique_paths": 290,
+          "categories": {
+            "dependency_lock": {
+              "added": 747,
+              "deleted": 1117,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 2728,
+              "deleted": 244,
+              "binary_touches": 0,
+              "touches": 43
+            },
+            "other_source_or_asset": {
+              "added": 5618,
+              "deleted": 798,
+              "binary_touches": 0,
+              "touches": 173
+            },
+            "test": {
+              "added": 2510,
+              "deleted": 205,
+              "binary_touches": 0,
+              "touches": 73
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 13",
+        "events": {
+          "issue_active_in_window": 54,
+          "issue_active_state_closed": 37,
+          "issue_active_state_open": 17,
+          "issue_candidate_records": 54,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 37,
+          "issue_opened_in_window": 54,
+          "issue_window_events": 439,
+          "pr_active_in_window": 39,
+          "pr_active_state_closed": 3,
+          "pr_active_state_merged": 33,
+          "pr_active_state_open": 3,
+          "pr_candidate_records": 39,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 36,
+          "pr_merged_in_window": 33,
+          "pr_opened_in_window": 36,
+          "pr_window_events": 168
+        },
+        "first_parent_commit_objects_in_window": 33,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 9965,
+          "deleted": 5531,
+          "binary_touches": 0,
+          "file_touches": 238,
+          "unique_paths": 238,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 2133,
+              "deleted": 948,
+              "binary_touches": 0,
+              "touches": 40
+            },
+            "other_source_or_asset": {
+              "added": 4783,
+              "deleted": 4405,
+              "binary_touches": 0,
+              "touches": 138
+            },
+            "test": {
+              "added": 3049,
+              "deleted": 178,
+              "binary_touches": 0,
+              "touches": 59
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 14",
+        "events": {
+          "issue_active_in_window": 3,
+          "issue_active_state_closed": 2,
+          "issue_active_state_open": 1,
+          "issue_candidate_records": 3,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 2,
+          "issue_opened_in_window": 3,
+          "issue_window_events": 17,
+          "pr_active_in_window": 1,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 1,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 1,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 1,
+          "pr_merged_in_window": 1,
+          "pr_opened_in_window": 1,
+          "pr_window_events": 7
+        },
+        "first_parent_commit_objects_in_window": 1,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 1669,
+          "deleted": 46,
+          "binary_touches": 0,
+          "file_touches": 37,
+          "unique_paths": 37,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 1666,
+              "deleted": 43,
+              "binary_touches": 0,
+              "touches": 35
+            },
+            "other_source_or_asset": {
+              "added": 3,
+              "deleted": 3,
+              "binary_touches": 0,
+              "touches": 2
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 15",
+        "events": {
+          "issue_active_in_window": 4,
+          "issue_active_state_closed": 4,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 4,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 4,
+          "issue_opened_in_window": 4,
+          "issue_window_events": 20,
+          "pr_active_in_window": 1,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 1,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 1,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 1,
+          "pr_merged_in_window": 1,
+          "pr_opened_in_window": 1,
+          "pr_window_events": 6
+        },
+        "first_parent_commit_objects_in_window": 1,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 667,
+          "deleted": 74,
+          "binary_touches": 0,
+          "file_touches": 25,
+          "unique_paths": 25,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 484,
+              "deleted": 27,
+              "binary_touches": 0,
+              "touches": 18
+            },
+            "other_source_or_asset": {
+              "added": 183,
+              "deleted": 47,
+              "binary_touches": 0,
+              "touches": 7
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 16",
+        "events": {
+          "issue_active_in_window": 15,
+          "issue_active_state_closed": 15,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 15,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 15,
+          "issue_opened_in_window": 15,
+          "issue_window_events": 148,
+          "pr_active_in_window": 4,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 1,
+          "pr_active_state_open": 3,
+          "pr_candidate_records": 4,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 1,
+          "pr_merged_in_window": 1,
+          "pr_opened_in_window": 4,
+          "pr_window_events": 25
+        },
+        "first_parent_commit_objects_in_window": 1,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 3934,
+          "deleted": 214,
+          "binary_touches": 0,
+          "file_touches": 31,
+          "unique_paths": 31,
+          "categories": {
+            "dependency_lock": {
+              "added": 2559,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            },
+            "documentation": {
+              "added": 705,
+              "deleted": 11,
+              "binary_touches": 0,
+              "touches": 16
+            },
+            "other_source_or_asset": {
+              "added": 454,
+              "deleted": 203,
+              "binary_touches": 0,
+              "touches": 13
+            },
+            "test": {
+              "added": 216,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 1
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 17",
+        "events": {
+          "issue_active_in_window": 3,
+          "issue_active_state_closed": 3,
+          "issue_active_state_open": 0,
+          "issue_candidate_records": 3,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 3,
+          "issue_opened_in_window": 3,
+          "issue_window_events": 17,
+          "pr_active_in_window": 1,
+          "pr_active_state_closed": 0,
+          "pr_active_state_merged": 1,
+          "pr_active_state_open": 0,
+          "pr_candidate_records": 1,
+          "pr_distinct_reopened": 0,
+          "pr_distinct_with_close_event": 1,
+          "pr_merged_in_window": 1,
+          "pr_opened_in_window": 1,
+          "pr_window_events": 6
+        },
+        "first_parent_commit_objects_in_window": 1,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 687,
+          "deleted": 169,
+          "binary_touches": 0,
+          "file_touches": 26,
+          "unique_paths": 26,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 502,
+              "deleted": 51,
+              "binary_touches": 0,
+              "touches": 19
+            },
+            "other_source_or_asset": {
+              "added": 185,
+              "deleted": 118,
+              "binary_touches": 0,
+              "touches": 7
+            },
+            "test": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            }
+          }
+        }
+      },
+      {
+        "project": "Project 18",
+        "events": {
+          "issue_active_in_window": 67,
+          "issue_active_state_closed": 66,
+          "issue_active_state_open": 1,
+          "issue_candidate_records": 67,
+          "issue_distinct_reopened": 0,
+          "issue_distinct_with_close_event": 66,
+          "issue_opened_in_window": 55,
+          "issue_window_events": 474,
+          "pr_active_in_window": 84,
+          "pr_active_state_closed": 13,
+          "pr_active_state_merged": 70,
+          "pr_active_state_open": 1,
+          "pr_candidate_records": 84,
+          "pr_distinct_reopened": 2,
+          "pr_distinct_with_close_event": 82,
+          "pr_merged_in_window": 69,
+          "pr_opened_in_window": 77,
+          "pr_window_events": 539
+        },
+        "first_parent_commit_objects_in_window": 46,
+        "net_files_complete": true,
+        "net_diff": {
+          "added": 24401,
+          "deleted": 4650,
+          "binary_touches": 51,
+          "file_touches": 397,
+          "unique_paths": 397,
+          "categories": {
+            "dependency_lock": {
+              "added": 0,
+              "deleted": 0,
+              "binary_touches": 0,
+              "touches": 0
+            },
+            "documentation": {
+              "added": 1409,
+              "deleted": 173,
+              "binary_touches": 0,
+              "touches": 51
+            },
+            "other_source_or_asset": {
+              "added": 11815,
+              "deleted": 4136,
+              "binary_touches": 51,
+              "touches": 226
+            },
+            "test": {
+              "added": 11177,
+              "deleted": 341,
+              "binary_touches": 0,
+              "touches": 120
+            }
+          }
+        }
+      }
+    ]
+  }
+}

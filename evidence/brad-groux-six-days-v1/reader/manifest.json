@@ -1,0 +1,35 @@
+{
+  "status": "reviewed_evidence_with_editorial_drafts",
+  "canonical_evidence": "../evidence.json",
+  "derived_reader_data": "explorer-data.json",
+  "explorer": "explorer.html",
+  "article_status": "draft_for_review",
+  "articles": [
+    "blog.md",
+    "blog.html",
+    "study.md",
+    "study.html",
+    "twitter-article.md",
+    "linkedin.txt"
+  ],
+  "linkedin_characters": 2787,
+  "figures": [
+    "figures/day-project-matrix.png",
+    "figures/day-project-matrix.svg",
+    "figures/repository-merges.png",
+    "figures/repository-merges.svg",
+    "figures/responses-by-day.png",
+    "figures/responses-by-day.svg",
+    "figures/steering-partition.png",
+    "figures/steering-partition.svg"
+  ],
+  "runtime_assets": [
+    "editorial.css",
+    "explorer.js",
+    "spatial.js",
+    "vendor/three.module.js",
+    "vendor/three.core.js"
+  ],
+  "third_party_license": "vendor/LICENSE",
+  "upstream_release": "vendor/release.json"
+}

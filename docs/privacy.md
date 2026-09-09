@@ -17,3 +17,7 @@ Draft collection writes a new file outside the checkout and source store. It doe
 
 
 Optional direct ratings in schema `1.1` add only bounded integers, null answers, timing categories and coverage counts. They contain no original identifiers, timestamps, project/machine names or narrative. Nulls disclose missingness; they are never converted into neutral or satisfied responses. The usage collector leaves this layer absent. Adding real ratings requires the same full-file review and explicit release/license consent. Do not include local rating-to-task mappings or any hashes of source identities.
+
+## Separately reviewed observational cases
+
+Real case-study aggregates may live in `evidence/` under the separate [observational evidence format](observational-evidence-format.md). This does not widen the participant submission schemas or authorize raw-history exports. The same privacy boundary applies to JSON and every accompanying reader asset, download, figure, filename and narrative. Case data must be explicitly reviewed for public release and MIT contribution; original identities, source hashes, mappings, private text/URLs and public joins to named projects remain excluded. Numeric consistency is not an anonymity guarantee.

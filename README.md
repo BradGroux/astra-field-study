@@ -9,7 +9,19 @@ Two entirely untested hypotheses motivate the project:
 
 These are hypotheses formed from roughly four or five days of personal experience, not conclusions about a model's internal objectives. Efficiency can be useful and fully compliant. It is not itself cheating. Shared bad strategies, missing context, tool failures and unclear instructions are different possible explanations.
 
-Usage counts describe activity. They do not establish SOP adherence, model authorship, productivity gains or either proposed cause. This is an observational project with voluntary, self-selected contributions, no randomized comparison and no account-wide completeness guarantee. The initial repository contains **synthetic data only**.
+Usage counts describe activity. They do not establish SOP adherence, model authorship, productivity gains or either proposed cause. This is an observational project with voluntary, self-selected contributions, no randomized comparison and no account-wide completeness guarantee. The kit examples contain **synthetic data only**. A separate [reviewed real case study](evidence/brad-groux-six-days-v1/README.md) now publishes de-identified aggregate evidence; it is not a participant submission or a raw history export.
+
+## Published observational evidence
+
+[Brad Groux's six-day Astra case study](evidence/brad-groux-six-days-v1/README.md) includes real aggregate evidence, methods, public source context, four exportable figures, and a local interactive reader. The reported finding is that his established GPT-5.6 operating method did not transfer reliably to GPT-6 in his testing and usage. A matched comparative failure rate and both causal explanations remain unmeasured.
+
+The evidence contains 25,254 recorded responses and 538 reviewed substantive contributions, including 147 with corrective steering and 154 with explicit dissatisfaction, with 91 overlapping. These are descriptive counts, not a performance score. Every project and observer is generic; days are relative. Article and social text remain clearly labeled drafts for review, not published final articles or social posts.
+
+The separate [observational evidence format](docs/observational-evidence-format.md) preserves submission 1.0/1.1 compatibility and the separation of optional direct ratings. Validate the case locally:
+
+```sh
+python3 tools/validate_evidence.py evidence/brad-groux-six-days-v1/evidence.json --ready
+```
 
 ## Try the kit
 
