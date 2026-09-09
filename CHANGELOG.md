@@ -1,5 +1,9 @@
 # Change notes
 
+## Documentation updates
+
+Evidence packages now use neutral study IDs. The first package is `evidence/study-0001-v1/`; tooling, guides, and package labels use the new path. Frozen aggregate data and evidence version 1 are unchanged. Prior path links may no longer resolve on `main`; the evidence index provides the current entry point. Git history and linked public sources remain identifiable.
+
 ## v1.0 — 2026-09-09
 
 The first complete public study package includes a local collection and contribution kit, reviewed observational evidence, reproducible reader data, six exportable SVG/PNG figures, and an interactive explorer with an optional 3D view.

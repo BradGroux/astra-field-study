@@ -6,7 +6,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 
-CASE=Path(__file__).resolve().parents[1]/'evidence/brad-groux-six-days-v1'
+CASE=Path(__file__).resolve().parents[1]/'evidence/study-0001-v1'
 
 
 class ReaderHandler(SimpleHTTPRequestHandler):

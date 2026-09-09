@@ -8,7 +8,7 @@ from validate import load
 from validate_evidence import validate_evidence
 
 ROOT = Path(__file__).resolve().parents[1]
-CASE = ROOT / 'evidence/brad-groux-six-days-v1'
+CASE = ROOT / 'evidence/study-0001-v1'
 READER = CASE / 'reader'
 INK, MUTED, BG, GRID = '#eef3fa', '#a6b5c8', '#121f30', '#30445c'
 BLUE, ORANGE, ROSE, VIOLET, GRAY = '#8cbaff', '#efb45c', '#ee9da6', '#b9a0f6', '#788da8'

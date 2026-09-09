@@ -2,7 +2,7 @@
 
 This format publishes a reviewed case study with aggregate usage, contextual coding, and repository activity. It is **separate from submission schemas 1.0 and 1.1**. Existing collectors, submission validators, synthetic examples, and optional direct ratings remain unchanged. Do not feed an audit export into the contribution validator or treat this broader format as permission to publish a source store.
 
-The first real case is [Brad Groux's six-day Astra observation](../evidence/brad-groux-six-days-v1/README.md). Its counts are not synthetic, while every fixture under `examples/` remains synthetic.
+The first real case is [Study 0001: six-day Astra observation](../evidence/study-0001-v1/README.md). Its counts are not synthetic, while every fixture under `examples/` remains synthetic.
 
 ## Contract
 
@@ -24,7 +24,7 @@ Zero-filled diff categories preserve the snapshot's path classification: documen
 ## Accounting checks
 
 ```sh
-python3 tools/validate_evidence.py evidence/brad-groux-six-days-v1/evidence.json --ready
+python3 tools/validate_evidence.py evidence/study-0001-v1/evidence.json --ready
 ```
 
 The standard-library validator checks:
@@ -46,6 +46,14 @@ The schema bounds labels and arrays for this format; future requirements may nee
 Accompany a case with a human-reviewed methods document explaining population, exclusions, model attribution, measurement units, coding, outcomes, missingness, source selection and limitations. Narrative must be authored from approved findings; it must not copy private source text, original identifiers, mappings, exact execution timestamps, or private provenance. Public methods articles and selected public replies may be linked as external context without joining generic project rows to named repositories.
 
 A frozen case revision should use a new evidence version with a short aggregate-level change note. Keep source hashes and identity mappings private. Never revise an old result silently or represent a schema conversion as new observations.
+
+## Neutral study identifiers
+
+Use `evidence/study-NNNN-vV/`, such as `evidence/study-0001-v1/`, and label the package “Study 0001” rather than naming its contributor. The study number identifies a package, not a person or a globally unique participant. Do not put a person, account, employer, repository, source identifier, or identity hash in the directory name. Do not publish a private ID-to-person mapping.
+
+Use generic observer labels in findings and package descriptions. Public source citations may retain their proper authors, and license notices must retain the required copyright attribution. Neutral naming is de-identification, not a claim of anonymity: linked publications, Git history, and public authorship can identify an already published case.
+
+A path/label-only rename does not create new observations or require a new evidence version. Document it, preserve the frozen data bytes, and update tooling and links. Changes to measurements still require a new evidence version.
 
 ## Privacy and compatibility
 

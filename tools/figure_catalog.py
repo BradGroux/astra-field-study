@@ -1,7 +1,7 @@
 """Public figure captions and export paths; no article content."""
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-READER=ROOT/"evidence/brad-groux-six-days-v1/reader"
+READER=ROOT/"evidence/study-0001-v1/reader"
 FIGURES={
  'responses-by-day': ('Recorded responses by relative study day', '25,254 responses across six relative days. Day 6 ends at the common cutoff. Source: recorded usage in evidence.json.'),
  'steering-partition': ('Exclusive categories among 538 substantive contributions', 'Each square represents one contribution. The five categories are exclusive: 310 routine, 63 dissatisfaction only, 56 correction only, 91 both, and 18 ambiguous. Source: contextual review, protocol 1.1.'),
