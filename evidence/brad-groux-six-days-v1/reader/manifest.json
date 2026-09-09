@@ -10,26 +10,40 @@
     "study.md",
     "study.html",
     "twitter-article.md",
-    "linkedin.txt"
+    "linkedin.txt",
+    "social.html"
   ],
-  "linkedin_characters": 2787,
+  "linkedin_characters": 2203,
   "figures": [
-    "figures/day-project-matrix.png",
-    "figures/day-project-matrix.svg",
-    "figures/repository-merges.png",
-    "figures/repository-merges.svg",
-    "figures/responses-by-day.png",
     "figures/responses-by-day.svg",
+    "figures/responses-by-day-mobile.svg",
+    "figures/responses-by-day.png",
+    "figures/steering-partition.svg",
+    "figures/steering-partition-mobile.svg",
     "figures/steering-partition.png",
-    "figures/steering-partition.svg"
+    "figures/token-composition.svg",
+    "figures/token-composition-mobile.svg",
+    "figures/token-composition.png",
+    "figures/day-project-matrix.svg",
+    "figures/day-project-matrix-mobile.svg",
+    "figures/day-project-matrix.png",
+    "figures/episode-outcomes.svg",
+    "figures/episode-outcomes-mobile.svg",
+    "figures/episode-outcomes.png",
+    "figures/repository-merges.svg",
+    "figures/repository-merges-mobile.svg",
+    "figures/repository-merges.png"
   ],
   "runtime_assets": [
     "editorial.css",
     "explorer.js",
     "spatial.js",
     "vendor/three.module.js",
-    "vendor/three.core.js"
+    "vendor/three.core.js",
+    "vendor/roboto.woff2"
   ],
   "third_party_license": "vendor/LICENSE",
-  "upstream_release": "vendor/release.json"
+  "upstream_release": "vendor/release.json",
+  "font_license": "vendor/Roboto-OFL.txt",
+  "font_notice": "vendor/Roboto-NOTICE.md"
 }

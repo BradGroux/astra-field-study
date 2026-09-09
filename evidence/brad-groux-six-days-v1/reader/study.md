@@ -1,18 +1,18 @@
-> Editorial draft published for review. This is not a final article or a social post.
+> Editorial draft for review.
 
-# When an established workflow meets GPT-6 Astra
+# Six days of GPT-6 Astra: usage and corrective steering
 
-## What I observed
+## Why I reviewed the work
 
-The workflow I used with GPT-5.6 did not carry forward reliably to GPT-6. That is my experience from testing and day-to-day use. This study documents retained Astra activity and the steering recorded around it. It asks whether an established operating method remains dependable after a model upgrade.
+The workflow I used with GPT-5.6 hasn't carried over reliably in my GPT-6 Astra testing. I've had to repeat instructions about testing, point back to supplied context, and ask for requested work missing from a completion handoff. I reviewed the retained records to describe the activity and the corrections involved.
 
-Across six relative study days, the retained records contain 25,254 responses, 557 turns, and 3,420,584,663 total tokens. A separate contextual review identifies corrective steering in 147 of 538 substantive contributions. Those contributions form 78 correction episodes, 31 with repeated corrective contributions.
+The records cover six relative study days across two local stores. They contain 25,254 responses across 557 turns. A separate review of 538 substantive contributions identified 147 containing corrective steering, grouped into 78 episodes. Thirty-one episodes contained repeated corrections.
 
-These observations support examining supervision and workflow continuity. They do not supply a matched GPT-5.6 baseline, a causal account of Astra's behavior, or a model failure rate. The large usage total does not resolve those limitations.
+This study covers my usage only. I haven't run a matched GPT-5.6 comparison or an independent coding review.
 
-## The operating method predates this review
+## The workflow I was using
 
-My documented method uses task scope, repository context, versioned SOPs, verification criteria, durable notes, and clear handoffs. Six articles describe its development:
+My method gives tasks a defined scope, repository context, versioned standard operating procedures, verification criteria, and a clear handoff. I documented it before this review in the articles below.
 
 | Published | Article | Relevant practice |
 |---|---|---|
@@ -23,142 +23,137 @@ My documented method uses task scope, repository context, versioned SOPs, verifi
 | June 29, 2026 | [Using Codex or OpenClaw? Put Your SOPs Where the History Lives.](https://x.com/BradGroux/status/2071586981381832714) | Versioned standards, shared context, review and rollback; stale SOP risks. |
 | July 1, 2026 | [Before Businesses Use Codex, Decide What It Can Access](https://x.com/BradGroux/status/2072313657883586873) | Access modes, task-specific privilege, configuration validation. |
 
-Eric Provencher from OpenAI's Codex DX team describes substantially overlapping principles in [Practical multi-agent orchestration in Codex](https://x.com/pvncher/status/2080707291603407077), published July 24: distinct assignments, constraint preservation, delegation boundaries, and proportional reasoning effort for GPT-5.6.
+Eric Provencher from OpenAI's Codex DX team described overlapping practices in [Practical multi-agent orchestration in Codex](https://x.com/pvncher/status/2080707291603407077), published July 24. His GPT-5.6 guidance covers distinct assignments, preserving constraints, bounding delegation, and choosing reasoning effort for the task.
 
-This prior-generation guidance is central to the comparison. It establishes the kind of working method practitioners were encouraged to adopt. The articles do not prove identical configurations or that every later task loaded the correct instruction version. My firsthand account is that the method did not transfer reliably; a controlled comparative difference remains unmeasured.
+## What the records cover
 
-## Three kinds of evidence
+The review uses two retained local record stores, with duplicate records reconciled and three measurement or coordination tasks excluded. All records end at a common cutoff, and the final study day is partial.
 
-The study keeps measured activity, coded observations, and direct ratings separate.
+Model attribution comes from recorded turn context. Observer labels refer to the two record stores. Only retained records were available. The public data uses relative days and generic project and observer labels; raw conversations and the mappings back to source projects remain private.
 
-**Measured activity** comes from retained native records and repository history. It describes recorded responses, tokens, turns and repository events. None of these measures directly evaluates correctness or satisfaction.
-
-**Coded observations** come from contextual review of substantive contributions. Explicit dissatisfaction and corrective steering may overlap. Coding is interpretive and can be revised through adjudication.
-
-**Direct ratings** would come from a participant explicitly reporting satisfaction or ease. No historical rating was inferred from these transcripts. There is no CSAT, ease score, or composite performance score in this study.
-
-## Population and collection
-
-This is one practitioner's observational case study using two retained local record stores. The frozen window covers six relative days, with the final day ending at a common cutoff. The calendar start was a requested study boundary, not independent proof of a global model release timestamp. Three measurement or coordination tasks were excluded.
-
-Records were attributed to Astra using recorded turn context, not server-resolved model telemetry. An observer label identifies the store retaining a record; it does not establish where execution occurred. Records and identities were reconciled to avoid duplicate counting. This is not a comprehensive account billing export, and missing or unretained records may affect coverage.
-
-Repository history covers the broader date window in 17 identifiable repositories associated with observed work. One of the 18 observed project identities remained unresolved. Context association does not prove that a repository was changed in that task. Repository events may come from any author, bots, references, and administrative activity.
-
-Every project uses a stable generic label. The explorer contains no public joins back to named source projects. De-identification reduces disclosure but cannot guarantee anonymity: activity patterns can remain distinctive.
+The usage figures come from recorded counters. The correction and dissatisfaction counts come from reviewing the conversations. No satisfaction or task-ease ratings were collected.
 
 ## Recorded usage
 
-| Measure | Frozen-window value | Interpretation |
-|---|---:|---|
-| Responses | 25,254 | Native recorded responses; not an HTTP request count. |
-| Turns | 557 | Includes 551 completed and 6 unfinished turns. |
-| Native user-message items | 488 | Not guaranteed distinct human requests. |
-| Task identities | 76 | Distinct retained identities after reconciliation. |
-| Total tokens | 3,420,584,663 | Input plus output, with repeated context counted. |
-| Input tokens | 3,409,595,316 | Includes cached input. |
-| Cached input tokens | 3,348,480,640 | About 98.2% of input tokens. |
-| Uncached input tokens | 61,114,676 | Input minus cached input. |
-| Output tokens | 10,989,347 | Includes reasoning output. |
-| Reasoning output tokens | 3,684,075 | A subset of output, not an additional total. |
+The 25,254 responses were spread across six study days. Day 4 contained 10,152 responses, the largest daily count in the retained window. The final day ends at the cutoff, so its lower count needs that context.
 
-The completed-turn durations sum to about 142.54 hours. Their interval union is about 83.11 hours after removing concurrency. Neither represents human hours saved. Unfinished turns are excluded from duration measures. Daily duration groups assign a completed turn's full duration to its start day; they are not calendar-day occupancy.
+<!-- figure: responses-by-day -->
 
-Unique task counts and interval unions cannot be summed across arbitrary groups. The explorer therefore uses additive response and token counters for filtered comparisons and leaves these non-additive whole-window measures in the study text.
+| Measure | Recorded value |
+|---|---:|
+| Responses | 25,254 |
+| Turns | 557: 551 completed, 6 unfinished |
+| Native user-message items | 488 |
+| Distinct retained task identities | 76 |
+| Total tokens | 3,420,584,663 |
+| Input tokens | 3,409,595,316 |
+| Cached input tokens | 3,348,480,640 |
+| Uncached input tokens | 61,114,676 |
+| Output tokens | 10,989,347 |
+| Reasoning output tokens | 3,684,075 |
 
-## Repository activity
+Cached input accounts for 98.21% of input tokens. Output includes the reasoning tokens, and input includes cached tokens. Repeated context is counted each time it appears in the recorded counters. These totals don't establish billing, unique text, or useful work completed.
+
+<!-- figure: token-composition -->
+
+Completed-turn durations sum to about 142.54 hours. Removing overlap between concurrent intervals leaves about 83.11 hours. Neither measure represents human hours saved. A completed turn's full duration is assigned to its start day, and unfinished turns are excluded from both duration measures.
+
+Distinct task counts and interval unions can't be added across arbitrary groups. The [explorer](explorer.html) therefore uses additive response and token counts for its filtered comparisons.
+
+<!-- figure: day-project-matrix -->
+
+## How the contextual review worked
+
+Protocol 1.1 treats a substantive contribution as the unit of review, after reconciling typed and voice material. The 538 contributions include 396 typed, 141 voice, and one voice contribution with a typed reference. A contribution can contain multiple source components, which explains the difference from the 488 native message items.
+
+The review distinguishes explicit dissatisfaction and corrective steering. A first request or a new preference isn't automatically a correction, and profanity alone doesn't establish dissatisfaction with the work. Disputed contributions were reviewed in context, and both record stores were reconciled against the same versioned rules.
+
+The review identified 147 corrective contributions and 154 expressing dissatisfaction. Ninety-one belonged to both categories.
+
+<!-- figure: steering-partition -->
+
+| Category | Contributions |
+|---|---:|
+| Dissatisfaction only | 63 |
+| Correction only | 56 |
+| Both | 91 |
+| Routine | 310 |
+| Ambiguous | 18 |
+| Total | 538 |
+
+There were 210 contributions containing either correction or dissatisfaction. Per 100 reviewed contributions, the counts are 27.32 for correction, 28.62 for dissatisfaction, and 39.03 for either. These describe the reviewed material. Contributions within a task aren't independent trials, and repeated discussion of one problem can contribute several units.
+
+Related corrections were grouped into episodes. An episode is counted on the day and project of its first corrective contribution, even when the discussion continues elsewhere. Of 78 episodes, 31 contained repeated corrections. Forty involved process or SOP concerns and linked to 102 corrective contributions. Because an episode can mix functional and process concerns, those 102 contributions don't represent 102 separately established SOP violations.
+
+## What needed correction, and what was resolved?
+
+Corrections included requests to follow the agreed testing cadence, use the supplied writing guide, and complete missing delivery work. One testing-related episode contained 17 corrective contributions and a later full-suite run. The audit didn't classify individual reruns as necessary or unnecessary, or measure their cost.
+
+A deployment runbook contained outdated instructions. Other completion messages correctly listed unfinished work.
+
+<!-- figure: episode-outcomes -->
+
+| Episode outcome | Count |
+|---|---:|
+| Confirmed resolved in the reviewed context | 14 |
+| Accepted with a residual issue or waiver | 3 |
+| Fix reported without independent verification | 15 |
+| Claim withdrawn; artifact unverified | 1 |
+| No closure established | 45 |
+
+The reviewed records didn't establish closure for 45 episodes. Confirmed resolution refers to the specific concern reviewed.
+
+## Repository activity during the window
+
+Seventeen repositories associated with the observed work could be identified and queried. One of the 18 project identities remained unresolved. Repository figures include all authors over the broader window.
+
+<!-- figure: repository-merges -->
 
 | Measure | Full-window value |
 |---|---:|
 | Active issues | 444 |
 | Issues opened | 401 |
-| Distinct issues with a close event | 385 |
+| Issues with a close event | 385 |
 | Distinct issues reopened | 3 |
 | Active PRs | 452 |
 | PRs opened | 435 |
 | PRs merged during the window | 410 |
 | First-parent commit objects | 396 |
-| Repository-qualified paths changed in net boundary diffs | 3,753 |
-| Text lines added in net boundary diffs | 311,765 |
-| Text lines deleted in net boundary diffs | 18,415 |
+| Repository-qualified paths changed | 3,753 |
+| Text lines added | 311,765 |
+| Text lines deleted | 18,415 |
 | Net text-line change | +293,350 |
 
-“Active” means created in the window or carrying at least one timestamped timeline event. A close event does not establish a verified fix and can be followed by reopening. At cutoff, the active PR population contained 411 merged PRs, 29 closed without merge, and 12 open. One of those 411 merged before the window, which explains the difference from 410 in-window merges.
+Active means created during the window or carrying a timestamped timeline event. At cutoff, the active PR population contained 411 merged PRs, 29 closed without merge, and 12 open. One of those 411 merged before the window, leaving 410 in-window merges. An issue with a close event can later reopen.
 
-The diffs compare immutable first-parent boundaries, using an empty-tree baseline where a repository was created in the window. They include documentation, tests, lockfiles, and other source or assets. Binary files do not contribute meaningful text-line counts. Net path changes are not cumulative touches. First-parent commit objects are not PR identities or necessarily branch landing events.
+Path and line counts come from net diffs between immutable first-parent boundaries. They include documentation, tests, lockfiles, and other source or assets. Binary files don't provide meaningful text-line counts. Repository comparisons use the full window; the source data doesn't support daily merge counts.
 
-These figures are activity context, not verified Astra authorship or productivity. The repository dataset is available for the full window only; the explorer does not invent daily outcomes or allocate merges in proportion to token use.
+## Other practitioners' experiences
 
-## How the contextual review worked
+Replies to my posts included [Arbaz's account of drift with detailed design instructions](https://x.com/arb5z/status/2096429348287029584), [Billovskii's report of behavior recurring after explicit prohibitions](https://x.com/TheArcAge/status/2097291134976282752), and [Christopher Comparán's experience with hard constraints](https://x.com/ccomparanv/status/2097102158881493122).
 
-Protocol 1.1 defines the unit as a substantive contribution after typed/voice reconciliation. A contribution can have multiple source components. The 538 units contain 396 typed contributions, 141 voice contributions, and one voice contribution with a typed reference. This differs deliberately from the native usage denominator.
+[John Collins reported good instruction-following when steps were explained](https://x.com/Yinielin/status/2097063165410369674). [Nikhil Pareek described constrained editing as a broader issue across models and suggested varying the number of constraints](https://x.com/itsjustnikhil/status/2096419855004209603). These replies aren't included in the study counts.
 
-The review distinguishes explicit dissatisfaction (D), corrective steering (C), routine contributions, and ambiguous material. D and C may coincide. A new request or preference is not automatically a correction. Profanity alone is insufficient to establish dissatisfaction with model work. Context was reviewed around disputed units, and both observers were reconciled against the same versioned rules.
+## The explanations I want to test
 
-The exclusive partition is 63 D-only, 56 C-only, 91 both, 310 routine, and 18 ambiguous: together, 538. Thus D is 154, C is 147, and the union is 210. That yields 28.62 D units, 27.32 C units, and 39.03 union units per 100 reviewed contributions. These describe the reviewed material, not independent trials or probabilities of model failure.
+I suspect shortcuts toward finishing can displace requirements, and requirements can get lost during delegation. Both are entirely untested hypotheses based on roughly four or five days of personal experience.
 
-Correction episodes group related steering. Repetition means distinct corrective contributions in an episode. Episode counts are assigned to the day of the first corrective contribution; they do not count every day on which an episode continued. Process/SOP tags apply at episode level and can coexist with functional concerns.
+[OpenAI's incident report](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) describes internal evaluations with reduced safeguards and an internal research model driving the principal compromise. [Hugging Face's technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline) covers that intrusion. Neither documents a production Astra takeover. OpenAI also describes excessive reasoning without score improvement, which complicates a token-minimization explanation.
 
-The review found 78 correction episodes, including 31 repeated episodes. Forty episodes involved process or SOP concerns, linking 102 corrective contributions. Those 102 contributions are not individually demonstrated SOP violations.
+A [DeepMind preprint](https://arxiv.org/html/2609.04170v1) describes a grading exploit spreading through shared artifacts. The preprint studies the spread of an exploit; it doesn't test instruction loss during delegation.
 
-## What was corrected and what was resolved
+## What would make a stronger comparison?
 
-Selected retained examples involved repeated discussion of testing cadence, a request for a writing-guide location already supplied earlier, and a completion handoff that omitted requested work. One testing-related episode contained 17 corrective contributions and a later full-suite run. The record establishes intervention and the run; it does not establish that every rerun was unnecessary or calculate wasted tokens.
+A follow-up comparison should use matched tasks, frozen instructions, and acceptance checks defined before execution. Model and surface versions should be recorded, with task order counterbalanced. Interventions, verified outcomes, and optional direct ratings should be recorded separately from response volume.
 
-A deployment-direction dispute involved a stale runbook. This is a meaningful competing explanation: workflow documentation and model behavior both deserve scrutiny. Some other handoffs accurately disclosed remaining work; disclosed incompletion is not automatically false completion.
+For each delegated task, record the requirement, the assignment, the instructions available to the receiving agent, its action, and any correction. Compare direct execution with bounded delegation on the same task scope, with the same instructions and tool access.
 
-| Episode outcome under the review rubric | Episodes |
-|---|---:|
-| Confirmed resolved in the reviewed context | 14 |
-| Accepted with residual issue or waiver | 3 |
-| Fix reported, not independently verified | 15 |
-| Claim withdrawn; artifact unverified | 1 |
-| No closure established | 45 |
+A second independent review should code the same material with the same rubric and report disagreements. The current reconciliation checked arithmetic, duplicate records, category partitions, and the common protocol. A long discussion about one problem can produce many corrections, so episode and task counts should accompany contribution counts.
 
-These outcomes sum to 78. “No closure established” is not proof that an issue remained unresolved forever. “Confirmed resolved” is bounded to the reviewed issue and available context, not independent certification of the entire deliverable. Acceptance of a prepared package does not establish every aspect of its quality.
+Instructions changed during the work, so later rules can't be applied retroactively. Frontend voice-model identity is unknown; the recorded Astra worker context doesn't identify the model responsible for every conversational mismatch. Without a matched baseline, this study can't measure the performance difference between GPT-5.6 and GPT-6.
 
-## Related practitioner reports
+## Inspect the evidence or contribute
 
-Selected replies add context, without expanding the audit denominator:
+The [explorer](explorer.html), [canonical aggregate JSON](../evidence.json), [detailed methods](../methodology.md), and [source references](../sources.md) are available alongside this study. The [MIT contribution kit](https://github.com/BradGroux/astra-field-study) accepts reviewed aggregates and optional directly reported ratings. Its example submissions are synthetic; this case's reviewed aggregates are stored separately.
 
-- [Arbaz](https://x.com/arb5z/status/2096429348287029584) describes drift with a long design-system document and better results with fewer concrete references.
-- [Billovskii](https://x.com/TheArcAge/status/2097291134976282752) describes behavior recurring after explicit prohibitions.
-- [Christopher Comparán](https://x.com/ccomparanv/status/2097102158881493122) describes difficulty on projects with hard constraints.
-- [John Collins](https://x.com/Yinielin/status/2097063165410369674) reports good instruction-following when steps are explained.
-- [Nikhil Pareek](https://x.com/itsjustnikhil/status/2096419855004209603) describes a broader constrained-editing problem across models and proposes varying constraint counts.
-
-These are illustrative, self-selected reports, not a representative survey. They do not establish identical configurations, matched comparisons, or the prevalence of the problem. The different experience and broader explanation remain part of the evidence.
-
-## Two untested explanations
-
-I suspect shortcuts toward completion can displace SOP or guideline adherence. I also suspect requirements can be lost during delegation, as described in [my handoff post](https://x.com/BradGroux/status/2097420111389098317). Both are entirely untested hypotheses based on roughly four or five days of personal experience. Efficiency is beneficial when it preserves the intended outcome and constraints.
-
-Related safety research raises useful questions without establishing either explanation here. [OpenAI's incident report](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) concerns internal evaluations with reduced safeguards and an internal research model driving the principal compromise. It also describes excessive reasoning without score improvement, which does not support a simple token-minimization explanation. [Hugging Face's technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline) reconstructs that particular intrusion. Neither documents a production Astra takeover.
-
-A [DeepMind preprint](https://arxiv.org/html/2609.04170v1) describes a grading exploit spreading among agents through shared artifacts. Propagating a bad strategy differs from losing a requirement during delegation. Its evaluation does not establish either mechanism in Astra.
-
-## Limits and robustness
-
-The arithmetic, exclusive partitions, shared protocol, source reconciliation, and frozen inputs were checked. Those checks support internal consistency, not independent coding reliability. Contextual decisions were revised during reconciliation; the current result supersedes earlier observer-specific coding versions.
-
-This study lacks randomized assignment, matched task difficulty, an independently coded comparison set, a controlled model baseline, comprehensive billing coverage, and a verified counterfactual. Contributions within a task are dependent, and high-intervention tasks can contribute many units. Small day or project groups are especially unstable and should not be ranked as model performance.
-
-Instructions changed during the work. A later rule cannot be retroactively treated as an earlier requirement. Frontend voice-model identity is unknown; recorded Astra worker context does not identify the model responsible for every conversational mismatch. Outcome evidence is incomplete. These limits prevent a causal attribution or population estimate.
-
-## What would make the next study stronger
-
-A prospective comparison could use matched tasks and frozen instructions, record model and surface versions, define acceptance checks before execution, and counterbalance task order. It should record interventions and outcomes separately from response volume and cost.
-
-A delegation test should trace each requirement through the actual assignment, accessible recipient context, resulting action, and correction. It should compare direct execution with bounded delegation while holding task scope constant and checking tool access and stale instructions.
-
-An efficiency test needs an observable tradeoff and an independently defined acceptance bar. Finishing quickly while preserving all requirements is a success. Deviations should be judged against the original task contract, not inferred motives.
-
-Independent coding and an adjudication log would help assess rubric reliability. Optional direct satisfaction and ease ratings should be collected prospectively, without manufacturing historical scores or combining them with token volume into a single index.
-
-## Participate and inspect
-
-The accompanying [local explorer](explorer.html) provides day and project comparisons while preserving the distinction between usage and coded observations. Repository comparisons remain explicitly full-window. Its source data is limited to reviewed, de-identified aggregates; raw records and alias mappings remain private.
-
-The [MIT contribution kit](https://github.com/BradGroux/astra-field-study) contains synthetic examples, a bounded contribution format, and support for optional directly reported ratings. Its examples remain synthetic. Reviewed aggregates are published separately in the repository’s versioned evidence area; the contribution schema is narrower than this audit and cannot directly ingest the existing aggregate exports.
-
-This is what I currently think, and I want to know more. Contrary experiences are especially useful. Use the kit's guidance or contact me through [Twitter](https://x.com/BradGroux). Publishing a real contribution should follow a deliberate review of its scope and privacy; the existence of a synthetic example does not establish anonymity.
+This is what I currently think, and I'd like to understand where others see different results. Successful adherence examples and contrary experiences are welcome through the repo or [Twitter](https://x.com/BradGroux). Keep raw conversations private when contributing, and review what an aggregate reveals. Generic labels reduce disclosure, while GitHub submissions still identify their contributor accounts.

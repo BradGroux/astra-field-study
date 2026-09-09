@@ -1,35 +1,49 @@
-> Editorial draft published for review. This is not a final article or a social post.
-
-# Article-ready figures
+# Figures and source notes
 
 ## responses-by-day
 
 Alt text: Recorded responses by relative study day
 
-Caption: 25,254 responses across six relative days. The final day ends at the common cutoff. Counts describe recorded activity, not useful work.
+25,254 responses across six relative days. Day 6 ends at the common cutoff. Source: recorded usage in evidence.json.
 
-Files: [SVG](figures/responses-by-day.svg), [PNG](figures/responses-by-day.png).
+[SVG](figures/responses-by-day.svg) · [PNG](figures/responses-by-day.png) · [Mobile SVG](figures/responses-by-day-mobile.svg)
 
 ## steering-partition
 
-Alt text: Exclusive partition of 538 substantive contributions
+Alt text: Exclusive categories among 538 substantive contributions
 
-Caption: Protocol 1.1: 63 dissatisfaction only, 56 correction only, 91 both, 310 routine, and 18 ambiguous. Corrective steering totals 147; the D/C union is 210. These are not model failure rates.
+Each square represents one contribution. The five categories are exclusive: 310 routine, 63 dissatisfaction only, 56 correction only, 91 both, and 18 ambiguous. Source: contextual review, protocol 1.1.
 
-Files: [SVG](figures/steering-partition.svg), [PNG](figures/steering-partition.png).
+[SVG](figures/steering-partition.svg) · [PNG](figures/steering-partition.png) · [Mobile SVG](figures/steering-partition-mobile.svg)
+
+## token-composition
+
+Alt text: Cached and uncached input tokens, with output shown separately
+
+The strip divides input tokens into cached and uncached input. Output is shown separately and includes reasoning. Source: recorded usage in evidence.json.
+
+[SVG](figures/token-composition.svg) · [PNG](figures/token-composition.png) · [Mobile SVG](figures/token-composition-mobile.svg)
 
 ## day-project-matrix
 
-Alt text: Recorded responses across six days and eighteen generic projects
+Alt text: Recorded response counts for six days and eighteen generic projects
 
-Caption: Each cell shows recorded responses on a linear color scale. Generic project labels have no public mapping. Zero means no retained responses in that cell, not proof of no work.
+Each cell reports an exact response count. The color scale is linear and fixed across all cells. Project numbers are generic labels. Source: recorded usage in evidence.json.
 
-Files: [SVG](figures/day-project-matrix.svg), [PNG](figures/day-project-matrix.png).
+[SVG](figures/day-project-matrix.svg) · [PNG](figures/day-project-matrix.png) · [Mobile SVG](figures/day-project-matrix-mobile.svg)
+
+## episode-outcomes
+
+Alt text: Recorded outcomes for 78 correction episodes
+
+Fourteen episodes were confirmed resolved in the reviewed context. Forty-five had no established closure; their later status is unknown. Source: contextual review, protocol 1.1.
+
+[SVG](figures/episode-outcomes.svg) · [PNG](figures/episode-outcomes.png) · [Mobile SVG](figures/episode-outcomes-mobile.svg)
 
 ## repository-merges
 
-Alt text: PRs merged during the full study window by generic project
+Alt text: PR merges by generic project over the full study window
 
-Caption: 410 in-window PR merges across 17 identifiable repositories, all authors. This is repository activity, not proven Astra authorship. No daily allocation is available.
+410 in-window PR merges across 17 identifiable repositories. Counts include all authors and are not allocated to individual study days. Source: repository activity in evidence.json.
 
-Files: [SVG](figures/repository-merges.svg), [PNG](figures/repository-merges.png).
+[SVG](figures/repository-merges.svg) · [PNG](figures/repository-merges.png) · [Mobile SVG](figures/repository-merges-mobile.svg)

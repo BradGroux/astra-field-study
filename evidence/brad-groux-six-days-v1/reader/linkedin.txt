@@ -1,31 +1,13 @@
-The workflow I used with GPT-5.6 did not carry forward reliably to GPT-6 Astra. That is what I have seen in my own testing and daily work.
+I've been using GPT-6 Astra with the workflow I developed around GPT-5.6: documented task scope, repository context, standard operating procedures, and verification before delivery. In my testing, I've had to repeat instructions about testing, point back to a supplied writing guide, and ask for requested work missing from a completion handoff.
 
-I had already documented the method: defined scope, repository context, versioned SOPs, meaningful verification, and clear handoffs. Eric Provencher from OpenAI's Codex DX team described closely aligned practices in his July guidance for GPT-5.6:
+I reviewed six days of retained Astra records to understand how much activity and corrective steering appeared in my own usage. The records contained 25,254 responses across 557 turns. A separate review of 538 substantive typed and voice contributions identified 147 containing corrective steering, grouped into 78 episodes. Thirty-one episodes contained repeated corrections.
+
+The operating method was already documented in my earlier articles. Eric Provencher from OpenAI's Codex DX team described closely aligned practices in his July guidance for GPT-5.6, including distinct assignments and preserving constraints when delegating:
 https://x.com/pvncher/status/2080707291603407077
 
-That is why the generation matters. Businesses invest in operating processes. A model upgrade needs to preserve those processes or provide an evidence-backed migration path.
+My established method hasn't carried over reliably in my Astra testing. I suspect shortcuts toward finishing can displace requirements, and requirements can get lost during delegation. Both are entirely untested hypotheses from roughly four or five days of personal experience. The review doesn't establish either cause or a matched performance difference between the models. A deployment runbook also contained outdated instructions.
 
-I reviewed retained Astra records across six study days and two local stores:
-
-• 25,254 responses across 557 turns.
-• 3.42 billion recorded tokens, including 3.35 billion cached input tokens.
-• 10.99 million output tokens, including reasoning output.
-
-Cached input was about 98.2% of input. Those counters are not unique text, billed spend, or a measure of useful work.
-
-A separate contextual review coded 538 substantive contributions. Of these, 147 contained corrective steering, 154 expressed explicit dissatisfaction, and 91 contained both. The union was 210.
-
-That is not a model failure rate or a satisfaction score. It measures interventions under a review rubric, with judgment and incomplete outcome evidence.
-
-The corrections formed 78 episodes; 31 included repeated corrective contributions. Examples involved reasserting testing cadence, pointing back to supplied context, and challenging missing handoff work. A stale runbook also contributed to one dispute.
-
-Several replies to my posts described similar friction with detailed design instructions and hard constraints. Others reported good instruction-following when steps were explained. Those are selected practitioner experiences, not a survey.
-
-I suspect shortcuts toward completion can displace requirements, and that requirements can get lost during delegation. Both are entirely untested hypotheses based on roughly four or five days of personal experience. Efficiency is beneficial when it preserves the intended outcome and constraints.
-
-The audit does not establish either cause or a matched GPT-5.6/GPT-6 performance difference. My reported experience is that an established workflow has taken repeated intervention to keep intact with Astra.
-
-I have published a small MIT contribution kit with synthetic examples and optional directly reported ratings. The examples are synthetic; reviewed aggregates are available in the separate evidence area:
+The counts describe my reviewed conversations, with multiple corrections sometimes addressing one problem. They aren't a model failure rate or a satisfaction score. I've published the methods and reviewed aggregates in Astra Field Study, alongside an interactive explorer and an MIT contribution kit. Raw conversations stay private; contributors review their own aggregate before submitting it:
 https://github.com/BradGroux/astra-field-study
 
-This is what I currently think. I want to know more, especially from people whose experience contradicts mine. If your existing workflow transferred cleanly, I would like to understand what made it work.
+This is what I currently think, and I want to know more. If your established workflow transferred cleanly to Astra, I'd like to understand what you used and how you verified the result. Successful examples and experiences that contradict mine are welcome through the repo or by reaching out.
