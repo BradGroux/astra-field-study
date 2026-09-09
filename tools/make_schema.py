@@ -1,4 +1,5 @@
 """Regenerate the submission contract; no dependencies."""
+import copy
 import json
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,5 +38,30 @@ schema = {
  'diagnostics': obj({'duplicate_response_records': count(), 'ignored_counter_snapshots': count()}),
  'observations': array(observation, 100),
  })}
+# v1.0 stays byte-for-byte compatible. v1.1 adds one OPTIONAL evidence layer.
+def nullable(spec):
+    return {'anyOf': [spec, {'type': 'null'}]}
+
+def rating(maximum):
+    return nullable({'type': 'integer', 'minimum': 1, 'maximum': maximum})
+
+self_reports = obj({
+    'protocol': choice('post_task_v1'),
+    'participant_scope': choice('one_self_reporting_participant'),
+    'groups': {**array(obj({
+        'timing': choice('immediately_after_task', 'retrospective_recollection', 'unknown'),
+        'eligible_task_attempts': nullable(count()),
+        'invited_task_attempts': nullable(count()),
+        'ratings': array(obj({'satisfaction': rating(5), 'task_ease': rating(7)}), 1000),
+    }), 3), 'minItems': 1},
+})
+schema_v11 = copy.deepcopy(schema)
+schema_v11['$id'] = 'https://github.com/BradGroux/astra-field-study/blob/main/schema/submission-v1.1.schema.json'
+schema_v11['title'] = 'Astra Field Study sanitized aggregate submission v1.1'
+schema_v11['properties']['schema_version'] = choice('1.1')
+schema_v11['properties']['self_reports'] = self_reports
+# Deliberately absent from root required: participation is optional.
+
 if __name__ == '__main__':
- (ROOT/'schema/submission-v1.schema.json').write_text(json.dumps(schema, indent=2)+'\n')
+    for filename, contract in [('submission-v1.schema.json', schema), ('submission-v1.1.schema.json', schema_v11)]:
+        (ROOT/'schema'/filename).write_text(json.dumps(contract, indent=2)+'\n')

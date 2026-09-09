@@ -31,6 +31,16 @@ The collector reads only local JSONL under `~/.codex/sessions` and `~/.codex/arc
 
 Only the evidenced native `token_usage_record` format with matching `turn_context` is supported. Older clients that only retain cumulative `token_count` snapshots cannot be measured by this collector. Unsupported, incomplete or conflicting evidence is rejected rather than estimated. See [metric definitions and format limits](docs/methodology.md).
 
+## Optional direct ratings
+
+Keep measured activity, coded observations, and participant ratings separate. The optional [task satisfaction and ease protocol](docs/self-reported-ratings.md) adds actual 1–5 satisfaction and 1–7 SEQ answers, with explicit missingness and invitation coverage. Immediate responses and later recollection are reported separately. The collector never infers ratings, and there is no blended quality index.
+
+```sh
+python3 tools/validate.py examples/synthetic-ratings-submission.json --ready --preview
+```
+
+[Schema 1.1](schema/submission-v1.1.schema.json) adds this optional layer; existing 1.0 submissions remain valid and unchanged. Both examples contain invented data only.
+
 ## Participate
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md). Submit a reviewed aggregate JSON through a pull request, or use [Discussions](https://github.com/BradGroux/astra-field-study/discussions) for questions and contradictory experiences. Successful adherence examples are as useful as deviations. If a useful observation does not fit the controlled categories, propose a schema change with a synthetic example; do not add private narrative to a submission.
