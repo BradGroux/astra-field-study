@@ -9,7 +9,8 @@ This directory contains **real, reviewed, de-identified aggregates**, released b
 - [Canonical evidence JSON](evidence.json), in [observational evidence format 1.0](../../docs/observational-evidence-format.md).
 - [Methods, definitions, interpretation and limits](methodology.md).
 - [Public source references](sources.md), including seven earlier methods articles and selected supporting and contrary replies.
-- [Reader and article drafts](reader/README.md): interactive explorer, illustrated blog/study drafts, Twitter/LinkedIn drafts, and article-ready SVG/PNG figures.
+- [Evidence reader](reader/README.md): interactive explorer and SVG/PNG figures.
+- [Article and social drafts](https://github.com/DigitalMeld/digitalmeld.io/tree/main/docs/drafts/2026-09-09-astra-field-study): maintained in the digitalmeld.io repository.
 
 ## What the record contains
 
@@ -44,7 +45,7 @@ The last command creates a new file and refuses to overwrite one by default. To 
 python3 tools/build_evidence_reader.py evidence/brad-groux-six-days-v1/evidence.json --out evidence/brad-groux-six-days-v1/reader/explorer-data.json --replace
 ```
 
-The reader JSON is a derivative, not a second independent source. Its numbers reconcile with the canonical JSON. The viewer performs no uploads and uses locally retained, MIT-licensed Three.js r186. See the [reader instructions](reader/README.md) for local HTTP preview. Publishing these files in Git does not deploy a website or publish a social post. All article drafts remain subject to author review.
+The reader JSON is a derivative, not a second independent source. Its numbers reconcile with the canonical JSON. The viewer performs no uploads and uses locally retained, MIT-licensed Three.js r186. See the [reader instructions](reader/README.md) for local HTTP preview. Publishing these files in Git does not deploy a website or publish a social post. Article and social drafts are maintained separately in digitalmeld.io.
 
 ## What would change the interpretation
 

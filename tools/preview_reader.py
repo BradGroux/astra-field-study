@@ -16,7 +16,7 @@ class ReaderHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         path=urlsplit(self.path).path
-        aliases={'/':'/reader/blog.html',**{'/'+name:'/reader/'+name for name in ('blog.html','study.html','social.html','explorer.html')}}
+        aliases={'/':'/reader/explorer.html','/explorer.html':'/reader/explorer.html'}
         if path in aliases:
             self.send_response(302)
             self.send_header('Location',aliases[path])
@@ -27,11 +27,11 @@ class ReaderHandler(SimpleHTTPRequestHandler):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--port',type=int,default=8766)
+    parser.add_argument('--port',type=int,default=8767)
     args=parser.parse_args()
     handler=partial(ReaderHandler,directory=str(CASE))
     with ThreadingHTTPServer(('127.0.0.1',args.port),handler) as server:
-        print(f'Public evidence preview: http://127.0.0.1:{args.port}/reader/blog.html',flush=True)
+        print(f'Public evidence preview: http://127.0.0.1:{args.port}/reader/explorer.html',flush=True)
         try:server.serve_forever()
         except KeyboardInterrupt:pass
 
