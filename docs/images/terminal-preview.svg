@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1133" viewBox="0 0 1200 1133" role="img">
+<title>Validated terminal preview</title>
+<rect width="100%" height="100%" fill="#111d2b"/>
+<text x="40" y="52" fill="#f4b85b" font-family="DejaVu Sans" font-size="17">SYNTHETIC EXAMPLE · NOT PARTICIPANT FINDINGS</text>
+<text x="40" y="94" fill="#edf2fa" font-family="DejaVu Sans" font-size="28">Validated terminal preview</text>
+<text x="40" y="125" fill="#a9b7c9" font-family="DejaVu Sans" font-size="17">python3 tools/validate.py examples/synthetic-submission.json --preview</text>
+<text x="40" y="165" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">{</text>
+<text x="40" y="192" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  &quot;synthetic&quot;: true,</text>
+<text x="40" y="219" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  &quot;window&quot;: {</text>
+<text x="40" y="246" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;requested_days&quot;: 2</text>
+<text x="40" y="273" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  },</text>
+<text x="40" y="300" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  &quot;setup&quot;: {</text>
+<text x="40" y="327" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;model&quot;: &quot;gpt-6-astra&quot;,</text>
+<text x="40" y="354" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;attribution&quot;: &quot;recorded_turn_context&quot;,</text>
+<text x="40" y="381" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;client&quot;: &quot;unknown&quot;,</text>
+<text x="40" y="408" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;reasoning_effort&quot;: &quot;unknown&quot;,</text>
+<text x="40" y="435" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;observer_scope&quot;: &quot;one_local_store&quot;,</text>
+<text x="40" y="462" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;collection_format&quot;: &quot;codex_native_response_records_v1&quot;</text>
+<text x="40" y="489" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  },</text>
+<text x="40" y="516" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  &quot;totals&quot;: {</text>
+<text x="40" y="543" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;responses&quot;: 1,</text>
+<text x="40" y="570" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;turns_with_responses&quot;: 1,</text>
+<text x="40" y="597" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;tasks_with_responses&quot;: 1,</text>
+<text x="40" y="624" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;native_user_message_items&quot;: 1,</text>
+<text x="40" y="651" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;repository_contexts_with_responses&quot;: 1,</text>
+<text x="40" y="678" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;tokens&quot;: {</text>
+<text x="40" y="705" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">      &quot;input_tokens&quot;: 100,</text>
+<text x="40" y="732" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">      &quot;cached_input_tokens&quot;: 80,</text>
+<text x="40" y="759" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">      &quot;cache_write_input_tokens&quot;: 0,</text>
+<text x="40" y="786" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">      &quot;output_tokens&quot;: 10,</text>
+<text x="40" y="813" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">      &quot;reasoning_output_tokens&quot;: 4,</text>
+<text x="40" y="840" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">      &quot;total_tokens&quot;: 110</text>
+<text x="40" y="867" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    }</text>
+<text x="40" y="894" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  },</text>
+<text x="40" y="921" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  &quot;observation_count&quot;: 2,</text>
+<text x="40" y="948" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  &quot;consent&quot;: {</text>
+<text x="40" y="975" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;public_release_reviewed&quot;: true,</text>
+<text x="40" y="1002" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">    &quot;rights_and_mit_license_confirmed&quot;: true</text>
+<text x="40" y="1029" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">  }</text>
+<text x="40" y="1056" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">}</text>
+<text x="40" y="1107" fill="#a9b7c9" font-family="DejaVu Sans" font-size="16">Full synthetic summary. Consent shown here belongs only to the invented example.</text></svg>

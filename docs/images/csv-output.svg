@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img">
+<title>Your local usage.csv export</title>
+<rect width="100%" height="100%" fill="#111d2b"/>
+<text x="40" y="52" fill="#f4b85b" font-family="DejaVu Sans" font-size="17">SYNTHETIC EXAMPLE · NOT PARTICIPANT FINDINGS</text>
+<text x="40" y="94" fill="#edf2fa" font-family="DejaVu Sans" font-size="28">Your local usage.csv export</text>
+<text x="40" y="125" fill="#a9b7c9" font-family="DejaVu Sans" font-size="17">Actual documented export, transposed here so every field is readable.</text>
+<text x="40" y="165" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">FIELD                                      WINDOW        DAY 1</text>
+<text x="40" y="192" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">────────────────────────────────────────────────────────────────</text>
+<text x="40" y="219" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">scope                                      window          day</text>
+<text x="40" y="246" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">day_index                                       —            1</text>
+<text x="40" y="273" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">responses                                       1            1</text>
+<text x="40" y="300" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">turns_with_responses                            1            1</text>
+<text x="40" y="327" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">tasks_with_responses                            1            1</text>
+<text x="40" y="354" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">native_user_message_items                       1            1</text>
+<text x="40" y="381" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">repository_contexts_with_responses              1            1</text>
+<text x="40" y="408" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">input_tokens                                  100          100</text>
+<text x="40" y="435" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">cached_input_tokens                            80           80</text>
+<text x="40" y="462" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">cache_write_input_tokens                        0            0</text>
+<text x="40" y="489" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">output_tokens                                  10           10</text>
+<text x="40" y="516" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">reasoning_output_tokens                         4            4</text>
+<text x="40" y="543" fill="#edf2fa" font-family="DejaVu Sans Mono" font-size="18" xml:space="preserve">total_tokens                                  110          110</text>
+<text x="40" y="594" fill="#a9b7c9" font-family="DejaVu Sans" font-size="16">Window and day are separate scopes. Do not add the window row to the daily rows.</text></svg>
