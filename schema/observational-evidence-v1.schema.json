@@ -1,0 +1,2344 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "format_version",
+    "synthetic",
+    "consent",
+    "model",
+    "study_days",
+    "direct_ratings",
+    "usage",
+    "coded_observations",
+    "repository_activity"
+  ],
+  "properties": {
+    "format": {
+      "type": "string",
+      "enum": [
+        "observational_evidence"
+      ]
+    },
+    "format_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "public_release_reviewed",
+        "mit_contribution"
+      ],
+      "properties": {
+        "public_release_reviewed": {
+          "type": "boolean"
+        },
+        "mit_contribution": {
+          "type": "boolean"
+        }
+      }
+    },
+    "model": {
+      "type": "string",
+      "enum": [
+        "gpt-6-astra"
+      ]
+    },
+    "study_days": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 366
+    },
+    "direct_ratings": {
+      "type": "string",
+      "enum": [
+        "not_collected"
+      ]
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "summary",
+        "by_day",
+        "by_project",
+        "by_observer",
+        "by_day_project_observer"
+      ],
+      "properties": {
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "responses",
+            "turns",
+            "completed_turns",
+            "incomplete_turns",
+            "native_user_messages",
+            "tasks",
+            "sum_completed_turn_ms",
+            "completed_interval_union_ms",
+            "tokens"
+          ],
+          "properties": {
+            "responses": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "turns": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "completed_turns": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "incomplete_turns": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "native_user_messages": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "tasks": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "sum_completed_turn_ms": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "completed_interval_union_ms": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "tokens": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "input_tokens",
+                "cached_input_tokens",
+                "uncached_input_tokens",
+                "cache_write_input_tokens",
+                "output_tokens",
+                "reasoning_output_tokens",
+                "total_tokens"
+              ],
+              "properties": {
+                "input_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "cached_input_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "uncached_input_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "cache_write_input_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "output_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "reasoning_output_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "total_tokens": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                }
+              }
+            }
+          }
+        },
+        "by_day": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "day",
+              "responses",
+              "turns",
+              "completed_turns",
+              "incomplete_turns",
+              "native_user_messages",
+              "tasks",
+              "sum_completed_turn_ms",
+              "completed_interval_union_ms",
+              "tokens"
+            ],
+            "properties": {
+              "day": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 366
+              },
+              "responses": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "incomplete_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "native_user_messages": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tasks": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "sum_completed_turn_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_interval_union_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tokens": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "input_tokens",
+                  "cached_input_tokens",
+                  "uncached_input_tokens",
+                  "cache_write_input_tokens",
+                  "output_tokens",
+                  "reasoning_output_tokens",
+                  "total_tokens"
+                ],
+                "properties": {
+                  "input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "uncached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cache_write_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "reasoning_output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "total_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 366
+        },
+        "by_project": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "project",
+              "responses",
+              "turns",
+              "completed_turns",
+              "incomplete_turns",
+              "native_user_messages",
+              "tasks",
+              "sum_completed_turn_ms",
+              "completed_interval_union_ms",
+              "tokens"
+            ],
+            "properties": {
+              "project": {
+                "type": "string",
+                "enum": [
+                  "Project 01",
+                  "Project 02",
+                  "Project 03",
+                  "Project 04",
+                  "Project 05",
+                  "Project 06",
+                  "Project 07",
+                  "Project 08",
+                  "Project 09",
+                  "Project 10",
+                  "Project 11",
+                  "Project 12",
+                  "Project 13",
+                  "Project 14",
+                  "Project 15",
+                  "Project 16",
+                  "Project 17",
+                  "Project 18",
+                  "Project 19",
+                  "Project 20",
+                  "Project 21",
+                  "Project 22",
+                  "Project 23",
+                  "Project 24",
+                  "Project 25",
+                  "Project 26",
+                  "Project 27",
+                  "Project 28",
+                  "Project 29",
+                  "Project 30",
+                  "Project 31",
+                  "Project 32",
+                  "Project 33",
+                  "Project 34",
+                  "Project 35",
+                  "Project 36",
+                  "Project 37",
+                  "Project 38",
+                  "Project 39",
+                  "Project 40",
+                  "Project 41",
+                  "Project 42",
+                  "Project 43",
+                  "Project 44",
+                  "Project 45",
+                  "Project 46",
+                  "Project 47",
+                  "Project 48",
+                  "Project 49",
+                  "Project 50",
+                  "Project 51",
+                  "Project 52",
+                  "Project 53",
+                  "Project 54",
+                  "Project 55",
+                  "Project 56",
+                  "Project 57",
+                  "Project 58",
+                  "Project 59",
+                  "Project 60",
+                  "Project 61",
+                  "Project 62",
+                  "Project 63",
+                  "Project 64",
+                  "Project 65",
+                  "Project 66",
+                  "Project 67",
+                  "Project 68",
+                  "Project 69",
+                  "Project 70",
+                  "Project 71",
+                  "Project 72",
+                  "Project 73",
+                  "Project 74",
+                  "Project 75",
+                  "Project 76",
+                  "Project 77",
+                  "Project 78",
+                  "Project 79",
+                  "Project 80",
+                  "Project 81",
+                  "Project 82",
+                  "Project 83",
+                  "Project 84",
+                  "Project 85",
+                  "Project 86",
+                  "Project 87",
+                  "Project 88",
+                  "Project 89",
+                  "Project 90",
+                  "Project 91",
+                  "Project 92",
+                  "Project 93",
+                  "Project 94",
+                  "Project 95",
+                  "Project 96",
+                  "Project 97",
+                  "Project 98",
+                  "Project 99"
+                ]
+              },
+              "responses": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "incomplete_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "native_user_messages": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tasks": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "sum_completed_turn_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_interval_union_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tokens": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "input_tokens",
+                  "cached_input_tokens",
+                  "uncached_input_tokens",
+                  "cache_write_input_tokens",
+                  "output_tokens",
+                  "reasoning_output_tokens",
+                  "total_tokens"
+                ],
+                "properties": {
+                  "input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "uncached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cache_write_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "reasoning_output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "total_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 99
+        },
+        "by_observer": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "observer",
+              "responses",
+              "turns",
+              "completed_turns",
+              "incomplete_turns",
+              "native_user_messages",
+              "tasks",
+              "sum_completed_turn_ms",
+              "completed_interval_union_ms",
+              "tokens"
+            ],
+            "properties": {
+              "observer": {
+                "type": "string",
+                "enum": [
+                  "Observer 01",
+                  "Observer 02",
+                  "Observer 03",
+                  "Observer 04",
+                  "Observer 05",
+                  "Observer 06",
+                  "Observer 07",
+                  "Observer 08",
+                  "Observer 09",
+                  "Observer 10"
+                ]
+              },
+              "responses": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "incomplete_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "native_user_messages": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tasks": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "sum_completed_turn_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_interval_union_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tokens": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "input_tokens",
+                  "cached_input_tokens",
+                  "uncached_input_tokens",
+                  "cache_write_input_tokens",
+                  "output_tokens",
+                  "reasoning_output_tokens",
+                  "total_tokens"
+                ],
+                "properties": {
+                  "input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "uncached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cache_write_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "reasoning_output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "total_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 10
+        },
+        "by_day_project_observer": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "day",
+              "project",
+              "observer",
+              "responses",
+              "turns",
+              "completed_turns",
+              "incomplete_turns",
+              "native_user_messages",
+              "tasks",
+              "sum_completed_turn_ms",
+              "completed_interval_union_ms",
+              "tokens"
+            ],
+            "properties": {
+              "day": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 366
+              },
+              "project": {
+                "type": "string",
+                "enum": [
+                  "Project 01",
+                  "Project 02",
+                  "Project 03",
+                  "Project 04",
+                  "Project 05",
+                  "Project 06",
+                  "Project 07",
+                  "Project 08",
+                  "Project 09",
+                  "Project 10",
+                  "Project 11",
+                  "Project 12",
+                  "Project 13",
+                  "Project 14",
+                  "Project 15",
+                  "Project 16",
+                  "Project 17",
+                  "Project 18",
+                  "Project 19",
+                  "Project 20",
+                  "Project 21",
+                  "Project 22",
+                  "Project 23",
+                  "Project 24",
+                  "Project 25",
+                  "Project 26",
+                  "Project 27",
+                  "Project 28",
+                  "Project 29",
+                  "Project 30",
+                  "Project 31",
+                  "Project 32",
+                  "Project 33",
+                  "Project 34",
+                  "Project 35",
+                  "Project 36",
+                  "Project 37",
+                  "Project 38",
+                  "Project 39",
+                  "Project 40",
+                  "Project 41",
+                  "Project 42",
+                  "Project 43",
+                  "Project 44",
+                  "Project 45",
+                  "Project 46",
+                  "Project 47",
+                  "Project 48",
+                  "Project 49",
+                  "Project 50",
+                  "Project 51",
+                  "Project 52",
+                  "Project 53",
+                  "Project 54",
+                  "Project 55",
+                  "Project 56",
+                  "Project 57",
+                  "Project 58",
+                  "Project 59",
+                  "Project 60",
+                  "Project 61",
+                  "Project 62",
+                  "Project 63",
+                  "Project 64",
+                  "Project 65",
+                  "Project 66",
+                  "Project 67",
+                  "Project 68",
+                  "Project 69",
+                  "Project 70",
+                  "Project 71",
+                  "Project 72",
+                  "Project 73",
+                  "Project 74",
+                  "Project 75",
+                  "Project 76",
+                  "Project 77",
+                  "Project 78",
+                  "Project 79",
+                  "Project 80",
+                  "Project 81",
+                  "Project 82",
+                  "Project 83",
+                  "Project 84",
+                  "Project 85",
+                  "Project 86",
+                  "Project 87",
+                  "Project 88",
+                  "Project 89",
+                  "Project 90",
+                  "Project 91",
+                  "Project 92",
+                  "Project 93",
+                  "Project 94",
+                  "Project 95",
+                  "Project 96",
+                  "Project 97",
+                  "Project 98",
+                  "Project 99"
+                ]
+              },
+              "observer": {
+                "type": "string",
+                "enum": [
+                  "Observer 01",
+                  "Observer 02",
+                  "Observer 03",
+                  "Observer 04",
+                  "Observer 05",
+                  "Observer 06",
+                  "Observer 07",
+                  "Observer 08",
+                  "Observer 09",
+                  "Observer 10"
+                ]
+              },
+              "responses": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "incomplete_turns": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "native_user_messages": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tasks": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "sum_completed_turn_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "completed_interval_union_ms": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "tokens": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "input_tokens",
+                  "cached_input_tokens",
+                  "uncached_input_tokens",
+                  "cache_write_input_tokens",
+                  "output_tokens",
+                  "reasoning_output_tokens",
+                  "total_tokens"
+                ],
+                "properties": {
+                  "input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "uncached_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "cache_write_input_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "reasoning_output_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "total_tokens": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 2000
+        }
+      }
+    },
+    "coded_observations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol_version",
+        "summary",
+        "by_day",
+        "by_project",
+        "by_day_project",
+        "by_surface"
+      ],
+      "properties": {
+        "protocol_version": {
+          "type": "string",
+          "enum": [
+            "1.1"
+          ]
+        },
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "eligible",
+            "D_only",
+            "C_only",
+            "both",
+            "routine",
+            "ambiguous",
+            "union",
+            "dissatisfaction_units",
+            "corrective_units",
+            "correction_episodes",
+            "repeated_correction_episodes",
+            "process_correction_episodes",
+            "process_correction_units",
+            "outcomes"
+          ],
+          "properties": {
+            "eligible": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "D_only": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "C_only": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "both": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "routine": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "ambiguous": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "union": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "dissatisfaction_units": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "corrective_units": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "correction_episodes": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "repeated_correction_episodes": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "process_correction_episodes": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "process_correction_units": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "outcomes": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "confirmed_resolved",
+                "accepted_with_residual_or_waived",
+                "fix_reported_unverified",
+                "claim_withdrawn_artifact_unverified",
+                "no_closure_established"
+              ],
+              "properties": {
+                "confirmed_resolved": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "accepted_with_residual_or_waived": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "fix_reported_unverified": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "claim_withdrawn_artifact_unverified": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                },
+                "no_closure_established": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 1000000000000000
+                }
+              }
+            }
+          }
+        },
+        "by_day": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "day",
+              "eligible",
+              "D_only",
+              "C_only",
+              "both",
+              "routine",
+              "ambiguous",
+              "union",
+              "dissatisfaction_units",
+              "corrective_units",
+              "correction_episodes",
+              "repeated_correction_episodes",
+              "process_correction_episodes",
+              "process_correction_units",
+              "outcomes"
+            ],
+            "properties": {
+              "day": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 366
+              },
+              "eligible": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "D_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "C_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "both": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "routine": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "ambiguous": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "union": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "dissatisfaction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "corrective_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "repeated_correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "process_correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "process_correction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "outcomes": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "confirmed_resolved",
+                  "accepted_with_residual_or_waived",
+                  "fix_reported_unverified",
+                  "claim_withdrawn_artifact_unverified",
+                  "no_closure_established"
+                ],
+                "properties": {
+                  "confirmed_resolved": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "accepted_with_residual_or_waived": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "fix_reported_unverified": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "claim_withdrawn_artifact_unverified": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "no_closure_established": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 366
+        },
+        "by_project": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "project",
+              "eligible",
+              "D_only",
+              "C_only",
+              "both",
+              "routine",
+              "ambiguous",
+              "union",
+              "dissatisfaction_units",
+              "corrective_units",
+              "correction_episodes",
+              "repeated_correction_episodes",
+              "process_correction_episodes",
+              "process_correction_units",
+              "outcomes"
+            ],
+            "properties": {
+              "project": {
+                "type": "string",
+                "enum": [
+                  "Project 01",
+                  "Project 02",
+                  "Project 03",
+                  "Project 04",
+                  "Project 05",
+                  "Project 06",
+                  "Project 07",
+                  "Project 08",
+                  "Project 09",
+                  "Project 10",
+                  "Project 11",
+                  "Project 12",
+                  "Project 13",
+                  "Project 14",
+                  "Project 15",
+                  "Project 16",
+                  "Project 17",
+                  "Project 18",
+                  "Project 19",
+                  "Project 20",
+                  "Project 21",
+                  "Project 22",
+                  "Project 23",
+                  "Project 24",
+                  "Project 25",
+                  "Project 26",
+                  "Project 27",
+                  "Project 28",
+                  "Project 29",
+                  "Project 30",
+                  "Project 31",
+                  "Project 32",
+                  "Project 33",
+                  "Project 34",
+                  "Project 35",
+                  "Project 36",
+                  "Project 37",
+                  "Project 38",
+                  "Project 39",
+                  "Project 40",
+                  "Project 41",
+                  "Project 42",
+                  "Project 43",
+                  "Project 44",
+                  "Project 45",
+                  "Project 46",
+                  "Project 47",
+                  "Project 48",
+                  "Project 49",
+                  "Project 50",
+                  "Project 51",
+                  "Project 52",
+                  "Project 53",
+                  "Project 54",
+                  "Project 55",
+                  "Project 56",
+                  "Project 57",
+                  "Project 58",
+                  "Project 59",
+                  "Project 60",
+                  "Project 61",
+                  "Project 62",
+                  "Project 63",
+                  "Project 64",
+                  "Project 65",
+                  "Project 66",
+                  "Project 67",
+                  "Project 68",
+                  "Project 69",
+                  "Project 70",
+                  "Project 71",
+                  "Project 72",
+                  "Project 73",
+                  "Project 74",
+                  "Project 75",
+                  "Project 76",
+                  "Project 77",
+                  "Project 78",
+                  "Project 79",
+                  "Project 80",
+                  "Project 81",
+                  "Project 82",
+                  "Project 83",
+                  "Project 84",
+                  "Project 85",
+                  "Project 86",
+                  "Project 87",
+                  "Project 88",
+                  "Project 89",
+                  "Project 90",
+                  "Project 91",
+                  "Project 92",
+                  "Project 93",
+                  "Project 94",
+                  "Project 95",
+                  "Project 96",
+                  "Project 97",
+                  "Project 98",
+                  "Project 99"
+                ]
+              },
+              "eligible": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "D_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "C_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "both": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "routine": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "ambiguous": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "union": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "dissatisfaction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "corrective_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "repeated_correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "process_correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "process_correction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "outcomes": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "confirmed_resolved",
+                  "accepted_with_residual_or_waived",
+                  "fix_reported_unverified",
+                  "claim_withdrawn_artifact_unverified",
+                  "no_closure_established"
+                ],
+                "properties": {
+                  "confirmed_resolved": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "accepted_with_residual_or_waived": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "fix_reported_unverified": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "claim_withdrawn_artifact_unverified": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "no_closure_established": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 99
+        },
+        "by_day_project": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "day",
+              "project",
+              "eligible",
+              "D_only",
+              "C_only",
+              "both",
+              "routine",
+              "ambiguous",
+              "union",
+              "dissatisfaction_units",
+              "corrective_units",
+              "correction_episodes",
+              "repeated_correction_episodes",
+              "process_correction_episodes",
+              "process_correction_units",
+              "outcomes"
+            ],
+            "properties": {
+              "day": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 366
+              },
+              "project": {
+                "type": "string",
+                "enum": [
+                  "Project 01",
+                  "Project 02",
+                  "Project 03",
+                  "Project 04",
+                  "Project 05",
+                  "Project 06",
+                  "Project 07",
+                  "Project 08",
+                  "Project 09",
+                  "Project 10",
+                  "Project 11",
+                  "Project 12",
+                  "Project 13",
+                  "Project 14",
+                  "Project 15",
+                  "Project 16",
+                  "Project 17",
+                  "Project 18",
+                  "Project 19",
+                  "Project 20",
+                  "Project 21",
+                  "Project 22",
+                  "Project 23",
+                  "Project 24",
+                  "Project 25",
+                  "Project 26",
+                  "Project 27",
+                  "Project 28",
+                  "Project 29",
+                  "Project 30",
+                  "Project 31",
+                  "Project 32",
+                  "Project 33",
+                  "Project 34",
+                  "Project 35",
+                  "Project 36",
+                  "Project 37",
+                  "Project 38",
+                  "Project 39",
+                  "Project 40",
+                  "Project 41",
+                  "Project 42",
+                  "Project 43",
+                  "Project 44",
+                  "Project 45",
+                  "Project 46",
+                  "Project 47",
+                  "Project 48",
+                  "Project 49",
+                  "Project 50",
+                  "Project 51",
+                  "Project 52",
+                  "Project 53",
+                  "Project 54",
+                  "Project 55",
+                  "Project 56",
+                  "Project 57",
+                  "Project 58",
+                  "Project 59",
+                  "Project 60",
+                  "Project 61",
+                  "Project 62",
+                  "Project 63",
+                  "Project 64",
+                  "Project 65",
+                  "Project 66",
+                  "Project 67",
+                  "Project 68",
+                  "Project 69",
+                  "Project 70",
+                  "Project 71",
+                  "Project 72",
+                  "Project 73",
+                  "Project 74",
+                  "Project 75",
+                  "Project 76",
+                  "Project 77",
+                  "Project 78",
+                  "Project 79",
+                  "Project 80",
+                  "Project 81",
+                  "Project 82",
+                  "Project 83",
+                  "Project 84",
+                  "Project 85",
+                  "Project 86",
+                  "Project 87",
+                  "Project 88",
+                  "Project 89",
+                  "Project 90",
+                  "Project 91",
+                  "Project 92",
+                  "Project 93",
+                  "Project 94",
+                  "Project 95",
+                  "Project 96",
+                  "Project 97",
+                  "Project 98",
+                  "Project 99"
+                ]
+              },
+              "eligible": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "D_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "C_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "both": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "routine": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "ambiguous": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "union": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "dissatisfaction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "corrective_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "repeated_correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "process_correction_episodes": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "process_correction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "outcomes": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "confirmed_resolved",
+                  "accepted_with_residual_or_waived",
+                  "fix_reported_unverified",
+                  "claim_withdrawn_artifact_unverified",
+                  "no_closure_established"
+                ],
+                "properties": {
+                  "confirmed_resolved": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "accepted_with_residual_or_waived": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "fix_reported_unverified": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "claim_withdrawn_artifact_unverified": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "no_closure_established": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 2000
+        },
+        "by_surface": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "surface",
+              "eligible",
+              "D_only",
+              "C_only",
+              "both",
+              "routine",
+              "ambiguous",
+              "union",
+              "dissatisfaction_units",
+              "corrective_units"
+            ],
+            "properties": {
+              "surface": {
+                "type": "string",
+                "enum": [
+                  "typed",
+                  "voice",
+                  "voice_with_typed_reference"
+                ]
+              },
+              "eligible": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "D_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "C_only": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "both": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "routine": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "ambiguous": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "union": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "dissatisfaction_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "corrective_units": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 3
+        }
+      }
+    },
+    "repository_activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scope",
+        "identifiable_repositories",
+        "unresolved_projects",
+        "events",
+        "net_changes",
+        "by_project"
+      ],
+      "properties": {
+        "scope": {
+          "type": "string",
+          "enum": [
+            "full_window_all_authors"
+          ]
+        },
+        "identifiable_repositories": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "unresolved_projects": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "events": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "issue_active_in_window",
+            "issue_active_state_closed",
+            "issue_active_state_open",
+            "issue_candidate_records",
+            "issue_distinct_reopened",
+            "issue_distinct_with_close_event",
+            "issue_opened_in_window",
+            "issue_window_events",
+            "pr_active_in_window",
+            "pr_active_state_closed",
+            "pr_active_state_merged",
+            "pr_active_state_open",
+            "pr_candidate_records",
+            "pr_distinct_reopened",
+            "pr_distinct_with_close_event",
+            "pr_merged_in_window",
+            "pr_opened_in_window",
+            "pr_window_events"
+          ],
+          "properties": {
+            "issue_active_in_window": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_active_state_closed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_active_state_open": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_candidate_records": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_distinct_reopened": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_distinct_with_close_event": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_opened_in_window": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "issue_window_events": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_active_in_window": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_active_state_closed": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_active_state_merged": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_active_state_open": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_candidate_records": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_distinct_reopened": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_distinct_with_close_event": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_merged_in_window": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_opened_in_window": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "pr_window_events": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            }
+          }
+        },
+        "net_changes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "first_parent_commit_objects_in_window",
+            "net_changed_repository_qualified_paths",
+            "net_diff_additions",
+            "net_diff_deletions",
+            "repositories_with_complete_net_diff",
+            "repositories_with_default_branch_commit_activity",
+            "net_line_delta"
+          ],
+          "properties": {
+            "first_parent_commit_objects_in_window": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "net_changed_repository_qualified_paths": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "net_diff_additions": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "net_diff_deletions": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "repositories_with_complete_net_diff": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "repositories_with_default_branch_commit_activity": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "net_line_delta": {
+              "type": "integer",
+              "minimum": -1000000000000000,
+              "maximum": 1000000000000000
+            }
+          }
+        },
+        "by_project": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "project",
+              "events",
+              "first_parent_commit_objects_in_window",
+              "net_files_complete",
+              "net_diff"
+            ],
+            "properties": {
+              "project": {
+                "type": "string",
+                "enum": [
+                  "Project 01",
+                  "Project 02",
+                  "Project 03",
+                  "Project 04",
+                  "Project 05",
+                  "Project 06",
+                  "Project 07",
+                  "Project 08",
+                  "Project 09",
+                  "Project 10",
+                  "Project 11",
+                  "Project 12",
+                  "Project 13",
+                  "Project 14",
+                  "Project 15",
+                  "Project 16",
+                  "Project 17",
+                  "Project 18",
+                  "Project 19",
+                  "Project 20",
+                  "Project 21",
+                  "Project 22",
+                  "Project 23",
+                  "Project 24",
+                  "Project 25",
+                  "Project 26",
+                  "Project 27",
+                  "Project 28",
+                  "Project 29",
+                  "Project 30",
+                  "Project 31",
+                  "Project 32",
+                  "Project 33",
+                  "Project 34",
+                  "Project 35",
+                  "Project 36",
+                  "Project 37",
+                  "Project 38",
+                  "Project 39",
+                  "Project 40",
+                  "Project 41",
+                  "Project 42",
+                  "Project 43",
+                  "Project 44",
+                  "Project 45",
+                  "Project 46",
+                  "Project 47",
+                  "Project 48",
+                  "Project 49",
+                  "Project 50",
+                  "Project 51",
+                  "Project 52",
+                  "Project 53",
+                  "Project 54",
+                  "Project 55",
+                  "Project 56",
+                  "Project 57",
+                  "Project 58",
+                  "Project 59",
+                  "Project 60",
+                  "Project 61",
+                  "Project 62",
+                  "Project 63",
+                  "Project 64",
+                  "Project 65",
+                  "Project 66",
+                  "Project 67",
+                  "Project 68",
+                  "Project 69",
+                  "Project 70",
+                  "Project 71",
+                  "Project 72",
+                  "Project 73",
+                  "Project 74",
+                  "Project 75",
+                  "Project 76",
+                  "Project 77",
+                  "Project 78",
+                  "Project 79",
+                  "Project 80",
+                  "Project 81",
+                  "Project 82",
+                  "Project 83",
+                  "Project 84",
+                  "Project 85",
+                  "Project 86",
+                  "Project 87",
+                  "Project 88",
+                  "Project 89",
+                  "Project 90",
+                  "Project 91",
+                  "Project 92",
+                  "Project 93",
+                  "Project 94",
+                  "Project 95",
+                  "Project 96",
+                  "Project 97",
+                  "Project 98",
+                  "Project 99"
+                ]
+              },
+              "events": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "issue_active_in_window",
+                  "issue_active_state_closed",
+                  "issue_active_state_open",
+                  "issue_candidate_records",
+                  "issue_distinct_reopened",
+                  "issue_distinct_with_close_event",
+                  "issue_opened_in_window",
+                  "issue_window_events",
+                  "pr_active_in_window",
+                  "pr_active_state_closed",
+                  "pr_active_state_merged",
+                  "pr_active_state_open",
+                  "pr_candidate_records",
+                  "pr_distinct_reopened",
+                  "pr_distinct_with_close_event",
+                  "pr_merged_in_window",
+                  "pr_opened_in_window",
+                  "pr_window_events"
+                ],
+                "properties": {
+                  "issue_active_in_window": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_active_state_closed": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_active_state_open": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_candidate_records": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_distinct_reopened": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_distinct_with_close_event": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_opened_in_window": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "issue_window_events": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_active_in_window": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_active_state_closed": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_active_state_merged": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_active_state_open": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_candidate_records": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_distinct_reopened": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_distinct_with_close_event": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_merged_in_window": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_opened_in_window": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "pr_window_events": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  }
+                }
+              },
+              "first_parent_commit_objects_in_window": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "net_files_complete": {
+                "type": "boolean"
+              },
+              "net_diff": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "added",
+                  "deleted",
+                  "binary_touches",
+                  "file_touches",
+                  "unique_paths",
+                  "categories"
+                ],
+                "properties": {
+                  "added": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "deleted": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "binary_touches": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "file_touches": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "unique_paths": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 1000000000000000
+                  },
+                  "categories": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "dependency_lock",
+                      "documentation",
+                      "other_source_or_asset",
+                      "test"
+                    ],
+                    "properties": {
+                      "dependency_lock": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "added",
+                          "deleted",
+                          "binary_touches",
+                          "touches"
+                        ],
+                        "properties": {
+                          "added": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "deleted": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "binary_touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          }
+                        }
+                      },
+                      "documentation": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "added",
+                          "deleted",
+                          "binary_touches",
+                          "touches"
+                        ],
+                        "properties": {
+                          "added": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "deleted": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "binary_touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          }
+                        }
+                      },
+                      "other_source_or_asset": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "added",
+                          "deleted",
+                          "binary_touches",
+                          "touches"
+                        ],
+                        "properties": {
+                          "added": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "deleted": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "binary_touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          }
+                        }
+                      },
+                      "test": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "added",
+                          "deleted",
+                          "binary_touches",
+                          "touches"
+                        ],
+                        "properties": {
+                          "added": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "deleted": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "binary_touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          },
+                          "touches": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "maximum": 1000000000000000
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 0,
+          "maxItems": 99
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observational evidence 1.0 (not a contribution submission)"
+}

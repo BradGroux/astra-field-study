@@ -36,3 +36,7 @@ Maintainers review the exact diff, schema, accounting, synthetic flag, consent a
 Use Discussions for public feedback, including experiences that contradict the hypotheses. A controlled vocabulary deliberately limits detail. Suggest additions with synthetic examples when it cannot capture your case safely. Schema changes need a version decision and local tests. Never upload session JSONL or SQLite to demonstrate a parser failure; construct a minimal synthetic fixture instead.
 
 No GitHub Actions or connected CI may be added, triggered or required. Run all checks locally. Do not add production dependencies without approval.
+
+## Larger observational evidence packages
+
+The [versioned observational format](docs/observational-evidence-format.md) is separate from normal participant submissions. Do not place an audit export into `examples/` or bypass the narrower contribution validator. Propose format changes with synthetic fixtures, retain all privacy boundaries, and obtain explicit release/license review before adding real case aggregates. No direct ratings may be inferred from source text.
