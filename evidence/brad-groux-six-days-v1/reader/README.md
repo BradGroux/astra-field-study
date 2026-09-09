@@ -2,7 +2,9 @@
 
 The [canonical evidence](../evidence.json), [methods](../methodology.md), [interactive explorer](explorer.html), and six [figures and captions](figure-captions.md) belong to Astra Field Study.
 
-Article and social drafts live in [digitalmeld.io](https://github.com/DigitalMeld/digitalmeld.io/tree/main/docs/drafts/2026-09-09-astra-field-study). Do not add editorial drafts to this repository.
+Read the published [study](https://go.sstb.ai/astra-study) and [companion blog](https://go.sstb.ai/astra-blog), or share the [repository](https://go.sstb.ai/astra-repo). The study links to the hosted explorer; the instructions below run the evidence reader locally.
+
+Editorial source and social drafts live in [digitalmeld.io](https://github.com/DigitalMeld/digitalmeld.io/tree/main/docs/drafts/2026-09-09-astra-field-study). Do not add editorial drafts to this repository.
 
 From this repository root, run `python3 tools/preview_reader.py`, then open http://127.0.0.1:8767/reader/explorer.html. All runtime files are local; no upload endpoint or CDN is used.
 

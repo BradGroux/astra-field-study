@@ -4,6 +4,14 @@
 
 This directory contains **real, reviewed, de-identified aggregates**, released by Brad for public review under the repository's MIT license. It is separate from the synthetic kit examples and from participant submissions. All source projects retain generic labels, all observers are generic, and days are relative. No raw transcripts, source identities, identity hashes, private locators, mappings, or joins to named projects are included.
 
+## Published written resources
+
+- [Six days of GPT-6 Astra: usage and corrective steering](https://go.sstb.ai/astra-study) — the published study and interactive explorer.
+- [From GPT-5.6 Sol to GPT-6 Astra: Why Am I Repeating Myself?](https://go.sstb.ai/astra-blog) — the companion account of the established workflow and observed friction.
+- [Astra Field Study repository](https://go.sstb.ai/astra-repo) — evidence, methods, figures, and contribution tools.
+
+These resources accompany the [v1.0 documentation update](../../CHANGELOG.md). The evidence remains the frozen version 1 snapshot; this update does not change its measurements or classifications.
+
 ## Start here
 
 - [Canonical evidence JSON](evidence.json), in [observational evidence format 1.0](../../docs/observational-evidence-format.md).
@@ -45,7 +53,7 @@ The last command creates a new file and refuses to overwrite one by default. To 
 python3 tools/build_evidence_reader.py evidence/brad-groux-six-days-v1/evidence.json --out evidence/brad-groux-six-days-v1/reader/explorer-data.json --replace
 ```
 
-The reader JSON is a derivative, not a second independent source. Its numbers reconcile with the canonical JSON. The viewer performs no uploads and uses locally retained, MIT-licensed Three.js r186. See the [reader instructions](reader/README.md) for local HTTP preview. Publishing these files in Git does not deploy a website or publish a social post. Article and social drafts are maintained separately in digitalmeld.io.
+The reader JSON is a derivative, not a second independent source. Its numbers reconcile with the canonical JSON. The viewer performs no uploads and uses locally retained, MIT-licensed Three.js r186. See the [reader instructions](reader/README.md) for local HTTP preview. The study and companion blog are published at the short links above. Website publication is separate from this local reader and does not establish publication of a social post. Editorial source and social drafts are maintained separately in digitalmeld.io.
 
 ## What would change the interpretation
 
