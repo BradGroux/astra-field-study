@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "consent": {
+    "public_release_reviewed": true,
+    "rights_and_mit_license_confirmed": true
+  },
+  "setup": {
+    "model": "gpt-6-astra",
+    "attribution": "recorded_turn_context",
+    "client": "unknown",
+    "reasoning_effort": "unknown",
+    "observer_scope": "one_local_store",
+    "collection_format": "codex_native_response_records_v1"
+  },
+  "window": {
+    "requested_days": 2
+  },
+  "totals": {
+    "responses": 1,
+    "turns_with_responses": 1,
+    "tasks_with_responses": 1,
+    "native_user_message_items": 1,
+    "repository_contexts_with_responses": 1,
+    "tokens": {
+      "input_tokens": 100,
+      "cached_input_tokens": 80,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10,
+      "reasoning_output_tokens": 4,
+      "total_tokens": 110
+    }
+  },
+  "daily": [
+    {
+      "responses": 1,
+      "turns_with_responses": 1,
+      "tasks_with_responses": 1,
+      "native_user_message_items": 1,
+      "repository_contexts_with_responses": 1,
+      "tokens": {
+        "input_tokens": 100,
+        "cached_input_tokens": 80,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10,
+        "reasoning_output_tokens": 4,
+        "total_tokens": 110
+      },
+      "day_index": 1
+    }
+  ],
+  "diagnostics": {
+    "duplicate_response_records": 0,
+    "ignored_counter_snapshots": 1
+  },
+  "observations": [
+    {
+      "requirement": "run_local_checks",
+      "behavior": "followed_requirement",
+      "delegation": "none",
+      "instruction_access": "confirmed_in_recipient_context",
+      "result": "verified_success",
+      "evidence_basis": "local_action_and_outcome_review",
+      "alternatives_considered": [
+        "unknown"
+      ]
+    },
+    {
+      "requirement": "follow_documented_steps",
+      "behavior": "lost_requirement_after_handoff",
+      "delegation": "used",
+      "instruction_access": "absent_from_handoff",
+      "result": "deviation_corrected",
+      "evidence_basis": "local_action_and_outcome_review",
+      "alternatives_considered": [
+        "missing_context",
+        "ambiguous_requirement"
+      ]
+    }
+  ]
+}

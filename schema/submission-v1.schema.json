@@ -1,0 +1,412 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/BradGroux/astra-field-study/blob/main/schema/submission-v1.schema.json",
+  "title": "Astra Field Study sanitized aggregate submission v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "synthetic",
+    "consent",
+    "setup",
+    "window",
+    "totals",
+    "daily",
+    "diagnostics",
+    "observations"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "1.0"
+      ]
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "public_release_reviewed",
+        "rights_and_mit_license_confirmed"
+      ],
+      "properties": {
+        "public_release_reviewed": {
+          "type": "boolean"
+        },
+        "rights_and_mit_license_confirmed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "setup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model",
+        "attribution",
+        "client",
+        "reasoning_effort",
+        "observer_scope",
+        "collection_format"
+      ],
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": [
+            "gpt-6-astra",
+            "gpt-5.6-sol",
+            "gpt-5.6-terra",
+            "gpt-5.6-luna",
+            "gpt-5.5"
+          ]
+        },
+        "attribution": {
+          "type": "string",
+          "enum": [
+            "recorded_turn_context"
+          ]
+        },
+        "client": {
+          "type": "string",
+          "enum": [
+            "codex_desktop",
+            "codex_cli",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "reasoning_effort": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max",
+            "ultra",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "observer_scope": {
+          "type": "string",
+          "enum": [
+            "one_local_store"
+          ]
+        },
+        "collection_format": {
+          "type": "string",
+          "enum": [
+            "codex_native_response_records_v1"
+          ]
+        }
+      }
+    },
+    "window": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requested_days"
+      ],
+      "properties": {
+        "requested_days": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 366
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "responses",
+        "turns_with_responses",
+        "tasks_with_responses",
+        "native_user_message_items",
+        "repository_contexts_with_responses",
+        "tokens"
+      ],
+      "properties": {
+        "responses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "turns_with_responses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "tasks_with_responses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "native_user_message_items": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "repository_contexts_with_responses": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "tokens": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "input_tokens",
+            "cached_input_tokens",
+            "cache_write_input_tokens",
+            "output_tokens",
+            "reasoning_output_tokens",
+            "total_tokens"
+          ],
+          "properties": {
+            "input_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "cached_input_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "cache_write_input_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "output_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "reasoning_output_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            },
+            "total_tokens": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000000000000
+            }
+          }
+        }
+      }
+    },
+    "daily": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "day_index",
+          "responses",
+          "turns_with_responses",
+          "tasks_with_responses",
+          "native_user_message_items",
+          "repository_contexts_with_responses",
+          "tokens"
+        ],
+        "properties": {
+          "day_index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 366
+          },
+          "responses": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000000000
+          },
+          "turns_with_responses": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000000000
+          },
+          "tasks_with_responses": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000000000
+          },
+          "native_user_message_items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000000000
+          },
+          "repository_contexts_with_responses": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000000000000
+          },
+          "tokens": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "input_tokens",
+              "cached_input_tokens",
+              "cache_write_input_tokens",
+              "output_tokens",
+              "reasoning_output_tokens",
+              "total_tokens"
+            ],
+            "properties": {
+              "input_tokens": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "cached_input_tokens": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "cache_write_input_tokens": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "output_tokens": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "reasoning_output_tokens": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              },
+              "total_tokens": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 1000000000000000
+              }
+            }
+          }
+        }
+      },
+      "maxItems": 366
+    },
+    "diagnostics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "duplicate_response_records",
+        "ignored_counter_snapshots"
+      ],
+      "properties": {
+        "duplicate_response_records": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        },
+        "ignored_counter_snapshots": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000000000000
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "requirement",
+          "behavior",
+          "delegation",
+          "instruction_access",
+          "result",
+          "evidence_basis",
+          "alternatives_considered"
+        ],
+        "properties": {
+          "requirement": {
+            "type": "string",
+            "enum": [
+              "run_local_checks",
+              "respect_scope",
+              "follow_documented_steps",
+              "preserve_user_work",
+              "verify_outcome",
+              "follow_delegation_limit"
+            ]
+          },
+          "behavior": {
+            "type": "string",
+            "enum": [
+              "followed_requirement",
+              "omitted_required_step",
+              "changed_required_process",
+              "lost_requirement_after_handoff",
+              "requested_clarification",
+              "insufficient_evidence"
+            ]
+          },
+          "delegation": {
+            "type": "string",
+            "enum": [
+              "none",
+              "used",
+              "unknown"
+            ]
+          },
+          "instruction_access": {
+            "type": "string",
+            "enum": [
+              "confirmed_in_recipient_context",
+              "available_but_read_unconfirmed",
+              "absent_from_handoff",
+              "unknown"
+            ]
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "verified_success",
+              "deviation_corrected",
+              "unresolved_deviation",
+              "inconclusive"
+            ]
+          },
+          "evidence_basis": {
+            "type": "string",
+            "enum": [
+              "local_action_and_outcome_review",
+              "local_action_review_only",
+              "recollection_only"
+            ]
+          },
+          "alternatives_considered": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "ambiguous_requirement",
+                "missing_context",
+                "tool_limitation",
+                "client_or_harness_behavior",
+                "task_difficulty",
+                "human_error",
+                "unknown"
+              ]
+            },
+            "maxItems": 7,
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        }
+      },
+      "maxItems": 100
+    }
+  }
+}
