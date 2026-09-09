@@ -62,7 +62,9 @@ python3 tools/validate.py examples/synthetic-ratings-submission.json --ready --p
 
 ## Participate
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md). Submit a reviewed aggregate JSON through a pull request, or use [Discussions](https://github.com/BradGroux/astra-field-study/discussions) for questions and contradictory experiences. Successful adherence examples are as useful as deviations. If a useful observation does not fit the controlled categories, propose a schema change with a synthetic example; do not add private narrative to a submission.
+**To submit your findings:** follow the [step-by-step contribution guide](CONTRIBUTING.md), then open a pull request to `main` with one reviewed aggregate JSON file in [`submissions/`](submissions/README.md). There is no automatic upload or hosted submission form. Keep collection drafts local until full review and explicit consent.
+
+Use [Discussions](https://github.com/BradGroux/astra-field-study/discussions) for questions and contradictory experiences. Successful adherence examples are as useful as deviations. If a useful observation does not fit the controlled categories, propose a schema change with a synthetic example; do not add private narrative to a submission.
 
 The versioned [schema](schema/submission-v1.schema.json), [synthetic example](examples/synthetic-submission.json) and local checks make contributions inspectable. De-identified payloads are not anonymous participation: GitHub pull requests expose the contributor account and commit metadata, and activity patterns can identify people. These checks do not guarantee anonymity or remove the need to review disclosure and permissions. Never upload Codex session history or databases, even when asking for troubleshooting help.
 
