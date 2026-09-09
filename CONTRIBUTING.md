@@ -12,6 +12,8 @@ There is no hosted submission form or automatic upload. A local draft is not a s
 
 ## Prepare locally
 
+You can first [view and export results privately](docs/local-results.md), including JSON and CSV examples, without agreeing to publication.
+
 1. Run the collector as described in the README, keeping its draft outside this checkout. Use one store and one non-overlapping collection window per contribution. Aggregate exports cannot deduplicate records across machines or identify overlap; do not sum multiple exports as unique usage.
 2. Read the **entire** draft JSON, including relative day numbers, categories, counts and observations. The terminal preview is a summary, not the full review. Consider whether even an aggregate reveals private work patterns. Do not collect someone else's records without their permission.
 3. Optionally add `observations` using only the schema's controlled vocabulary. Summarize the requirement by category, then separately label observed behavior, instruction access, delegation, result, evidence basis and alternative explanations. Review the relevant local evidence yourself; do not copy it into the JSON or PR. Include a `followed_requirement` example when you have one. Use `inconclusive` or `recollection_only` when appropriate. See the synthetic example for structure, not real findings.

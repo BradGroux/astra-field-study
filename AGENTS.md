@@ -11,6 +11,7 @@ Astra Field Study is a community kit for collecting local coding-agent activity 
 - `docs/privacy.md`: public disclosure boundary for all data, docs, assets, and PR content.
 - `docs/methodology.md`: collector support, metrics, accounting, and coverage limits.
 - `docs/local-collection-prompt.md`: local-only collection task and stopping point.
+- `docs/local-results.md`: private terminal summaries and validated JSON/CSV export examples.
 - `docs/self-reported-ratings.md`: optional direct ratings and missingness rules.
 - `docs/observational-evidence-format.md`: separate real case-study format.
 - `docs/reader-design.md`: reader/figure generation and visual verification.
@@ -36,6 +37,12 @@ The supported route is a reviewed JSON contribution in `submissions/`, submitted
 4. Observations require reviewed local evidence and controlled categories, not inference from usage volume. Direct ratings require actual participant answers; never reconstruct them from conversations. Keep missing values and immediate/recalled timing separate.
 5. After the contributor's separate submission decision and completed consent, follow `CONTRIBUTING.md` to validate, canonicalize to a new neutral filename, review the exact diff, and prepare the PR. Do not overwrite submissions or count overlapping exports as independent findings.
 6. Stop at the authorized stage. Collection, validation, a saved draft, PR submission, maintainer acceptance, website deployment, and social publication are distinct outcomes. Never publish from a local-only request.
+
+## Private viewing and exports
+
+For a request to inspect or export personal results, follow `docs/local-results.md`. Validate participant JSON without `--ready`; public consent is not needed for private viewing. Keep consent unchanged and outputs outside the checkout in a new directory. Do not use the consent-required sanitizer merely to view data. Export only validated aggregates, never raw history, and do not upload results or open them in a hosted service without separate authorization.
+
+Explain window versus daily rows, overlapping distinct counts, token subsets, missing days, and optional rating timing/denominators. The existing interactive reader serves the frozen observational case and is not a participant JSON importer. Do not overwrite or relabel the case to display someone else's data. CSV is a viewing derivative; submissions remain validated JSON. Verify documentation export examples with synthetic inputs, including false-consent data and refusal to overwrite existing outputs.
 
 ## Privacy and maintainer review
 
