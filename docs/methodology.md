@@ -1,4 +1,4 @@
-# Methodology and v1 metric definitions
+# Methodology and metric definitions
 
 This kit supports the native Codex JSONL record shape observed in retained September 2026 histories: `session_meta`, `turn_context`, `token_usage_record`, and `event_msg` containing completed `UserMessage` items. This is an observed client format, not a stable vendor API contract. No server-resolved model telemetry or billing data is available here. Format changes may require a reviewed adapter and new synthetic tests.
 
@@ -14,7 +14,7 @@ Only per-response records for the selected model in the inclusive UTC date windo
 
 | Field | Meaning and limits |
 |---|---|
-| `schema_version` | Public contract version, currently `1.0`. Unexpected fields or versions are rejected. |
+| `schema_version` | Public contract version, `1.0` for activity/observations; `1.1` optionally adds direct ratings. Both are supported. Unexpected fields or versions are rejected. |
 | `synthetic` | Whether this is invented demonstration data. The initial example is synthetic; the collector sets false. |
 | `consent` | Two explicit contributor acknowledgments for reviewed public release and rights/MIT licensing; default false. |
 | `setup.model` | Model attributed from matching turn context, not confirmed by server response or billing. |
@@ -44,3 +44,10 @@ No runtime, issues closed, merged PRs, line changes, productivity or monetary me
 Select a requirement category and record behavior separately from its outcome. `instruction_access` distinguishes confirmed recipient context from available-but-unconfirmed material or an absent handoff. `delegation` distinguishes actual use from uncertainty. `evidence_basis` distinguishes a local action/outcome review from recollection. `alternatives_considered` must include at least one category; `unknown` honestly represents unresolved alternatives.
 
 A report labeled `lost_requirement_after_handoff` is the contributor's observation classification, not a demonstrated causal effect of delegation. Missing context, ambiguous instructions, client behavior, tool limitations and task difficulty can explain apparent failures. Include successful adherence. The two initial explanations remain entirely untested hypotheses based on a short personal observation window. Repeated reports may motivate a controlled study; they cannot establish internal motives or causal productivity effects on their own.
+
+
+## Three separate evidence layers
+
+Measured activity is distinct from contextual observation coding and optional direct participant ratings. Observations remain judgments with their own sampling and evidence limits; they do not establish CSAT. No complaint or correction does not mean satisfaction. Do not subtract corrective requests from 100 and call the remainder satisfied, infer ratings from text, or combine these dimensions into a weighted quality index.
+
+Schema `1.1` adds optional `self_reports` while preserving existing `1.0` submissions and collector output. See the [rating protocol, denominators and migration instructions](self-reported-ratings.md). The preview keeps actual satisfaction/ease distributions and timing cohorts separate, reports missingness and response coverage, and calculates conventional CSAT only from valid satisfaction answers. Repeated attempts within one person are clustered observations. Self-selection, recall and missing responses limit interpretation; aggregate payloads cannot establish unique participant identity across contributions. Do not treat task ratings as independent people or infer causal/general-population results.
