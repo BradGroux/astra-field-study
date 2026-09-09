@@ -110,3 +110,7 @@ For the optional ratings demonstration, use `examples/synthetic-ratings-submissi
 `tools/preview_reader.py` serves the published Study 0001 observational case. It does **not** load your participant submission, and `tools/build_evidence_reader.py` expects the separate observational evidence format. Do not replace the frozen case or relabel your participant JSON to make it fit. Use the JSON/CSV workflow above for your own results. A general participant explorer would be a separate feature.
 
 If you later decide to share findings, follow [CONTRIBUTING.md](../CONTRIBUTING.md) for full review, consent, validation, and a pull request. Exporting or viewing these files does not submit them.
+
+## Full HTML report
+
+For a complete visual report, see the [synthetic HTML example](../examples/reports/synthetic-report.html), its [scope and reproduction notes](../examples/reports/README.md), and the [private report prompt](../README.md#make-a-full-private-html-report). Save the HTML and open it locally. The example generator is deliberately fixture-specific; personal reports need fresh analysis of the validated aggregate, not substituted data beneath synthetic conclusions.
