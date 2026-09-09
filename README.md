@@ -11,11 +11,18 @@ These are hypotheses formed from roughly four or five days of personal experienc
 
 Usage counts describe activity. They do not establish SOP adherence, model authorship, productivity gains or either proposed cause. This is an observational project with voluntary, self-selected contributions, no randomized comparison and no account-wide completeness guarantee. The kit examples contain **synthetic data only**. A separate [reviewed real case study](evidence/brad-groux-six-days-v1/README.md) now publishes de-identified aggregate evidence; it is not a participant submission or a raw history export.
 
+## v1.0 resources
+
+- [Six days of GPT-6 Astra: usage and corrective steering](https://go.sstb.ai/astra-study) — the published study, figures, methods, and interactive explorer.
+- [From GPT-5.6 Sol to GPT-6 Astra: Why Am I Repeating Myself?](https://go.sstb.ai/astra-blog) — the written account of the workflow and corrective-steering findings.
+- [Astra Field Study repository](https://go.sstb.ai/astra-repo) — reviewed aggregates, reproducible tools, and the contribution kit.
+- [v1.0 change notes](CHANGELOG.md) — scope, compatibility, and interpretation limits.
+
 ## Published observational evidence
 
 [Brad Groux's six-day Astra case study](evidence/brad-groux-six-days-v1/README.md) includes real aggregate evidence, methods, public source context, six exportable figures, and a local interactive reader. The reported finding is that his established GPT-5.6 operating method did not transfer reliably to GPT-6 in his testing and usage. A matched comparative failure rate and both causal explanations remain unmeasured.
 
-The evidence contains 25,254 recorded responses and 538 reviewed substantive contributions, including 147 with corrective steering and 154 with explicit dissatisfaction, with 91 overlapping. These are descriptive counts, not a performance score. Every project and observer is generic; days are relative. Article and social drafts are maintained in [digitalmeld.io](https://github.com/DigitalMeld/digitalmeld.io/tree/main/docs/drafts/2026-09-09-astra-field-study), outside this evidence repository.
+The evidence contains 25,254 recorded responses and 538 reviewed substantive contributions, including 147 with corrective steering and 154 with explicit dissatisfaction, with 91 overlapping. These are descriptive counts, not a performance score. Every project and observer is generic; days are relative. The published resources above are the reader-facing entry points. Editorial source and social drafts are maintained in [digitalmeld.io](https://github.com/DigitalMeld/digitalmeld.io/tree/main/docs/drafts/2026-09-09-astra-field-study), outside this evidence repository.
 
 The separate [observational evidence format](docs/observational-evidence-format.md) preserves submission 1.0/1.1 compatibility and the separation of optional direct ratings. Validate the case locally:
 

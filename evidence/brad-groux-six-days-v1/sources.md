@@ -2,6 +2,14 @@
 
 These primary pages were reviewed during the study preparation. They establish public statements and reported experiences; they are not additional rows in the frozen audit. No linked source identifies a generic Project label. Linked content retains its own terms and is not relicensed by the dataset's MIT license.
 
+## Written resources for this study
+
+- [Six days of GPT-6 Astra: usage and corrective steering](https://go.sstb.ai/astra-study).
+- [From GPT-5.6 Sol to GPT-6 Astra: Why Am I Repeating Myself?](https://go.sstb.ai/astra-blog).
+- [Astra Field Study repository](https://go.sstb.ai/astra-repo).
+
+These publications explain and distribute the same reviewed evidence. They are not independent corroboration or additional observations. Earlier sources below retain their original public URLs.
+
 ## Established working methods
 
 | Author and displayed date | Source | Relevance |
