@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 import shutil
 import subprocess
-from build_articles import FIGURES, READER
+from figure_catalog import FIGURES, READER
 
 
 def main():

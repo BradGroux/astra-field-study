@@ -1,19 +1,8 @@
 {
-  "status": "reviewed_evidence_with_editorial_drafts",
+  "status": "reviewed_evidence",
   "canonical_evidence": "../evidence.json",
   "derived_reader_data": "explorer-data.json",
   "explorer": "explorer.html",
-  "article_status": "draft_for_review",
-  "articles": [
-    "blog.md",
-    "blog.html",
-    "study.md",
-    "study.html",
-    "twitter-article.md",
-    "linkedin.txt",
-    "social.html"
-  ],
-  "linkedin_characters": 2203,
   "figures": [
     "figures/responses-by-day.svg",
     "figures/responses-by-day-mobile.svg",
@@ -45,5 +34,6 @@
   "third_party_license": "vendor/LICENSE",
   "upstream_release": "vendor/release.json",
   "font_license": "vendor/Roboto-OFL.txt",
-  "font_notice": "vendor/Roboto-NOTICE.md"
+  "font_notice": "vendor/Roboto-NOTICE.md",
+  "editorial_home": "https://github.com/DigitalMeld/digitalmeld.io/tree/main/docs/drafts/2026-09-09-astra-field-study"
 }
