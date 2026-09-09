@@ -73,7 +73,7 @@ The 396 first-parent commit objects use committer time. They are not PR identiti
 
 ## Explanations remain untested
 
-Brad suspects that shortcuts toward finishing may displace constraints and that delegation may lose requirements. Both are entirely untested hypotheses from roughly four or five days of personal experience. Efficiency is beneficial when it preserves the intended outcome and constraints. Large token or repository totals do not validate a mechanism.
+The observer suspects that shortcuts toward finishing may displace constraints and that delegation may lose requirements. Both are entirely untested hypotheses from roughly four or five days of personal experience. Efficiency is beneficial when it preserves the intended outcome and constraints. Large token or repository totals do not validate a mechanism.
 
 External incident reports and multi-agent evaluation research provide context, not causal evidence for this case. Propagating a bad strategy differs from losing a requirement. The [source notes](sources.md) distinguish these claims and include contrary practitioner experiences.
 

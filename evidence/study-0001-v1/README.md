@@ -1,8 +1,8 @@
-# Brad Groux's six-day Astra case study — evidence version 1
+# Study 0001: six-day Astra case study — evidence version 1
 
-**The reported finding is a loss of workflow reliability when moving from GPT-5.6 to GPT-6 Astra.** Brad's established method uses defined scope, repository context, versioned SOPs, verification criteria, durable notes, and clear handoffs. The prior-generation guidance and his earlier methods articles provide the reference point; his testing and daily use provide the firsthand account. The aggregate records describe Astra activity and intervention. They do not establish a matched comparative failure rate or the underlying cause.
+**The reported finding is a loss of workflow reliability when moving from GPT-5.6 to GPT-6 Astra.** The observer's established method uses defined scope, repository context, versioned SOPs, verification criteria, durable notes, and clear handoffs. The prior-generation guidance and the earlier methods articles provide the reference point; the observer’s testing and daily use provide the firsthand account. The aggregate records describe Astra activity and intervention. They do not establish a matched comparative failure rate or the underlying cause.
 
-This directory contains **real, reviewed, de-identified aggregates**, released by Brad for public review under the repository's MIT license. It is separate from the synthetic kit examples and from participant submissions. All source projects retain generic labels, all observers are generic, and days are relative. No raw transcripts, source identities, identity hashes, private locators, mappings, or joins to named projects are included.
+This directory contains **real, reviewed, de-identified aggregates**, released with explicit consent for public review under the repository's MIT license. It is separate from the synthetic kit examples and from participant submissions. All source projects retain generic labels, all observers are generic, and days are relative. No raw transcripts, source identities, identity hashes, private locators, mappings, or joins to named projects are included.
 
 ## Published written resources
 
@@ -43,14 +43,14 @@ From the repository root, with Python 3.10 or later and no additional Python dep
 
 ```sh
 python3 -m unittest discover -s tests -v
-python3 tools/validate_evidence.py evidence/brad-groux-six-days-v1/evidence.json --ready
-python3 tools/build_evidence_reader.py evidence/brad-groux-six-days-v1/evidence.json --out /tmp/astra-reader-preview.json
+python3 tools/validate_evidence.py evidence/study-0001-v1/evidence.json --ready
+python3 tools/build_evidence_reader.py evidence/study-0001-v1/evidence.json --out /tmp/astra-reader-preview.json
 ```
 
 The last command creates a new file and refuses to overwrite one by default. To intentionally refresh the checked-in derived reader dataset:
 
 ```sh
-python3 tools/build_evidence_reader.py evidence/brad-groux-six-days-v1/evidence.json --out evidence/brad-groux-six-days-v1/reader/explorer-data.json --replace
+python3 tools/build_evidence_reader.py evidence/study-0001-v1/evidence.json --out evidence/study-0001-v1/reader/explorer-data.json --replace
 ```
 
 The reader JSON is a derivative, not a second independent source. Its numbers reconcile with the canonical JSON. The viewer performs no uploads and uses locally retained, MIT-licensed Three.js r186. See the [reader instructions](reader/README.md) for local HTTP preview. The study and companion blog are published at the short links above. Website publication is separate from this local reader and does not establish publication of a social post. Editorial source and social drafts are maintained separately in digitalmeld.io.

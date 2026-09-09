@@ -22,7 +22,7 @@ Astra Field Study is a community kit for collecting local coding-agent activity 
 - `schema/`: participant formats 1.0/1.1 and the separate observational evidence format.
 - `examples/` and `tests/`: synthetic data and fixtures only; never copy real audit evidence here.
 - `submissions/`: manually reviewed, consented participant aggregate JSON only.
-- `evidence/`: separately reviewed, versioned real observational packages. These are not normal participant submissions.
+- `evidence/`: separately reviewed, versioned real observational packages. Use neutral paths such as `study-0001-v1` and headings such as “Study 0001,” never contributor names, account names, employers, or identity hashes. Study IDs identify packages, not people. These are not normal participant submissions.
 - `CHANGELOG.md`: package changes. A package version does not silently change data schema or frozen evidence versions.
 
 The published study is https://go.sstb.ai/astra-study, the companion blog is https://go.sstb.ai/astra-blog, and the repository short link is https://go.sstb.ai/astra-repo. Use these short links for these resources and verify destinations before changing publication claims. Editorial source and social drafts belong in `DigitalMeld/digitalmeld.io`, under `docs/drafts/2026-09-09-astra-field-study`, not here. Do not describe an unpublished social draft as published or link to a nonexistent short URL.
@@ -50,6 +50,8 @@ Keep private history out of this public repository. Do not include raw logs, pro
 
 Review each submission's exact diff, format version, numeric accounting, synthetic flag, both consent fields, rights, coverage, and overlap limitations. Real data must retain `synthetic: false`. Passing validation does not prove safe disclosure, anonymity, or truth. GitHub identities and commit metadata remain public. If sensitive content appears, stop further sharing; do not quote it into an issue or review comment. Escalate privately to the maintainer rather than promising that later removal erases public copies.
 
+Neutral naming does not guarantee anonymity or erase existing Git/publication history. Preserve proper attribution in public citations and required license notices; do not expose an identity mapping. Path/label-only renames must preserve frozen data bytes and update references, as described in `docs/observational-evidence-format.md`.
+
 Frozen observational evidence corrections require a new evidence version and an aggregate-level change note. Do not silently revise measurements or private provenance. Schema changes require an explicit version decision, compatibility review, synthetic fixtures, and local tests.
 
 ## Local verification and publication
@@ -60,7 +62,7 @@ Use Python 3.10+ and the standard library. Run applicable checks from the reposi
 python3 -m unittest discover -s tests -v
 python3 tools/validate.py examples/synthetic-submission.json --ready --preview
 python3 tools/validate.py examples/synthetic-ratings-submission.json --ready --preview
-python3 tools/validate_evidence.py evidence/brad-groux-six-days-v1/evidence.json --ready
+python3 tools/validate_evidence.py evidence/study-0001-v1/evidence.json --ready
 git diff --check
 ```
 
