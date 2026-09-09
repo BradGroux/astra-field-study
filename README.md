@@ -54,6 +54,65 @@ Only the evidenced native `token_usage_record` format with matching `turn_contex
 
 Use the [local viewing and export guide](docs/local-results.md) to read a terminal summary, save complete JSON, and create CSV files for your own spreadsheet. It includes worked synthetic examples and optional rating summaries. Private viewing does not require public-release consent or a submission. The published study explorer displays the separate case study, not participant files.
 
+## Example prompts
+
+Paste these into a local coding assistant opened in this checkout. Replace `START_DATE`, `END_DATE`, `DRAFT_PATH`, and `OUTPUT_DIRECTORY` before using your own data. Dates are inclusive UTC days; use new output paths outside this checkout and your Codex store.
+
+### Try the synthetic example first
+
+```text
+Read AGENTS.md and docs/local-results.md. Run the terminal preview for
+examples/synthetic-submission.json, then execute the documented JSON/CSV
+export recipe with that synthetic input and a new temporary directory.
+Show me the summary and usage table, identify the outputs, and explain
+window versus daily counts and token subsets. Use only the synthetic
+example; do not read my session history, install anything, or upload files.
+```
+
+### Collect my own records privately
+
+```text
+Read AGENTS.md, docs/local-collection-prompt.md, docs/privacy.md, and
+CONTRIBUTING.md. Collect my own retained Codex records from START_DATE
+through END_DATE for gpt-6-astra into a new file at DRAFT_PATH. Keep client
+and reasoning effort unknown unless I specify them. Use the supported
+collector only, leave both consent fields false, and validate and show the
+local preview. Do not read SQLite, change source history, expose raw text
+or identifiers, infer observations or ratings, or publish anything.
+If the retained format is unsupported, report that limitation and stop.
+```
+
+### Export and view my existing aggregate
+
+```text
+Read AGENTS.md and docs/local-results.md. Validate my aggregate at
+DRAFT_PATH without --ready, then use the documented recipe to create
+aggregate.json, summary.json, usage.csv, and observations.csv in the new
+OUTPUT_DIRECTORY. Keep consent unchanged. Show the summary and a readable
+usage table. If actual ratings are present, show their summaries separately
+by timing group and preserve missing values. Do not infer ratings or use
+the fixed case-study explorer as an importer. Keep everything local; do
+not submit, upload, overwrite earlier exports, or install dependencies.
+```
+
+## Example outputs
+
+These images render **actual output from the checked-in synthetic example**. They are not participant findings or screenshots of a hosted dashboard. Your values depend on your retained records. All of the data shown remains available as selectable JSON or CSV through the [local export guide](docs/local-results.md).
+
+### Terminal preview
+
+![Full synthetic validator preview showing setup, counts, tokens, two observations, and example-only consent values](docs/images/terminal-preview.png)
+
+*The full `--preview` output from `examples/synthetic-submission.json`: one response, 100 input tokens, 80 cached input tokens, and 10 output tokens. The true consent values belong to this invented fixture; private collection leaves your consent false.*
+
+### CSV for your own spreadsheet
+
+![Synthetic usage CSV rendered as a table with every field and separate window and day-one values](docs/images/csv-output.png)
+
+*The documented recipe's actual `usage.csv`, transposed for readability. Window and day rows are separate scopes. Cached input and reasoning output are subsets, not extra tokens to add. The guide also exports the complete aggregate, summary, and observation categories.*
+
+[Image sources and regeneration](docs/images/README.md).
+
 ## Optional direct ratings
 
 Keep measured activity, coded observations, and participant ratings separate. The optional [task satisfaction and ease protocol](docs/self-reported-ratings.md) adds actual 1–5 satisfaction and 1–7 SEQ answers, with explicit missingness and invitation coverage. Immediate responses and later recollection are reported separately. The collector never infers ratings, and there is no blended quality index.
