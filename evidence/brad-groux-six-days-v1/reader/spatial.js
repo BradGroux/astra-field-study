@@ -1,21 +1,114 @@
 import * as THREE from './vendor/three.module.js';
-export async function createSpatial(container,data,onSelect){
- const renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setClearColor(0xe5e9e2);container.appendChild(renderer.domElement);
- const scene=new THREE.Scene(),camera=new THREE.OrthographicCamera(),group=new THREE.Group();scene.add(group);scene.add(new THREE.AmbientLight(0xffffff,2));const sun=new THREE.DirectionalLight(0xffffff,3);sun.position.set(8,18,10);scene.add(sun);
- const projects=[...new Set(data.rows.map(x=>x.project))],maxima=Object.fromEntries(['responses','total_tokens','corrective_units'].map(k=>[k,Math.max(1,...data.rows.map(x=>x[k]))]));
- let az=25,el=46,objects=[],selected=null;
- function draw(){const w=container.clientWidth,h=container.clientHeight;renderer.setSize(w,h,false);const aspect=w/h,span=Math.max(16,18/aspect);camera.left=-span*aspect/2;camera.right=span*aspect/2;camera.top=span/2;camera.bottom=-span/2;camera.near=.1;camera.far=200;const a=az*Math.PI/180,e=el*Math.PI/180;camera.position.set(32*Math.sin(a)*Math.cos(e),32*Math.sin(e),32*Math.cos(a)*Math.cos(e));camera.lookAt(0,1,0);camera.updateProjectionMatrix();renderer.render(scene,camera)}
- function label(text,x,y,z,size=1.3){const c=document.createElement('canvas');c.width=512;c.height=128;const cx=c.getContext('2d');cx.font='80px system-ui';cx.textAlign='center';cx.fillStyle='#173d46';cx.fillText(text,256,92);const map=new THREE.CanvasTexture(c),sprite=new THREE.Sprite(new THREE.SpriteMaterial({map,depthTest:false}));sprite.scale.set(size,size*128/512,1);sprite.position.set(x,y,z);group.add(sprite)}
- function update(rows,key,sel){selected=sel;while(group.children.length){const o=group.children[0];group.remove(o);o.geometry?.dispose();if(o.material){o.material.map?.dispose();o.material.dispose()}}objects=[];
- const max=maxima[key],height=5.8,active=new Set(rows.map(x=>x.day+'|'+x.project));
- const grid=new THREE.GridHelper(13,18,0xafbcb4,0xc4cec5);grid.scale.x=.68;group.add(grid);
- for(let d=1;d<=6;d++)label('Day '+d,(d-3.5)*1.35,.05,7.05,1.3);
- projects.forEach((p,i)=>label(p,-5.55,.1,(i-8.5)*.72,2.1));
- for(let i=0;i<=4;i++){const y=i*height/4;label(Math.round(max*i/4).toLocaleString('en-US'),4.75,y,6.8,1.8);const line=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(4.35,y,6.4),new THREE.Vector3(4.5,y,6.4)]),new THREE.LineBasicMaterial({color:0x597776}));group.add(line)}
- const axis=new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(4.35,0,6.4),new THREE.Vector3(4.35,height,6.4)]),new THREE.LineBasicMaterial({color:0x597776}));group.add(axis);
- for(const x of data.rows){if(!active.has(x.day+'|'+x.project)||!x[key])continue;const h=x[key]/max*height;const chosen=sel&&x.day===sel.day&&x.project===sel.project;const bar=new THREE.Mesh(new THREE.BoxGeometry(.84,h,.49),new THREE.MeshStandardMaterial({color:chosen?0xb56538:key==='corrective_units'?0x9c582f:0x27858a,roughness:1,metalness:0}));bar.position.set((x.day-3.5)*1.35,h/2,(projects.indexOf(x.project)-8.5)*.72);bar.userData.row=x;group.add(bar);objects.push(bar)}draw();
- }
- const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();renderer.domElement.addEventListener('click',e=>{const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);const hit=ray.intersectObjects(objects)[0];if(hit)onSelect(hit.object.userData.row)});
- renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();container.nextElementSibling.textContent='WebGL context lost. Use the complete flat matrix below.'});new ResizeObserver(draw).observe(container);
- return {update,camera(a,e){az=a;el=e;draw()}};
+
+// A focused six-day profile prevents the occlusion of the former 18-project cube.
+// The scale remains fixed to the full dataset, including when a filter is applied.
+export async function createSpatial(container, data, onSelect) {
+  await document.fonts.ready;
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.setClearColor(0x121f30);
+  container.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  const camera = new THREE.OrthographicCamera();
+  const group = new THREE.Group();
+  scene.add(group, new THREE.AmbientLight(0xffffff, 2));
+  const light = new THREE.DirectionalLight(0xffffff, 3);
+  light.position.set(-5, 12, 9);
+  scene.add(light);
+  const maxima = Object.fromEntries(['responses', 'total_tokens', 'corrective_units']
+    .map(key => [key, Math.max(1, ...data.rows.map(row => row[key]))]));
+  let azimuth = 12, elevation = 18, objects = [];
+
+  function draw() {
+    const width = container.clientWidth, height = container.clientHeight;
+    if (!width || !height) return;
+    renderer.setSize(width, height);
+    const a = THREE.MathUtils.degToRad(azimuth), e = THREE.MathUtils.degToRad(elevation);
+    const target = new THREE.Vector3(0, 2.1, 0);
+    camera.position.set(22 * Math.sin(a) * Math.cos(e), 2.1 + 22 * Math.sin(e), 22 * Math.cos(a) * Math.cos(e));
+    camera.lookAt(target);
+    camera.updateMatrixWorld();
+    // Fit every supported camera angle to a fixed box, including labels and axis.
+    // This preserves the apparent scale between project selections.
+    let extentX = 0, extentY = 0;
+    for (const x of [-6.4, 6.4]) for (const y of [-.8, 5.5]) for (const z of [-1.8, 1.8]) {
+      const v = new THREE.Vector3(x, y, z).applyMatrix4(camera.matrixWorldInverse);
+      extentX = Math.max(extentX, Math.abs(v.x));
+      extentY = Math.max(extentY, Math.abs(v.y));
+    }
+    const aspect = width / height;
+    const halfHeight = Math.max(extentY, extentX / aspect) * 1.04;
+    camera.left = -halfHeight * aspect; camera.right = halfHeight * aspect;
+    camera.top = halfHeight; camera.bottom = -halfHeight;
+    camera.near = .1; camera.far = 100;
+    camera.updateProjectionMatrix();
+    renderer.render(scene, camera);
+  }
+
+  function line(points, color = 0x3b516c) {
+    group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(points), new THREE.LineBasicMaterial({ color })));
+  }
+
+  function label(text, x, y, z, color = '#eef3fa', scale = 1) {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    context.font = '64px Roboto';
+    const measured = Math.ceil(context.measureText(text).width);
+    canvas.width = measured + 24; canvas.height = 100;
+    context.font = '64px Roboto'; context.textAlign = 'center'; context.fillStyle = color;
+    context.fillText(text, canvas.width / 2, 71);
+    const texture = new THREE.CanvasTexture(canvas);
+    const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: texture, depthTest: false }));
+    sprite.scale.set(canvas.width / 100 * .47 * scale, .47 * scale, 1);
+    sprite.position.set(x, y, z);
+    group.add(sprite);
+  }
+
+  function update(rows, key, selected, project) {
+    for (const object of [...group.children]) {
+      group.remove(object); object.geometry?.dispose();
+      object.material?.map?.dispose(); object.material?.dispose();
+    }
+    objects = [];
+    const maximum = maxima[key], heightScale = 4.1;
+    const floor = new THREE.Mesh(new THREE.PlaneGeometry(10.8, 1.7), new THREE.MeshBasicMaterial({ color: 0x1b2d43, side: THREE.DoubleSide }));
+    floor.rotation.x = -Math.PI / 2; floor.position.y = -.02;
+    group.add(floor);
+    for (let tick = 0; tick <= 2; tick++) {
+      const y = tick * heightScale / 2;
+      line([new THREE.Vector3(-4.9, y, -.75), new THREE.Vector3(4.9, y, -.75)]);
+    }
+    for (let day = 1; day <= data.study_days; day++) {
+      const row = rows.find(item => item.day === day && item.project === project);
+      const x = (day - 3.5) * 1.65;
+      const active = Boolean(row);
+      label('Day ' + day, x, -.45, .4, active ? '#eef3fa' : '#788da8', 1.2);
+      if (!active) continue;
+      const value = row[key], height = value / maximum * heightScale;
+      if (value) {
+        const chosen = selected?.day === day && selected?.project === project;
+        const bar = new THREE.Mesh(new THREE.BoxGeometry(.94, height, .66), new THREE.MeshStandardMaterial({ color: chosen ? 0xefb45c : 0x699fe8, roughness: .85, metalness: 0 }));
+        bar.position.set(x, height / 2, 0); bar.userData.row = row;
+        group.add(bar); objects.push(bar);
+      }
+      const display = value >= 1e6 ? (value / 1e6).toFixed(1) + 'M' : value.toLocaleString('en-US');
+      label(display, x, height + .3, .2, '#eef3fa', 1.4);
+    }
+    draw();
+  }
+
+  const ray = new THREE.Raycaster(), pointer = new THREE.Vector2();
+  renderer.domElement.addEventListener('click', event => {
+    const bounds = renderer.domElement.getBoundingClientRect();
+    pointer.set((event.clientX - bounds.left) / bounds.width * 2 - 1, -(event.clientY - bounds.top) / bounds.height * 2 + 1);
+    ray.setFromCamera(pointer, camera);
+    const hit = ray.intersectObjects(objects)[0];
+    if (hit) onSelect(hit.object.userData.row);
+  });
+  renderer.domElement.addEventListener('webglcontextlost', event => {
+    event.preventDefault();
+    document.getElementById('webglstatus').textContent = 'WebGL context lost. Exact values remain available in the project buttons and matrix.';
+  });
+  new ResizeObserver(draw).observe(container);
+  return { update, camera(a, e) { azimuth = a; elevation = e; draw(); } };
 }
