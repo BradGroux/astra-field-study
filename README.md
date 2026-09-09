@@ -50,6 +50,10 @@ The collector reads only local JSONL under `~/.codex/sessions` and `~/.codex/arc
 
 Only the evidenced native `token_usage_record` format with matching `turn_context` is supported. Older clients that only retain cumulative `token_count` snapshots cannot be measured by this collector. Unsupported, incomplete or conflicting evidence is rejected rather than estimated. See [metric definitions and format limits](docs/methodology.md).
 
+## View and export your own results
+
+Use the [local viewing and export guide](docs/local-results.md) to read a terminal summary, save complete JSON, and create CSV files for your own spreadsheet. It includes worked synthetic examples and optional rating summaries. Private viewing does not require public-release consent or a submission. The published study explorer displays the separate case study, not participant files.
+
 ## Optional direct ratings
 
 Keep measured activity, coded observations, and participant ratings separate. The optional [task satisfaction and ease protocol](docs/self-reported-ratings.md) adds actual 1–5 satisfaction and 1–7 SEQ answers, with explicit missingness and invitation coverage. Immediate responses and later recollection are reported separately. The collector never infers ratings, and there is no blended quality index.
