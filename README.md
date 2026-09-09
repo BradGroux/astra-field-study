@@ -54,6 +54,8 @@ Only the evidenced native `token_usage_record` format with matching `turn_contex
 
 Use the [local viewing and export guide](docs/local-results.md) to read a terminal summary, save complete JSON, and create CSV files for your own spreadsheet. It includes worked synthetic examples and optional rating summaries. Private viewing does not require public-release consent or a submission. The published study explorer displays the separate case study, not participant files.
 
+For a complete visual example, [download the self-contained HTML report](examples/reports/synthetic-report.html) and open the saved file locally. It includes charts, observations, satisfaction and ease ratings, coverage, interpretation, and next steps using invented data. [Report details and reproduction](examples/reports/README.md).
+
 ## Example prompts
 
 Paste these into a local coding assistant opened in this checkout. Replace `START_DATE`, `END_DATE`, `DRAFT_PATH`, and `OUTPUT_DIRECTORY` before using your own data. Dates are inclusive UTC days; use new output paths outside this checkout and your Codex store.
@@ -93,6 +95,27 @@ usage table. If actual ratings are present, show their summaries separately
 by timing group and preserve missing values. Do not infer ratings or use
 the fixed case-study explorer as an importer. Keep everything local; do
 not submit, upload, overwrite earlier exports, or install dependencies.
+```
+
+### Make a full private HTML report
+
+```text
+Read AGENTS.md, docs/local-results.md, and examples/reports/README.md.
+Use examples/reports/synthetic-report.html as a structure reference, then
+validate my aggregate at DRAFT_PATH without --ready. Create a complete,
+self-contained HTML report in a new OUTPUT_DIRECTORY outside this checkout
+and my source store. Derive every number and statement from my validated
+aggregate; do not reuse the synthetic example's findings or consent values.
+Include an executive summary, appropriate charts, reviewed observations,
+actual ratings when present, missingness and timing-specific denominators,
+interpretation, next steps, and limitations. Preserve unknowns and missing
+days; distinguish window/daily scopes and token subsets. Do not infer
+ratings, failure rates, productivity, cost, or causal model comparisons.
+If observations or ratings are absent, say so rather than inventing them.
+Keep consent unchanged and all processing local. Do not upload, publish,
+read raw history, overwrite existing output, or install dependencies.
+Check the finished report and show me the HTML file, with any verification
+limits stated plainly.
 ```
 
 ## Example outputs

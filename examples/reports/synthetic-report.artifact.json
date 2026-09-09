@@ -1,0 +1,678 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "A personal field-study report \u2014 synthetic example",
+    "description": "A complete private-report example using invented, validated participant aggregates.",
+    "generatedAt": "2026-09-09T00:00:00Z",
+    "cards": [],
+    "charts": [
+      {
+        "id": "tokens",
+        "title": "Token composition",
+        "type": "bar",
+        "dataset": "tokens",
+        "sourceId": "tokens-source",
+        "encodings": {
+          "x": {
+            "field": "component",
+            "type": "ordinal",
+            "label": "Exclusive component"
+          },
+          "y": {
+            "field": "tokens",
+            "type": "quantitative",
+            "label": "Tokens",
+            "format": "number"
+          }
+        },
+        "yAxisTitle": "Tokens",
+        "valueFormat": "number",
+        "layout": "full"
+      },
+      {
+        "id": "satisfaction",
+        "title": "Satisfaction answers by score",
+        "type": "bar",
+        "dataset": "satisfaction",
+        "sourceId": "satisfaction-source",
+        "encodings": {
+          "x": {
+            "field": "score",
+            "type": "ordinal",
+            "label": "Score \u00b7 1\u20135"
+          },
+          "y": {
+            "field": "answers",
+            "type": "quantitative",
+            "label": "Answers",
+            "format": "number"
+          },
+          "color": {
+            "field": "timing",
+            "type": "nominal",
+            "label": "Rating timing"
+          }
+        },
+        "yAxisTitle": "Answers",
+        "valueFormat": "number",
+        "layout": "full"
+      },
+      {
+        "id": "ease",
+        "title": "Task-ease answers by score",
+        "type": "bar",
+        "dataset": "ease",
+        "sourceId": "ease-source",
+        "encodings": {
+          "x": {
+            "field": "score",
+            "type": "ordinal",
+            "label": "Score \u00b7 1\u20137"
+          },
+          "y": {
+            "field": "answers",
+            "type": "quantitative",
+            "label": "Answers",
+            "format": "number"
+          },
+          "color": {
+            "field": "timing",
+            "type": "nominal",
+            "label": "Rating timing"
+          }
+        },
+        "yAxisTitle": "Answers",
+        "valueFormat": "number",
+        "layout": "full"
+      }
+    ],
+    "tables": [
+      {
+        "id": "activity",
+        "title": "Recorded activity across the requested window",
+        "dataset": "activity",
+        "sourceId": "activity-source",
+        "columns": [
+          {
+            "field": "measure",
+            "label": "Measure",
+            "type": "text"
+          },
+          {
+            "field": "count",
+            "label": "Count",
+            "format": "number"
+          }
+        ]
+      },
+      {
+        "id": "observations",
+        "title": "Two reviewed observation examples",
+        "dataset": "observations",
+        "sourceId": "observations-source",
+        "columns": [
+          {
+            "field": "requirement",
+            "label": "Requirement",
+            "type": "text"
+          },
+          {
+            "field": "behavior",
+            "label": "Behavior",
+            "type": "text"
+          },
+          {
+            "field": "instruction_access",
+            "label": "Instruction access",
+            "type": "text"
+          },
+          {
+            "field": "result",
+            "label": "Outcome",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "id": "coverage",
+        "title": "Rating coverage by timing and question",
+        "dataset": "coverage",
+        "sourceId": "coverage-source",
+        "columns": [
+          {
+            "field": "timing",
+            "label": "Timing",
+            "type": "text"
+          },
+          {
+            "field": "measure",
+            "label": "Question",
+            "type": "text"
+          },
+          {
+            "field": "eligible",
+            "label": "Eligible",
+            "format": "number"
+          },
+          {
+            "field": "invited",
+            "label": "Invited",
+            "format": "number"
+          },
+          {
+            "field": "recorded",
+            "label": "Recorded",
+            "format": "number"
+          },
+          {
+            "field": "answered",
+            "label": "Answered",
+            "format": "number"
+          },
+          {
+            "field": "unanswered",
+            "label": "Recorded blank",
+            "format": "number"
+          },
+          {
+            "field": "coverage",
+            "label": "Answered / invited",
+            "format": "percent"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "fixture",
+        "label": "Invented participant example, schema 1.1",
+        "path": "examples/synthetic-ratings-submission.json"
+      },
+      {
+        "id": "activity-source",
+        "label": "Synthetic example: activity",
+        "path": "examples/synthetic-ratings-submission.json",
+        "query": {
+          "engine": "SQLite in memory",
+          "sql": "SELECT * FROM activity",
+          "tables_used": [
+            "activity"
+          ],
+          "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+        }
+      },
+      {
+        "id": "tokens-source",
+        "label": "Synthetic example: tokens",
+        "path": "examples/synthetic-ratings-submission.json",
+        "query": {
+          "engine": "SQLite in memory",
+          "sql": "SELECT * FROM tokens",
+          "tables_used": [
+            "tokens"
+          ],
+          "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+        }
+      },
+      {
+        "id": "observations-source",
+        "label": "Synthetic example: observations",
+        "path": "examples/synthetic-ratings-submission.json",
+        "query": {
+          "engine": "SQLite in memory",
+          "sql": "SELECT * FROM observations",
+          "tables_used": [
+            "observations"
+          ],
+          "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+        }
+      },
+      {
+        "id": "satisfaction-source",
+        "label": "Synthetic example: satisfaction",
+        "path": "examples/synthetic-ratings-submission.json",
+        "query": {
+          "engine": "SQLite in memory",
+          "sql": "SELECT * FROM satisfaction",
+          "tables_used": [
+            "satisfaction"
+          ],
+          "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+        }
+      },
+      {
+        "id": "ease-source",
+        "label": "Synthetic example: ease",
+        "path": "examples/synthetic-ratings-submission.json",
+        "query": {
+          "engine": "SQLite in memory",
+          "sql": "SELECT * FROM ease",
+          "tables_used": [
+            "ease"
+          ],
+          "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+        }
+      },
+      {
+        "id": "coverage-source",
+        "label": "Synthetic example: coverage",
+        "path": "examples/synthetic-ratings-submission.json",
+        "query": {
+          "engine": "SQLite in memory",
+          "sql": "SELECT * FROM coverage",
+          "tables_used": [
+            "coverage"
+          ],
+          "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "id": "title",
+        "type": "markdown",
+        "body": "# A personal field-study report \u2014 synthetic example"
+      },
+      {
+        "id": "summary",
+        "type": "markdown",
+        "body": "## Executive Summary\n\n**This is an invented worked example, not a participant finding.** It demonstrates what a complete private report can explain from validated aggregates: activity, reviewed observations, and separately collected ratings.\n\n- **Activity is measurable; effectiveness is not established.** The fixture records one response and 110 tokens across a two-day requested window, with only day 1 represented.\n- **The observation examples point in different directions.** One requirement was followed successfully; another was lost after a handoff and the deviation was corrected. These examples do not supply a failure-rate denominator.\n- **The ratings are sparse and unevenly covered.** Immediate satisfaction has three answers, two of them favorable. Task ease has two immediate answers. A separate recalled answer stays separate.\n\nUse this report to identify what needs closer review, not to rank models or infer productivity.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "activity-context",
+        "type": "markdown",
+        "body": "## One recorded response cannot establish a trend\n\nThe activity layer contains **one response, one response-bearing turn, one task, and one repository context**. These are different units describing the same recorded activity, not four independent results. Window-level distinct counts must not be summed with daily counts.\n\nOnly day 1 has a row in a requested two-day window. Day 2 is unrepresented; it is not plotted as zero. No trend or day-over-day comparison is supported. Confirm retained-record coverage before interpreting low volume.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "activity-block",
+        "type": "table",
+        "tableId": "activity",
+        "layout": "full"
+      },
+      {
+        "id": "token-context",
+        "type": "markdown",
+        "body": "## Cached input accounts for most of the recorded tokens\n\nOf **100 input tokens, 80 are cached**: 80% of the input denominator. Another 20 input tokens and 10 output tokens complete the 110-token total. The bars use mutually exclusive components so they can be added safely.\n\nFour reasoning tokens are already included in the 10 output tokens. Cache-write input is recorded as zero. Token counts describe recorded processing volume; they do not establish cost, work quality, or time saved.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "tokens-block",
+        "type": "chart",
+        "chartId": "tokens",
+        "layout": "full"
+      },
+      {
+        "id": "observation-context",
+        "type": "markdown",
+        "body": "## The observations show both adherence and a corrected deviation\n\nThe two reviewed examples record a successful local-check requirement and a documented-step requirement lost after delegation. In the second example, instructions were absent from the handoff and the deviation was corrected. That pattern makes context transfer worth inspecting; it does not establish an internal motive or a causal model defect.\n\nThese coded observations are a separate evidence layer. They are not linked one-to-one to the single usage response, and selected observations are not a sample of every opportunity to comply. A ratio such as \u201cone of two observations\u201d would describe this selection only, not an overall failure rate.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "observations-block",
+        "type": "table",
+        "tableId": "observations",
+        "layout": "full"
+      },
+      {
+        "id": "satisfaction-context",
+        "type": "markdown",
+        "body": "## Immediate satisfaction is mixed, with only three answers\n\nOn the **1\u20135 satisfaction scale**, the immediate answers are 2, 4, and 5. Two of three answered ratings are favorable (4\u20135), or **66.7%**. Only three of five invited attempts answered satisfaction, so invitation coverage is **60%**; three of eight eligible attempts answered, or **37.5%**.\n\nThe chart shows answer counts at every score. The separate recalled rating is 1. It is displayed as a different series and is not pooled into the immediate result. These few invented answers illustrate reporting, not a stable satisfaction estimate.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "satisfaction-block",
+        "type": "chart",
+        "chartId": "satisfaction",
+        "layout": "full"
+      },
+      {
+        "id": "ease-context",
+        "type": "markdown",
+        "body": "## Task ease is split between a difficult and an easy attempt\n\nOn the **1\u20137 task-ease scale**, where higher is easier, the two immediate answers are 2 and 6. Showing their distribution preserves the contrast that an average would conceal. The separate recalled answer is 3.\n\nOnly two of five invited attempts answered task ease (**40%**); two of eight eligible attempts answered (**25%**). Do not combine ease with satisfaction into a quality score, or treat a blank response as a low score.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "ease-block",
+        "type": "chart",
+        "chartId": "ease",
+        "layout": "full"
+      },
+      {
+        "id": "coverage-context",
+        "type": "markdown",
+        "body": "## Missing answers change how much the ratings can tell us\n\nFour immediate task-attempt entries were recorded from five invitations and eight eligible attempts. Of those entries, one lacks satisfaction and two lack ease; one entry has neither answer. The fifth invitation has no recorded entry. \u201cRecorded blank\u201d therefore differs from all invited attempts without an answer.\n\nThe recalled group contains one entry, with unknown eligible and invited counts. Missing values in the table mean **unknown**, not zero. Rating attempts need not match response-bearing tasks in the usage layer; the fixture does not provide a linkage or establish that the cohorts coincide.",
+        "sourceId": "fixture"
+      },
+      {
+        "id": "coverage-block",
+        "type": "table",
+        "tableId": "coverage",
+        "layout": "full"
+      },
+      {
+        "id": "next-steps",
+        "type": "markdown",
+        "body": "## Next steps for a real personal report\n\n1. **Check the collection window and retained format.** Establish which days and clients are represented before comparing activity.\n2. **Review both successful and unsuccessful requirements.** Keep observations grounded in local evidence and record plausible alternatives, especially handoff context and instruction clarity.\n3. **Collect ratings consistently.** Invite answers immediately after eligible attempts, track skipped invitations and missing answers, and preserve recalled responses as a separate group.\n4. **Keep the report private until separately reviewed for release.** Private validation and HTML viewing need no public consent. Publication is a separate decision.\n\nA larger, consistently observed set could support better descriptive comparisons. A causal claim would still need a suitable study design."
+      },
+      {
+        "id": "questions",
+        "type": "markdown",
+        "body": "## Questions this report cannot answer\n\nDid the absent daily row reflect incomplete retention or no matching activity? Were the reviewed observations representative? Did unanswered rating invitations differ from answered ones? Would another model behave differently on the same tasks under the same conditions?\n\nThe aggregate alone cannot resolve these questions. No model comparison, cost estimate, causal conclusion, or productivity score is reported."
+      },
+      {
+        "id": "limits",
+        "type": "markdown",
+        "body": "## Scope and limitations\n\nAll values are synthetic and come from one checked-in example. The model label is GPT-6 Astra; client and reasoning effort are unknown. The observer scope is one local store. One counter snapshot was ignored and no duplicate response records were reported.\n\nThe original fixture contains example-only consent values. They are not a template for anyone\u2019s release decision. This HTML contains aggregate example data only and requires no upload or hosted service. In a real report, describe only supplied evidence and actual participant answers.",
+        "sourceId": "fixture"
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-09-09T00:00:00Z",
+    "status": "fixture",
+    "datasets": {
+      "activity": [
+        {
+          "measure": "Responses",
+          "count": 1
+        },
+        {
+          "measure": "Turns with responses",
+          "count": 1
+        },
+        {
+          "measure": "Tasks with responses",
+          "count": 1
+        },
+        {
+          "measure": "Repository contexts",
+          "count": 1
+        }
+      ],
+      "tokens": [
+        {
+          "component": "Cached input",
+          "tokens": 80
+        },
+        {
+          "component": "Other input",
+          "tokens": 20
+        },
+        {
+          "component": "Output",
+          "tokens": 10
+        }
+      ],
+      "observations": [
+        {
+          "requirement": "run local checks",
+          "behavior": "followed requirement",
+          "result": "verified success",
+          "instruction_access": "confirmed in recipient context"
+        },
+        {
+          "requirement": "follow documented steps",
+          "behavior": "lost requirement after handoff",
+          "result": "deviation corrected",
+          "instruction_access": "absent from handoff"
+        }
+      ],
+      "satisfaction": [
+        {
+          "score": "1",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "2",
+          "answers": 1,
+          "timing": "Immediate"
+        },
+        {
+          "score": "3",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "4",
+          "answers": 1,
+          "timing": "Immediate"
+        },
+        {
+          "score": "5",
+          "answers": 1,
+          "timing": "Immediate"
+        },
+        {
+          "score": "1",
+          "answers": 1,
+          "timing": "Recalled"
+        },
+        {
+          "score": "2",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "3",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "4",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "5",
+          "answers": 0,
+          "timing": "Recalled"
+        }
+      ],
+      "ease": [
+        {
+          "score": "1",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "2",
+          "answers": 1,
+          "timing": "Immediate"
+        },
+        {
+          "score": "3",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "4",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "5",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "6",
+          "answers": 1,
+          "timing": "Immediate"
+        },
+        {
+          "score": "7",
+          "answers": 0,
+          "timing": "Immediate"
+        },
+        {
+          "score": "1",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "2",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "3",
+          "answers": 1,
+          "timing": "Recalled"
+        },
+        {
+          "score": "4",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "5",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "6",
+          "answers": 0,
+          "timing": "Recalled"
+        },
+        {
+          "score": "7",
+          "answers": 0,
+          "timing": "Recalled"
+        }
+      ],
+      "coverage": [
+        {
+          "timing": "Immediate",
+          "measure": "Satisfaction",
+          "eligible": 8,
+          "invited": 5,
+          "recorded": 4,
+          "answered": 3,
+          "unanswered": 1,
+          "coverage": 0.6
+        },
+        {
+          "timing": "Immediate",
+          "measure": "Task ease",
+          "eligible": 8,
+          "invited": 5,
+          "recorded": 4,
+          "answered": 2,
+          "unanswered": 2,
+          "coverage": 0.4
+        },
+        {
+          "timing": "Recalled",
+          "measure": "Satisfaction",
+          "eligible": null,
+          "invited": null,
+          "recorded": 1,
+          "answered": 1,
+          "unanswered": 0,
+          "coverage": null
+        },
+        {
+          "timing": "Recalled",
+          "measure": "Task ease",
+          "eligible": null,
+          "invited": null,
+          "recorded": 1,
+          "answered": 1,
+          "unanswered": 0,
+          "coverage": null
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "id": "fixture",
+      "label": "Invented participant example, schema 1.1",
+      "path": "examples/synthetic-ratings-submission.json"
+    },
+    {
+      "id": "activity-source",
+      "label": "Synthetic example: activity",
+      "path": "examples/synthetic-ratings-submission.json",
+      "query": {
+        "engine": "SQLite in memory",
+        "sql": "SELECT * FROM activity",
+        "tables_used": [
+          "activity"
+        ],
+        "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+      }
+    },
+    {
+      "id": "tokens-source",
+      "label": "Synthetic example: tokens",
+      "path": "examples/synthetic-ratings-submission.json",
+      "query": {
+        "engine": "SQLite in memory",
+        "sql": "SELECT * FROM tokens",
+        "tables_used": [
+          "tokens"
+        ],
+        "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+      }
+    },
+    {
+      "id": "observations-source",
+      "label": "Synthetic example: observations",
+      "path": "examples/synthetic-ratings-submission.json",
+      "query": {
+        "engine": "SQLite in memory",
+        "sql": "SELECT * FROM observations",
+        "tables_used": [
+          "observations"
+        ],
+        "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+      }
+    },
+    {
+      "id": "satisfaction-source",
+      "label": "Synthetic example: satisfaction",
+      "path": "examples/synthetic-ratings-submission.json",
+      "query": {
+        "engine": "SQLite in memory",
+        "sql": "SELECT * FROM satisfaction",
+        "tables_used": [
+          "satisfaction"
+        ],
+        "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+      }
+    },
+    {
+      "id": "ease-source",
+      "label": "Synthetic example: ease",
+      "path": "examples/synthetic-ratings-submission.json",
+      "query": {
+        "engine": "SQLite in memory",
+        "sql": "SELECT * FROM ease",
+        "tables_used": [
+          "ease"
+        ],
+        "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+      }
+    },
+    {
+      "id": "coverage-source",
+      "label": "Synthetic example: coverage",
+      "path": "examples/synthetic-ratings-submission.json",
+      "query": {
+        "engine": "SQLite in memory",
+        "sql": "SELECT * FROM coverage",
+        "tables_used": [
+          "coverage"
+        ],
+        "description": "Validated synthetic JSON transformed by tools/build_report_example.py, then selected from an in-memory derived table. No personal database is read."
+      }
+    }
+  ]
+}
